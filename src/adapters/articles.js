@@ -1,3 +1,4 @@
+/* eslint-disable */
 export default ({
     "success": true,
     "payload": {
