@@ -1,2 +1,2 @@
-# mostly-focused-site-v2
-A newer version of my site 
+# Mostly Focused Site V2
+I just wanna build a better site for my articles
