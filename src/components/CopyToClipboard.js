@@ -5,24 +5,22 @@ import TemporaryAlert from './TemporaryAlert';
 const CopyToClipboard = (props) => {
     const { articles } = props;
     const [isAlertVisible, setIsAlertVisible] = useState(false);
-
-    const showAlert = () => {
-        setIsAlertVisible(true);
-        setTimeout(() => setIsAlertVisible(false), 2000);
-    };
+    const [isAlertError, setIsAlertError] = useState(false);
 
     useEffect(() => {
         if (articles.length) {
             try {
                 document.getElementById('json-articles').select();
                 document.execCommand('copy');
-                showAlert();
+                setIsAlertError(false);
+                setIsAlertVisible(true);
             } catch (error) {
                 console.log('error: ', error);
+                setIsAlertError(true);
             }
+            setIsAlertVisible(true);
         }
     }, [articles]);
-
 
     return (
         <div id='copy-to-clipboard'>
@@ -32,11 +30,12 @@ const CopyToClipboard = (props) => {
                 readOnly
                 value={JSON.stringify(articles, null, 4)}
             />
-            {
-                isAlertVisible
-                    ? <TemporaryAlert />
-                    : ''
-            }
+            <TemporaryAlert
+                msg={isAlertError ? 'Something went wrong with copying the JSON to the clipboard' : 'JSON successfully saved to your clipboard!'}
+                setIsAlertVisible={setIsAlertVisible}
+                isAlertVisible={isAlertVisible}
+                isAlertError={isAlertError}
+            />
         </div>
     );
 };
