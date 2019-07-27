@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import ArticlesConverter from '../ArticlesConverter';
 import RawTextConverter from './RawTextConverter';
 import CopyToClipboard from './CopyToClipboard';
@@ -15,11 +15,6 @@ const MainComponent = () => {
         e.preventDefault();
         setArticles(new ArticlesConverter(rawText, 'mikecronin92'));
     };
-
-    useEffect(() => {
-        document.getElementById("json-articles").select();
-        document.execCommand("copy");
-    }, [articles]);
 
     return (
         <div id='main-component'>
