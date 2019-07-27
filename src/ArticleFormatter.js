@@ -1,6 +1,4 @@
 /* eslint-disable object-curly-newline */
-import articlesRaw from './articles';
-
 const checkForImage = imageId => (
     imageId
         ? `https://miro.medium.com/max/1400/${imageId}`
@@ -35,16 +33,11 @@ const formatArticle = (post) => {
     };
 };
 
-class ArticleAdapter {
-    static getAll() {
+class ArticleFormatter {
+    static getAll(articlesRaw) {
         const posts = articlesRaw.payload.references.Post;
-        const articles = [];
-        Object.keys(posts).forEach((post) => {
-            articles.push(formatArticle(posts[post]));
-        });
-
-        return Promise.resolve(articles);
+        return Object.keys(posts).map(post => formatArticle(posts[post]));
     }
 }
 
-export default ArticleAdapter;
+export default ArticleFormatter;

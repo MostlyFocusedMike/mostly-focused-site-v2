@@ -1,13 +1,17 @@
 import React from 'react';
 import './App.css';
-import { ArticleAdapter } from './adapters';
+import articleObjs from './articles';
+import ArticleFormatter from './ArticleFormatter';
 
-ArticleAdapter.getAll().then(console.log);
+const articles = ArticleFormatter.getAll(articleObjs);
 
 function App() {
     return (
         <div className="App">
             <h1>Hello there</h1>
+            <textarea>
+                {JSON.stringify(articles, null, 4)}
+            </textarea>
         </div>
     );
 }
