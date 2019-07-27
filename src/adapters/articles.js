@@ -1,4 +1,4 @@
-{
+export default ({
     "success": true,
     "payload": {
         "user": {
@@ -20,7 +20,7 @@
         },
         "streamItems": [
             {
-                "createdAt": 1564188923304,
+                "createdAt": 1564197908567,
                 "heading": {
                     "text": "Latest",
                     "heading": {
@@ -31,12 +31,12 @@
                         "headingType": "headingBasic"
                     }
                 },
-                "randomId": "80445ce8d86",
+                "randomId": "76f1434ef376",
                 "itemType": "heading",
                 "type": "StreamItem"
             },
             {
-                "createdAt": 1564188923304,
+                "createdAt": 1564197908567,
                 "postPreview": {
                     "postId": "62eef165bec8",
                     "postSuggestionReasons": [
@@ -45,12 +45,12 @@
                         }
                     ]
                 },
-                "randomId": "84a40f75a5e0",
+                "randomId": "1f061a6dec84",
                 "itemType": "postPreview",
                 "type": "StreamItem"
             },
             {
-                "createdAt": 1564188923304,
+                "createdAt": 1564197908567,
                 "postPreview": {
                     "postId": "a38b3033280c",
                     "postSuggestionReasons": [
@@ -59,12 +59,12 @@
                         }
                     ]
                 },
-                "randomId": "73846a1fbe9",
+                "randomId": "b1a43557ec",
                 "itemType": "postPreview",
                 "type": "StreamItem"
             },
             {
-                "createdAt": 1564188923304,
+                "createdAt": 1564197908567,
                 "postPreview": {
                     "postId": "a072ba653717",
                     "postSuggestionReasons": [
@@ -73,12 +73,12 @@
                         }
                     ]
                 },
-                "randomId": "24e2441971b7",
+                "randomId": "4f4834da3202",
                 "itemType": "postPreview",
                 "type": "StreamItem"
             },
             {
-                "createdAt": 1564188923304,
+                "createdAt": 1564197908567,
                 "postPreview": {
                     "postId": "9727c527efd0",
                     "postSuggestionReasons": [
@@ -87,12 +87,12 @@
                         }
                     ]
                 },
-                "randomId": "7a640a65f3aa",
+                "randomId": "98041f291692",
                 "itemType": "postPreview",
                 "type": "StreamItem"
             },
             {
-                "createdAt": 1564188923304,
+                "createdAt": 1564197908567,
                 "postPreview": {
                     "postId": "dd4921cb3c1a",
                     "postSuggestionReasons": [
@@ -101,12 +101,12 @@
                         }
                     ]
                 },
-                "randomId": "3f2855989b6f",
+                "randomId": "295ed9146dab",
                 "itemType": "postPreview",
                 "type": "StreamItem"
             },
             {
-                "createdAt": 1564188923304,
+                "createdAt": 1564197908567,
                 "postPreview": {
                     "postId": "e841724da924",
                     "postSuggestionReasons": [
@@ -115,12 +115,12 @@
                         }
                     ]
                 },
-                "randomId": "e802f44826ff",
+                "randomId": "20f4e7b07483",
                 "itemType": "postPreview",
                 "type": "StreamItem"
             },
             {
-                "createdAt": 1564188923304,
+                "createdAt": 1564197908567,
                 "postPreview": {
                     "postId": "236207de3d55",
                     "postSuggestionReasons": [
@@ -129,12 +129,12 @@
                         }
                     ]
                 },
-                "randomId": "6317f26b3f18",
+                "randomId": "3fa48d09aa96",
                 "itemType": "postPreview",
                 "type": "StreamItem"
             },
             {
-                "createdAt": 1564188923305,
+                "createdAt": 1564197908567,
                 "postPreview": {
                     "postId": "b5eb57fdbeb4",
                     "postSuggestionReasons": [
@@ -143,12 +143,12 @@
                         }
                     ]
                 },
-                "randomId": "beae3d9777af",
+                "randomId": "4c8ab7bc9d9",
                 "itemType": "postPreview",
                 "type": "StreamItem"
             },
             {
-                "createdAt": 1564188923305,
+                "createdAt": 1564197908567,
                 "postPreview": {
                     "postId": "c6592094658",
                     "postSuggestionReasons": [
@@ -157,12 +157,12 @@
                         }
                     ]
                 },
-                "randomId": "cccbe05686",
+                "randomId": "b3cf56e5208",
                 "itemType": "postPreview",
                 "type": "StreamItem"
             },
             {
-                "createdAt": 1564188923305,
+                "createdAt": 1564197908568,
                 "postPreview": {
                     "postId": "d5052dea52c5",
                     "postSuggestionReasons": [
@@ -171,7 +171,7 @@
                         }
                     ]
                 },
-                "randomId": "cf0f9c609743",
+                "randomId": "782d53431f1b",
                 "itemType": "postPreview",
                 "type": "StreamItem"
             }
@@ -244,9 +244,9 @@
                 {
                     "slug": "coding",
                     "name": "Coding",
-                    "postCount": 29241,
+                    "postCount": 29317,
                     "metadata": {
-                        "postCount": 29241,
+                        "postCount": 29317,
                         "coverImage": {
                             "id": "1*4EGwsCicbWJeml2aAm714A.gif",
                             "originalWidth": 1257,
@@ -259,9 +259,9 @@
                 {
                     "slug": "nodejs",
                     "name": "Nodejs",
-                    "postCount": 19647,
+                    "postCount": 19665,
                     "metadata": {
-                        "postCount": 19647,
+                        "postCount": 19665,
                         "coverImage": {
                             "id": "0*kpdt3aKP38oSZZWL",
                             "originalWidth": 3872,
@@ -336,9 +336,9 @@
                 {
                     "slug": "bootcamp",
                     "name": "Bootcamp",
-                    "postCount": 3160,
+                    "postCount": 3164,
                     "metadata": {
-                        "postCount": 3160,
+                        "postCount": 3164,
                         "coverImage": {
                             "id": "1*b6u5i2Bgn522iYXkNY_L-w.jpeg",
                             "originalWidth": 2048,
@@ -365,9 +365,9 @@
                 {
                     "slug": "node",
                     "name": "Node",
-                    "postCount": 1782,
+                    "postCount": 1784,
                     "metadata": {
-                        "postCount": 1782,
+                        "postCount": 1784,
                         "coverImage": {
                             "id": "1*bZMiWPHBe3xXLuBm6NBMDQ.png",
                             "originalWidth": 1380,
@@ -501,7 +501,7 @@
                         "width": 0
                     },
                     "metadata": {
-                        "followerCount": 21861,
+                        "followerCount": 21867,
                         "activeAt": 1564141792864
                     },
                     "virtuals": {
@@ -1052,7 +1052,7 @@
                             "lastReadAt": 1564143837075,
                             "lastReadParagraphName": "9f2f",
                             "lastReadPercentage": 0,
-                            "viewedAt": 1564169525605,
+                            "viewedAt": 1564189410052,
                             "presentedCountInResponseManagement": 0,
                             "clapCount": 0,
                             "seriesUpdateNotifsOptedInAt": 0,
@@ -1361,7 +1361,7 @@
                         "publishedInCount": 1,
                         "usersBySocialRecommends": [],
                         "noIndex": false,
-                        "recommends": 140,
+                        "recommends": 141,
                         "isBookmarked": false,
                         "tags": [
                             {
@@ -1463,7 +1463,7 @@
                         },
                         "isLockedPreviewOnly": false,
                         "metaDescription": "",
-                        "totalClapCount": 836,
+                        "totalClapCount": 837,
                         "sectionCount": 1,
                         "readingList": 0,
                         "topics": [
@@ -1655,7 +1655,7 @@
                             "lastReadAt": 1562801937889,
                             "lastReadParagraphName": "cdd9",
                             "lastReadPercentage": 0,
-                            "viewedAt": 1564153342340,
+                            "viewedAt": 1564189888517,
                             "presentedCountInResponseManagement": 0,
                             "clapCount": 0,
                             "seriesUpdateNotifsOptedInAt": 0,
@@ -1732,9 +1732,9 @@
                             {
                                 "slug": "coding",
                                 "name": "Coding",
-                                "postCount": 29241,
+                                "postCount": 29317,
                                 "metadata": {
-                                    "postCount": 29241,
+                                    "postCount": 29317,
                                     "coverImage": {
                                         "id": "1*4EGwsCicbWJeml2aAm714A.gif",
                                         "originalWidth": 1257,
@@ -2009,9 +2009,9 @@
                             {
                                 "slug": "nodejs",
                                 "name": "Nodejs",
-                                "postCount": 19647,
+                                "postCount": 19665,
                                 "metadata": {
-                                    "postCount": 19647,
+                                    "postCount": 19665,
                                     "coverImage": {
                                         "id": "0*kpdt3aKP38oSZZWL",
                                         "originalWidth": 3872,
@@ -2300,7 +2300,7 @@
                             "lastReadAt": 1562528794167,
                             "lastReadParagraphName": "68c8",
                             "lastReadPercentage": 0,
-                            "viewedAt": 1564153529204,
+                            "viewedAt": 1564189811653,
                             "presentedCountInResponseManagement": 0,
                             "clapCount": 0,
                             "seriesUpdateNotifsOptedInAt": 0,
@@ -2348,9 +2348,9 @@
                             {
                                 "slug": "coding",
                                 "name": "Coding",
-                                "postCount": 29241,
+                                "postCount": 29317,
                                 "metadata": {
-                                    "postCount": 29241,
+                                    "postCount": 29317,
                                     "coverImage": {
                                         "id": "1*4EGwsCicbWJeml2aAm714A.gif",
                                         "originalWidth": 1257,
@@ -2363,9 +2363,9 @@
                             {
                                 "slug": "node",
                                 "name": "Node",
-                                "postCount": 1782,
+                                "postCount": 1784,
                                 "metadata": {
-                                    "postCount": 1782,
+                                    "postCount": 1784,
                                     "coverImage": {
                                         "id": "1*bZMiWPHBe3xXLuBm6NBMDQ.png",
                                         "originalWidth": 1380,
@@ -2666,9 +2666,9 @@
                             {
                                 "slug": "nodejs",
                                 "name": "Nodejs",
-                                "postCount": 19647,
+                                "postCount": 19665,
                                 "metadata": {
-                                    "postCount": 19647,
+                                    "postCount": 19665,
                                     "coverImage": {
                                         "id": "0*kpdt3aKP38oSZZWL",
                                         "originalWidth": 3872,
@@ -3037,9 +3037,9 @@
                             {
                                 "slug": "bootcamp",
                                 "name": "Bootcamp",
-                                "postCount": 3160,
+                                "postCount": 3164,
                                 "metadata": {
-                                    "postCount": 3160,
+                                    "postCount": 3164,
                                     "coverImage": {
                                         "id": "1*b6u5i2Bgn522iYXkNY_L-w.jpeg",
                                         "originalWidth": 2048,
@@ -3052,9 +3052,9 @@
                             {
                                 "slug": "coding",
                                 "name": "Coding",
-                                "postCount": 29241,
+                                "postCount": 29317,
                                 "metadata": {
-                                    "postCount": 29241,
+                                    "postCount": 29317,
                                     "coverImage": {
                                         "id": "1*4EGwsCicbWJeml2aAm714A.gif",
                                         "originalWidth": 1257,
@@ -3318,9 +3318,9 @@
                             {
                                 "slug": "coding",
                                 "name": "Coding",
-                                "postCount": 29241,
+                                "postCount": 29317,
                                 "metadata": {
-                                    "postCount": 29241,
+                                    "postCount": 29317,
                                     "coverImage": {
                                         "id": "1*4EGwsCicbWJeml2aAm714A.gif",
                                         "originalWidth": 1257,
@@ -3620,9 +3620,9 @@
                                 "metadata": {
                                     "postCount": 1033,
                                     "coverImage": {
-                                        "id": "0*Up9tSbf0XuZFlIU_.png",
-                                        "originalWidth": 2078,
-                                        "originalHeight": 1700
+                                        "id": "1*HWrhA3nQ6PnPInnU0CwI8w.jpeg",
+                                        "originalWidth": 2369,
+                                        "originalHeight": 1294
                                     }
                                 },
                                 "type": "Tag"
@@ -3644,9 +3644,9 @@
                             {
                                 "slug": "coding",
                                 "name": "Coding",
-                                "postCount": 29241,
+                                "postCount": 29317,
                                 "metadata": {
-                                    "postCount": 29241,
+                                    "postCount": 29317,
                                     "coverImage": {
                                         "id": "1*4EGwsCicbWJeml2aAm714A.gif",
                                         "originalWidth": 1257,
@@ -3883,7 +3883,7 @@
                             "lastReadAt": 1551033224782,
                             "lastReadParagraphName": "b254",
                             "lastReadPercentage": 1,
-                            "viewedAt": 1551033226587,
+                            "viewedAt": 1564189313916,
                             "presentedCountInResponseManagement": 0,
                             "clapCount": 0,
                             "seriesUpdateNotifsOptedInAt": 0,
@@ -3981,9 +3981,9 @@
                                 "metadata": {
                                     "postCount": 1033,
                                     "coverImage": {
-                                        "id": "0*Up9tSbf0XuZFlIU_.png",
-                                        "originalWidth": 2078,
-                                        "originalHeight": 1700
+                                        "id": "1*HWrhA3nQ6PnPInnU0CwI8w.jpeg",
+                                        "originalWidth": 2369,
+                                        "originalHeight": 1294
                                     }
                                 },
                                 "type": "Tag"
@@ -4165,5 +4165,5 @@
         }
     },
     "v": 3,
-    "b": "38189-3062d42"
-}
+    "b": "38189"
+});

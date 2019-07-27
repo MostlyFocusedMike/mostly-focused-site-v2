@@ -18,6 +18,7 @@ module.exports = {
         "no-console": "off",
         "arrow-body-style": "off",
         "class-methods-use-this": "off",
+        "import/prefer-default-export": "off",
     },
     parser: "babel-eslint", // this lets us use ES6+ things in react like `= () => {}`
 };
