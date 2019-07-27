@@ -1,20 +1,7 @@
-/* eslint-disable object-curly-newline */
-import React, { useState } from 'react';
-import ArticlesConverter from '../ArticlesConverter';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const RawConverter = () => {
-    const [rawText, setRawText] = useState('');
-
-    const handleChange = (e) => {
-        setRawText(e.target.value);
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const articles = new ArticlesConverter(rawText, 'mikecronin92');
-        console.log('articles: ', articles);
-    };
-
+const RawConverter = ({ rawText, handleChange, handleSubmit }) => {
 
     return (
         <div id='home'>
@@ -28,6 +15,12 @@ const RawConverter = () => {
             </form>
         </div>
     );
+};
+
+RawConverter.propTypes = {
+    rawText: PropTypes.string,
+    handleChange: PropTypes.func,
+    handleSubmit: PropTypes.func,
 };
 
 export default RawConverter;
