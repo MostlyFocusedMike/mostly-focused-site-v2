@@ -35,8 +35,7 @@ const formatArticle = (post) => {
 
 class ArticleFormatter {
     static getAll(articlesRaw) {
-        const posts = articlesRaw.payload.references.Post;
-        return Object.keys(posts).map(post => formatArticle(posts[post]));
+        return Object.keys(articlesRaw).map(article => formatArticle(articlesRaw[article]));
     }
 }
 
