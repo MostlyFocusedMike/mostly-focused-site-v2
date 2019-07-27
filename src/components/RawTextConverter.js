@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const RawConverter = ({ rawText, handleChange, handleSubmit }) => {
-
     return (
         <div id='home'>
             <h1>RawConverter</h1>

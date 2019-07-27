@@ -2,7 +2,7 @@ class ArticlesConverter {
     constructor(rawText, userHandle) {
         this.userHandle = userHandle;
         this.rawText = rawText;
-        return this.articles;
+        return this.niceJSONArticles;
     }
 
     checkForImage = (imageId) => (
@@ -37,12 +37,12 @@ class ArticlesConverter {
         };
     };
 
-    get jsonArticles() {
+    get roughJSONArticles() {
         return JSON.parse(this.rawText.slice(this.rawText.indexOf('{'))).payload.references.Post;
     }
 
-    get articles() {
-        return Object.keys(this.jsonArticles).map(article => this.formatArticle(this.jsonArticles[article]));
+    get niceJSONArticles() {
+        return Object.keys(this.roughJSONArticles).map(article => this.formatArticle(this.roughJSONArticles[article]));
     }
 }
 

@@ -15,6 +15,11 @@ const MainComponent = () => {
         setArticles(new ArticlesConverter(rawText, 'mikecronin92'));
     };
 
+    useEffect(() => {
+        document.getElementById("json-articles").select();
+        document.execCommand("copy");
+    }, [articles]);
+
     return (
         <div id='main-component'>
             <h1>MainComponent</h1>
@@ -24,6 +29,9 @@ const MainComponent = () => {
                 rawText = {rawText}
             />
             <textarea
+                id='json-articles'
+                style={{ position: 'fixed', top: '-100rem' }}
+                readOnly
                 value={JSON.stringify(articles, null, 4)}
             />
         </div>
