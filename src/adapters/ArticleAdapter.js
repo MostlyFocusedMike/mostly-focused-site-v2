@@ -1,14 +1,17 @@
 /* eslint-disable object-curly-newline */
 import articlesRaw from './articles';
 
-const imageBase = 'https://miro.medium.com/max/1400/';
+const checkForImage = imageId => (
+    imageId
+        ? `https://miro.medium.com/max/1400/${imageId}`
+        : 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Pictogram_voting_question.svg/440px-Pictogram_voting_question.svg.png'
+);
 
 const formatTags = (tags) => {
     return tags.map(({ name, slug, postCount, metadata: { coverImage } }) => {
-        const image = coverImage.id ? `${imageBase}${coverImage.id}` : undefined;
-        return { name, slug, image, postCount };
+        return { name, slug, postCount, image: checkForImage(coverImage.id) };
     });
-}
+};
 
 const formatArticle = (post) => {
     const {
@@ -19,14 +22,13 @@ const formatArticle = (post) => {
         virtuals: { previewImage: { imageId }, tags },
         content: { subtitle, metaDescription },
     } = post;
-    const image = imageId ? `${imageBase}${imageId}` : undefined;
 
     return {
         id,
         title,
         slug,
         uniqueSlug,
-        image,
+        image: checkForImage(imageId),
         subtitle,
         metaDescription,
         tags: formatTags(tags),
