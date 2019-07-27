@@ -1,45 +1,51 @@
 /* eslint-disable object-curly-newline */
 import React, { useState } from 'react';
 
-const rawTextToJsonArticles = rawText => JSON.parse(rawText.slice(rawText.indexOf('{'))).payload.references.Post;
+class ArticlesConverter {
+    constructor(rawText, userHandle) {
+        this.userHandle = userHandle;
+        this.rawText = rawText;
+        return this.articles;
+    }
 
-const checkForImage = imageId => (
-    imageId
-        ? `https://miro.medium.com/max/1400/${imageId}`
-        : 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Pictogram_voting_question.svg/440px-Pictogram_voting_question.svg.png'
-);
+    checkForImage = (imageId) => (
+        imageId
+            ? `https://miro.medium.com/max/1400/${imageId}`
+            : 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Pictogram_voting_question.svg/440px-Pictogram_voting_question.svg.png'
+    );
 
-const formatTags = (tags) => {
-    return tags.map(({ name, slug, postCount, metadata: { coverImage } }) => {
-        return { name, slug, postCount, image: checkForImage(coverImage.id) };
-    });
-};
+    formatTags = (tags) => tags.map(({ name, slug }) => ({ name, slug }))
 
-const formatArticle = (post) => {
-    const {
-        id,
-        title,
-        slug,
-        uniqueSlug,
-        virtuals: { previewImage: { imageId }, tags },
-        content: { subtitle, metaDescription },
-    } = post;
+    formatArticle = (rawArticle) => {
+        const {
+            id,
+            title,
+            slug,
+            uniqueSlug,
+            virtuals: { previewImage: { imageId }, tags },
+            content: { subtitle, metaDescription },
+        } = rawArticle;
 
-    return {
-        id,
-        title,
-        slug,
-        uniqueSlug,
-        image: checkForImage(imageId),
-        subtitle,
-        metaDescription,
-        tags: formatTags(tags),
+        const link = `https://medium.com/@${this.userHandle}/${uniqueSlug}`;
+
+        return {
+            id,
+            title,
+            slug,
+            link,
+            image: this.checkForImage(imageId),
+            subtitle,
+            metaDescription,
+            tags: this.formatTags(tags),
+        };
     };
-};
 
-class ArticleFormatter {
-    static getAll(articlesRaw) {
-        return Object.keys(articlesRaw).map(article => formatArticle(articlesRaw[article]));
+    get jsonArticles() {
+        return JSON.parse(this.rawText.slice(this.rawText.indexOf('{'))).payload.references.Post;
+    }
+
+    get articles() {
+        return Object.keys(this.jsonArticles).map(article => this.formatArticle(this.jsonArticles[article]));
     }
 }
 
@@ -53,9 +59,7 @@ const RawConverter = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const fullResponseObject = JSON.parse(rawText.slice(rawText.indexOf('{')));
-        const rawArticles = fullResponseObject.payload.references.Post;
-        const articles = ArticleFormatter.getAll(rawArticles);
+        const articles = new ArticlesConverter(rawText, 'mikecronin92');
         console.log('articles: ', articles);
     };
 
