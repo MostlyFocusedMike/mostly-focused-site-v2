@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import RawTextConverter from './RawTextConverter';
 import ArticlesConverter from '../ArticlesConverter';
+import RawTextConverter from './RawTextConverter';
+import CopyToClipboard from './CopyToClipboard';
 
 const MainComponent = () => {
     const [rawText, setRawText] = useState('');
@@ -28,12 +29,7 @@ const MainComponent = () => {
                 handleSubmit = {handleSubmit}
                 rawText = {rawText}
             />
-            <textarea
-                id='json-articles'
-                style={{ position: 'fixed', top: '-100rem' }}
-                readOnly
-                value={JSON.stringify(articles, null, 4)}
-            />
+            <CopyToClipboard articles={articles} />
         </div>
     );
 };
