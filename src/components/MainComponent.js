@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ArticlesConverter from '../ArticlesConverter';
-import RawTextConverter from './RawTextConverter';
+import RawTextConverter from './RawTextInput';
 import CopyToClipboard from './CopyToClipboard';
 
 const MainComponent = () => {
