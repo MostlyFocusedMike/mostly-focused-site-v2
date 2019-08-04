@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ArticleAdapter } from '../Adapters';
+import ArticleCard from './ArticleCard';
 
 const ArticlesContainer = () => {
     const [articles, setArticles] = useState([
@@ -24,11 +25,18 @@ const ArticlesContainer = () => {
     return (
         <div id='articles-container'>
             <h1>My Articles</h1>
-            {
-                articles.map(article => {
-                    return <p key={article.mediumID}>{article.title}</p>;
-                })
-            }
+            <ul>
+                {
+                    articles.map((article) => (
+                        <ArticleCard
+                            article={article}
+                            key={article.mediumID}
+                        />
+
+                    ))
+                }
+            </ul>
+
         </div>
     );
 };
