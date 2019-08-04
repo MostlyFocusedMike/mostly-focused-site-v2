@@ -28,19 +28,19 @@
     font-weight: 200;
     margin: 1rem;
     text-align: center; }
-  .post-li a {
+  .post-li a.link {
     font-style: italic;
     text-align: center;
     display: block;
     margin: 0 auto;
     transition: all 150ms; }
-    .post-li a:link {
+    .post-li a.link:link {
       color: #5CA6E5; }
-    .post-li a:visited {
+    .post-li a.link:visited {
       color: #5CA6E5; }
-    .post-li a:hover {
+    .post-li a.link:hover {
       color: #e39b00; }
-    .post-li a:active {
+    .post-li a.link:active {
       color: #FFEF33; }
 
 ul {
@@ -58,6 +58,10 @@ html, body {
 textarea {
   width: 80%;
   height: 80vh; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
 
 #raw-text-input {
   width: 50%;

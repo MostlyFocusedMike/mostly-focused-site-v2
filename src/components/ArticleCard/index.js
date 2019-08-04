@@ -1,16 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { getFormattedSubtitle } from './helpers';
+import TagsConainer from '../TagsContainer';
 
 const ArticleCard = ({ article }) => {
     return (
         <li className="post-li" id={`post-${article.mediumID}-d`}>
-            <a id={`post-${article.id}-img-link`} href={`${article.url}`}>
+            <a id={`post-${article.id}-img-link`} href={`${article.link}`}>
                 <img id={`post-${article.id}-img`}src={`${article.image}`}alt={`${article.title} image`}/>
+                <h2 id={`post-${article.mediumID}-title`}>{article.title}</h2>
             </a>
-            <h2 id={`post-${article.mediumID}-title`}>{article.title}</h2>
             <p id={`post-${article.mediumID}-snippet`}>{getFormattedSubtitle(article.subtitle)}</p>
-            <a href={article.link}>read article</a>
+            <a className='link' href={article.link}>read article</a>
+            <TagsConainer tags={article.tags}/>
         </li>
     );
 };

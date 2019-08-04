@@ -1,4 +1,4 @@
-@import './components/ArticleCard/style.scss';
+@import './components/ArticleCard/styles.scss';
 
 
 
@@ -18,9 +18,14 @@ html, body {
     @extend %font;
 }
 
-  textarea {
+textarea {
     width: 80%;
     height: 80vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 #raw-text-input {
