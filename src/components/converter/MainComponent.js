@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ArticlesConverter from '../ArticlesConverter';
+import ArticlesConverter from '../../ArticlesConverter';
 import RawTextConverter from './RawTextInput';
 import CopyToClipboard from './CopyToClipboard';
 
