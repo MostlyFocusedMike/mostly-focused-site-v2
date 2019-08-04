@@ -15,7 +15,7 @@ class ArticlesConverter {
 
     formatArticle = (rawArticle) => {
         const {
-            id,
+            id: mediumID,
             title,
             slug,
             uniqueSlug,
@@ -26,7 +26,7 @@ class ArticlesConverter {
         const link = `https://medium.com/@${this.userHandle}/${uniqueSlug}`;
 
         return {
-            id,
+            mediumID,
             title,
             slug,
             link,

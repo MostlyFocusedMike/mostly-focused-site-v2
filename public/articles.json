@@ -1,6 +1,6 @@
 [
     {
-        "id": "b39840f75c4f",
+        "mediumID": "b39840f75c4f",
         "title": "How to Build a Dynamic, Controlled Form with React Hooks (2019)",
         "slug": "how-to-build-a-dynamic-controlled-form-with-react-hooks-2019",
         "link": "https://medium.com/@mikecronin92/how-to-build-a-dynamic-controlled-form-with-react-hooks-2019-b39840f75c4f",
@@ -30,7 +30,7 @@
         ]
     },
     {
-        "id": "62eef165bec8",
+        "mediumID": "62eef165bec8",
         "title": "What are Primitive and Reference Types in JavaScript?",
         "slug": "javascript-interview-prep-primitive-vs-reference-types",
         "link": "https://medium.com/@mikecronin92/javascript-interview-prep-primitive-vs-reference-types-62eef165bec8",
@@ -61,7 +61,7 @@
         ]
     },
     {
-        "id": "a38b3033280c",
+        "mediumID": "a38b3033280c",
         "title": "Test Driven Development Is Dumb. Fight Me.",
         "slug": "test-driven-development-is-dumb-fight-me",
         "link": "https://medium.com/@mikecronin92/test-driven-development-is-dumb-fight-me-a38b3033280c",
@@ -91,7 +91,7 @@
         ]
     },
     {
-        "id": "a072ba653717",
+        "mediumID": "a072ba653717",
         "title": "A Beginner’s Guide to Recursion",
         "slug": "understanding-how-recursion-works-by-using-arrays",
         "link": "https://medium.com/@mikecronin92/understanding-how-recursion-works-by-using-arrays-a072ba653717",
@@ -122,7 +122,7 @@
         ]
     },
     {
-        "id": "9727c527efd0",
+        "mediumID": "9727c527efd0",
         "title": "How to use DataLoaders in GraphQL",
         "slug": "how-to-use-dataloader-js",
         "link": "https://medium.com/@mikecronin92/how-to-use-dataloader-js-9727c527efd0",
@@ -153,7 +153,7 @@
         ]
     },
     {
-        "id": "dd4921cb3c1a",
+        "mediumID": "dd4921cb3c1a",
         "title": "What is the N+1 Problem in GraphQL?",
         "slug": "what-is-the-n-1-problem-in-graphql",
         "link": "https://medium.com/@mikecronin92/what-is-the-n-1-problem-in-graphql-dd4921cb3c1a",
@@ -183,7 +183,7 @@
         ]
     },
     {
-        "id": "e841724da924",
+        "mediumID": "e841724da924",
         "title": "Getting started with Hapi JS",
         "slug": "getting-started-with-hapi-js",
         "link": "https://medium.com/@mikecronin92/getting-started-with-hapi-js-e841724da924",
@@ -213,7 +213,7 @@
         ]
     },
     {
-        "id": "236207de3d55",
+        "mediumID": "236207de3d55",
         "title": "How to ask Questions as a Jr. Dev",
         "slug": "how-to-ask-questions-as-a-jr-dev",
         "link": "https://medium.com/@mikecronin92/how-to-ask-questions-as-a-jr-dev-236207de3d55",
@@ -243,7 +243,7 @@
         ]
     },
     {
-        "id": "b5eb57fdbeb4",
+        "mediumID": "b5eb57fdbeb4",
         "title": "A beginner’s guide to understanding JavaScript Closures",
         "slug": "a-beginners-guide-to-understanding-javascript-closures",
         "link": "https://medium.com/@mikecronin92/a-beginners-guide-to-understanding-javascript-closures-b5eb57fdbeb4",
@@ -273,7 +273,7 @@
         ]
     },
     {
-        "id": "c6592094658",
+        "mediumID": "c6592094658",
         "title": "Thoughts On Coding Bootcamps (Now That I’ve Graduated)",
         "slug": "thoughts-on-coding-bootcamps-now-that-ive-graduated",
         "link": "https://medium.com/@mikecronin92/thoughts-on-coding-bootcamps-now-that-ive-graduated-c6592094658",

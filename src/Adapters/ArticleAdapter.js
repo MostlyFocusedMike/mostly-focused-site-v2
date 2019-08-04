@@ -1,10 +1,10 @@
 class ArticleAdapter {
     static getAll() {
-        return fetch('./articles.json').then(r => r.json());
+        return fetch(this.url, this.options).then(r => r.json());
     }
 }
 
-ArticleAdapter.url = '/api/v1/notes';
+ArticleAdapter.url = './articles.json';
 ArticleAdapter.options = {
     method: 'GET',
     credentials: 'include', // fetch doesn't include cookies by default
