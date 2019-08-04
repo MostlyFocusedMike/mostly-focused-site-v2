@@ -5,7 +5,15 @@ const TagsContainer = ({ tags }) => {
     console.log('tags: ', tags);
     return (
         <ul id='tags-ul'>
-            <h2>tags</h2>
+            {
+                tags.map((tag, idx) => {
+                    return (
+                        <li className='tag' key={`${idx}-${tag.slug}`}>
+                            <input type='button' value={tag.name} />
+                        </li>
+                    );
+                })
+            }
         </ul>
     );
 };
