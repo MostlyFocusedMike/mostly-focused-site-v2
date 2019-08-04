@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
 import MainComponent from './components/converter/MainComponent';
-import { ArticleAdapter } from './Adapters';
+import ArticlesContainer from './components/ArticlesContainer';
 
 function App() {
-    ArticleAdapter.getAll()
-        .then(console.log);
+
     return (
         <div className="App">
             <h1>Hello there</h1>
+            <ArticlesContainer />
             <MainComponent />
         </div>
     );
