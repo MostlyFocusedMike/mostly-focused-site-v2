@@ -1,27 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { ArticleAdapter } from '../../Adapters';
+import React from 'react';
+import PropTypes from 'prop-types';
 import ArticleCard from './ArticleCard';
 
-const ArticlesContainer = () => {
-    const [articles, setArticles] = useState([
-        {
-            mediumID: '',
-            title: '',
-            slug: '',
-            link: '',
-            image: '',
-            subtitle: '',
-            tags: [],
-        },
-    ]);
-
-    useEffect(() => {
-        ArticleAdapter.getAll()
-            .then((jsonArticles) => {
-                setArticles(jsonArticles);
-            });
-    }, []);
-
+const ArticlesContainer = ({ articles }) => {
     return (
         <div id='articles-div'>
             <h1>My Articles</h1>
@@ -39,6 +20,10 @@ const ArticlesContainer = () => {
 
         </div>
     );
+};
+
+ArticlesContainer.propTypes = {
+    articles: PropTypes.array,
 };
 
 export default ArticlesContainer;
