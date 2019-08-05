@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArticleAdapter } from '../Adapters';
+import { ArticleAdapter } from '../../Adapters';
 import ArticleCard from './ArticleCard';
 
 const ArticlesContainer = () => {
@@ -23,9 +23,9 @@ const ArticlesContainer = () => {
     }, []);
 
     return (
-        <div id='articles-container'>
+        <div id='articles-div'>
             <h1>My Articles</h1>
-            <ul>
+            <ul id='articles-ul'>
                 {
                     articles.map((article) => (
                         <ArticleCard

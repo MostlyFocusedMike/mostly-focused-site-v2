@@ -1,0 +1,14 @@
+@import '../../utilities.scss';
+
+#tags-ul {
+    @extend %flexy;
+    border-top: 0.1rem solid #AAA;
+    width: 90%;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    .tag-li {
+        input[type=button] {
+            @extend %basic-button;
+        }
+    }
+}

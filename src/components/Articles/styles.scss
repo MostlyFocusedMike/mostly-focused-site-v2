@@ -1,0 +1,75 @@
+@import '../../utilities.scss';
+
+@keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}
+  }
+  @-moz-keyframes fadein { /* Firefox */
+    from {opacity:0;}
+    to {opacity:1;}
+  }
+  @-webkit-keyframes fadein { /* Safari and Chrome */
+    from {opacity:0;}
+    to {opacity:1;}
+  }
+  @-o-keyframes fadein { /* Opera */
+    from {opacity:0;}
+    to {opacity:1;}
+  }
+
+#articles-ul {
+    @extend %flexy;
+    margin: 1rem auto 2rem;
+    .post-li {
+        box-shadow: 1px 1px 10px rgba(0,0,0,.3);
+        margin: 1rem;
+        width: 20rem;
+        min-height: 26rem;
+        position: relative;
+        transform: scale(1);
+        animation: fadein 1s;
+        transition: all 500ms;
+        box-sizing: border-box;
+        overflow: hidden;
+        -moz-animation: fadein 1s; /* Firefox */
+        -webkit-animation: fadein 1s; /* Safari and Chrome */
+        -o-animation: fadein 1s; /* Opera */
+        &:hover {
+            box-shadow: 0px 0px 25px rgba(0,0,0,.5);
+        }
+        img {
+            width: 100%;
+            height: 11rem;
+            display: block;
+            margin: 0 auto 1rem;
+        }
+        h2 {
+            font-weight: 400;
+            margin: 1rem;
+        }
+        p {
+            font-weight: 200;
+            margin: 1rem;
+            text-align: center;
+        }
+        a.link {
+            font-style: italic;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            transition: all 150ms;
+            &:link {
+                color: #5CA6E5;
+            }
+            &:visited {
+                color: #5CA6E5;
+            }
+            &:hover {
+                color: rgb(227, 155, 0);
+            }
+            &:active {
+                color: #FFEF33;
+            }
+        }
+    }
+}

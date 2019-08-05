@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { getFormattedSubtitle } from './helpers';
-import TagsContainer from '../TagsContainer';
+import TagsContainer from '../../Tags/TagsContainer';
 
 const ArticleCard = ({ article }) => {
     return (
