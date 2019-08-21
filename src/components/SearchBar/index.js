@@ -1,4 +1,7 @@
 import React from 'react';
+import { TagAdapter } from '../../Adapters';
+
+const tags = TagAdapter.getAll().then(console.log);
 
 const SearchBar = () => {
     const handleSubmit = (e) => {
