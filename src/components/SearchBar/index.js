@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { TagAdapter } from '../../Adapters';
 
-const tags = TagAdapter.getAll().then(console.log);
-
 const SearchBar = () => {
+    const [tags, setTags] = useState([{
+        name: 'Anything',
+        slug: 'anything',
+    }]);
+
+    useEffect(() => {
+        TagAdapter.getAll().then(setTags);
+    }, []);
+
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('e.target.value: ', e.target.value);
@@ -17,12 +24,13 @@ const SearchBar = () => {
     return (
         <form onSubmit={handleSubmit}>
             <div id="select-holder">
-                <label htmlFor="sorting-buttons">find articles about: </label>
-                <select id="sorting-buttons" >
-                    <option value="all">Anything</option>
-                    <option value="ruby">Ruby</option>
-                    <option value="js">Javascript</option>
-                    <option value="databases">Databases</option>
+                <label htmlFor="tag-filter">find articles about: </label>
+                <select id="tag-filter" >
+                    {
+                        tags.map(tag => (
+                            <option key={tag.slug} value={tag.slug}>{tag.name}</option>
+                        ))
+                    }
                 </select>
                 <div id="fake-border">
                     <br />
