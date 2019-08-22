@@ -3,7 +3,7 @@ import { TagAdapter } from '../../Adapters';
 import appContext from '../../context';
 
 const SearchBar = () => {
-    const context = useContext(appContext);
+    const { chosenTag, setChosenTag } = useContext(appContext);
     const [tags, setTags] = useState([{
         name: 'Anything',
         slug: 'anything',
@@ -14,11 +14,11 @@ const SearchBar = () => {
     }, []);
 
     useEffect(() => {
-        console.log('tag: ', context.chosenTag);
-    }, [context]);
+        console.log('tag: ', chosenTag);
+    }, [chosenTag]);
 
     const handleChange = (e) => {
-        context.setChosenTag(e.target.value);
+        setChosenTag(e.target.value);
     };
     // make tags adapter to grab possible values
     // filter the value in the articles component
@@ -27,7 +27,7 @@ const SearchBar = () => {
         <form onChange={handleChange}>
             <div id="select-holder">
                 <label htmlFor="tag-filter">find articles about: </label>
-                <select id="tag-filter" >
+                <select id="tag-filter" value={chosenTag}>
                     {
                         tags.map(tag => (
                             <option key={tag.slug} value={tag.slug}>{tag.name}</option>
