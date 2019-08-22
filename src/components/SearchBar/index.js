@@ -20,14 +20,16 @@ const SearchBar = () => {
     const handleChange = (e) => {
         setChosenTag(e.target.value);
     };
-    // make tags adapter to grab possible values
-    // filter the value in the articles component
+
+    const handleReset = (e) => {
+        setChosenTag('anything');
+    };
 
     return (
-        <form onChange={handleChange}>
+        <form>
             <div id="select-holder">
                 <label htmlFor="tag-filter">find articles about: </label>
-                <select id="tag-filter" value={chosenTag}>
+                <select id="tag-filter" value={chosenTag} onChange={handleChange}>
                     {
                         tags.map(tag => (
                             <option key={tag.slug} value={tag.slug}>{tag.name}</option>
@@ -43,6 +45,7 @@ const SearchBar = () => {
                     </div>
                 </div>
             </div>
+            <input type="button" value="Show All Articles" onClick={handleReset} />
         </form>
     );
 };

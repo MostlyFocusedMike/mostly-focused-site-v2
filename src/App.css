@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   justify-content: center; }
 
-#tags-ul .tag-li input[type=button], form input[type=submit] {
+#tags-ul .tag-li input[type=button], form input[type=button] {
   background: #5CA6E5;
   color: white;
   border: none;
@@ -12,9 +12,9 @@
   padding: .3rem .7rem;
   margin: 0.25rem;
   transition: background 150ms; }
-  #tags-ul .tag-li input[type=button]:hover, form input[type=submit]:hover {
+  #tags-ul .tag-li input[type=button]:hover, form input[type=button]:hover {
     background: #1D88E3; }
-  #tags-ul .tag-li input[type=button]:active, form input[type=submit]:active {
+  #tags-ul .tag-li input[type=button]:active, form input[type=button]:active {
     background: #6EB0E8; }
 
 @keyframes fadein {
@@ -94,7 +94,7 @@
   flex-wrap: wrap;
   justify-content: center; }
 
-#tags-ul .tag-li input[type=button], form input[type=submit] {
+#tags-ul .tag-li input[type=button], form input[type=button] {
   background: #5CA6E5;
   color: white;
   border: none;
@@ -102,9 +102,9 @@
   padding: .3rem .7rem;
   margin: 0.25rem;
   transition: background 150ms; }
-  #tags-ul .tag-li input[type=button]:hover, form input[type=submit]:hover {
+  #tags-ul .tag-li input[type=button]:hover, form input[type=button]:hover {
     background: #1D88E3; }
-  #tags-ul .tag-li input[type=button]:active, form input[type=submit]:active {
+  #tags-ul .tag-li input[type=button]:active, form input[type=button]:active {
     background: #6EB0E8; }
 
 #tags-ul {
@@ -209,7 +209,7 @@ form {
           position: absolute;
           top: .8rem;
           right: -.5rem; }
-  form input[type=submit] {
+  form input[type=button] {
     font-size: 1.25rem;
     margin: 1rem auto;
     display: block; }
