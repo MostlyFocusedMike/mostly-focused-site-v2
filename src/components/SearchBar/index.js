@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { TagAdapter } from '../../Adapters';
+import appContext from '../../context';
 
 const SearchBar = () => {
+    const context = useContext(appContext);
     const [tags, setTags] = useState([{
         name: 'Anything',
         slug: 'anything',
@@ -11,18 +13,18 @@ const SearchBar = () => {
         TagAdapter.getAll().then(setTags);
     }, []);
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('e.target.value: ', e.target.value);
+    useEffect(() => {
+        console.log('tag: ', context.chosenTag);
+    }, [context]);
+
+    const handleChange = (e) => {
+        context.setChosenTag(e.target.value);
     };
-    // control form
-    // grab state
-    // set context filter value
     // make tags adapter to grab possible values
     // filter the value in the articles component
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onChange={handleChange}>
             <div id="select-holder">
                 <label htmlFor="tag-filter">find articles about: </label>
                 <select id="tag-filter" >
@@ -41,10 +43,8 @@ const SearchBar = () => {
                     </div>
                 </div>
             </div>
-            <br />
-            <input type="submit" name="" id="" value="Sort Articles" />
         </form>
-    )
+    );
 };
 
 export default SearchBar;
