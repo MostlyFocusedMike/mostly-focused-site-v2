@@ -27,24 +27,14 @@ const SearchBar = () => {
 
     return (
         <form>
-            <div id="select-holder">
-                <label htmlFor="tag-filter">find articles about: </label>
-                <select id="tag-filter" value={chosenTag} onChange={handleChange}>
-                    {
-                        tags.map(tag => (
-                            <option key={tag.slug} value={tag.slug}>{tag.name}</option>
-                        ))
-                    }
-                </select>
-                <div id="fake-border">
-                    <br />
-                </div>
-                <div id="arrows-holder">
-                    <div id="arrows">
-                        <br />
-                    </div>
-                </div>
-            </div>
+            <label htmlFor="tag-filter">find articles about: </label>
+            <select id="tag-filter" value={chosenTag} onChange={handleChange}>
+                {
+                    tags.map(tag => (
+                        <option key={tag.slug} value={tag.slug}>{tag.name}</option>
+                    ))
+                }
+            </select>
             <input type="button" value="Show All Articles" onClick={handleReset} />
         </form>
     );
