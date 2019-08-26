@@ -37,6 +37,17 @@ const launch = async () => {
                     },
                 },
             },
+            {
+                method: 'GET',
+                path: '/articles',
+                options: {
+                    description: 'Redirect old url to homepage for now',
+                    notes: "This should be temporary, since the homepage likely won't always be articles",
+                    handler: async (req, h) => {
+                        return h.redirect('/');
+                    }
+                },
+            }
         ]);
 
         await server.start(); // the builtin server.start method is async
