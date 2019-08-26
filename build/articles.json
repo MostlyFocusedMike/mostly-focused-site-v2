@@ -1,6 +1,46 @@
 [
     {
-        "id": "b39840f75c4f",
+        "mediumID": "16f1a7e639a0",
+        "title": "Attention New Devs: Professionals Google Stuff. A Lot.",
+        "slug": "attention-new-devs-professionals-google-stuff-a-lot",
+        "link": "https://medium.com/@mikecronin92/attention-new-devs-professionals-google-stuff-a-lot-16f1a7e639a0",
+        "image": "https://miro.medium.com/max/1400/1*_vTEr9GqtFOUmhS3Cvjp2Q.jpeg",
+        "subtitle": "And that’s a good thing",
+        "tags": [
+            {
+                "name": "JavaScript",
+                "slug": "javascript"
+            },
+            {
+                "name": "Coding Bootcamp",
+                "slug": "codingbootcamp"
+            }
+        ]
+    },
+    {
+        "mediumID": "c8e5275155b5",
+        "title": "A Ruby Cheatsheet For Arrays",
+        "slug": "a-ruby-cheatsheet-for-arrays",
+        "link": "https://medium.com/@mikecronin92/a-ruby-cheatsheet-for-arrays-c8e5275155b5",
+        "image": "https://miro.medium.com/max/1400/1*w4BdJCbwQJuEeHVSpwlAvQ.jpeg",
+        "subtitle": "A reference for beginners and forgetful professionals",
+        "tags": [
+            {
+                "name": "Ruby",
+                "slug": "ruby"
+            },
+            {
+                "name": "Ruby on Rails",
+                "slug": "ruby-on-rails"
+            },
+            {
+                "name": "Web Development",
+                "slug": "web-development"
+            }
+        ]
+    },
+    {
+        "mediumID": "b39840f75c4f",
         "title": "How to Build a Dynamic, Controlled Form with React Hooks (2019)",
         "slug": "how-to-build-a-dynamic-controlled-form-with-react-hooks-2019",
         "link": "https://medium.com/@mikecronin92/how-to-build-a-dynamic-controlled-form-with-react-hooks-2019-b39840f75c4f",
@@ -14,23 +54,11 @@
             {
                 "name": "React",
                 "slug": "react"
-            },
-            {
-                "name": "Reactjs",
-                "slug": "reactjs"
-            },
-            {
-                "name": "Coding",
-                "slug": "coding"
-            },
-            {
-                "name": "Web Development",
-                "slug": "web-development"
             }
         ]
     },
     {
-        "id": "62eef165bec8",
+        "mediumID": "62eef165bec8",
         "title": "What are Primitive and Reference Types in JavaScript?",
         "slug": "javascript-interview-prep-primitive-vs-reference-types",
         "link": "https://medium.com/@mikecronin92/javascript-interview-prep-primitive-vs-reference-types-62eef165bec8",
@@ -43,35 +71,23 @@
                 "slug": "javascript"
             },
             {
-                "name": "Software Development",
-                "slug": "software-development"
-            },
-            {
-                "name": "Programming",
-                "slug": "programming"
-            },
-            {
                 "name": "Interview Questions",
                 "slug": "interview-questions"
             },
             {
-                "name": "Codingbootcamp",
+                "name": "Coding Bootcamp",
                 "slug": "codingbootcamp"
             }
         ]
     },
     {
-        "id": "a38b3033280c",
+        "mediumID": "a38b3033280c",
         "title": "Test Driven Development Is Dumb. Fight Me.",
         "slug": "test-driven-development-is-dumb-fight-me",
         "link": "https://medium.com/@mikecronin92/test-driven-development-is-dumb-fight-me-a38b3033280c",
         "image": "https://miro.medium.com/max/1400/1*-3uGPw48sJjVS1R4Adx65g.jpeg",
         "subtitle": "A great idea hiding behind a terrible implementation",
         "tags": [
-            {
-                "name": "Software Development",
-                "slug": "software-development"
-            },
             {
                 "name": "Test Driven Development",
                 "slug": "test-driven-development"
@@ -81,17 +97,13 @@
                 "slug": "javascript"
             },
             {
-                "name": "Programming",
-                "slug": "programming"
-            },
-            {
                 "name": "Codingbootcamp",
                 "slug": "codingbootcamp"
             }
         ]
     },
     {
-        "id": "a072ba653717",
+        "mediumID": "a072ba653717",
         "title": "A Beginner’s Guide to Recursion",
         "slug": "understanding-how-recursion-works-by-using-arrays",
         "link": "https://medium.com/@mikecronin92/understanding-how-recursion-works-by-using-arrays-a072ba653717",
@@ -104,25 +116,13 @@
                 "slug": "javascript"
             },
             {
-                "name": "Programming",
-                "slug": "programming"
-            },
-            {
-                "name": "Software Engineering",
-                "slug": "software-engineering"
-            },
-            {
                 "name": "Recursion",
                 "slug": "recursion"
-            },
-            {
-                "name": "Coding",
-                "slug": "coding"
             }
         ]
     },
     {
-        "id": "9727c527efd0",
+        "mediumID": "9727c527efd0",
         "title": "How to use DataLoaders in GraphQL",
         "slug": "how-to-use-dataloader-js",
         "link": "https://medium.com/@mikecronin92/how-to-use-dataloader-js-9727c527efd0",
@@ -135,16 +135,8 @@
                 "slug": "javascript"
             },
             {
-                "name": "Nodejs",
-                "slug": "nodejs"
-            },
-            {
-                "name": "Programming",
-                "slug": "programming"
-            },
-            {
-                "name": "Software Engineering",
-                "slug": "software-engineering"
+                "name": "Node",
+                "slug": "node"
             },
             {
                 "name": "GraphQL",
@@ -153,7 +145,7 @@
         ]
     },
     {
-        "id": "dd4921cb3c1a",
+        "mediumID": "dd4921cb3c1a",
         "title": "What is the N+1 Problem in GraphQL?",
         "slug": "what-is-the-n-1-problem-in-graphql",
         "link": "https://medium.com/@mikecronin92/what-is-the-n-1-problem-in-graphql-dd4921cb3c1a",
@@ -169,21 +161,13 @@
                 "slug": "javascript"
             },
             {
-                "name": "Coding",
-                "slug": "coding"
-            },
-            {
                 "name": "Node",
                 "slug": "node"
-            },
-            {
-                "name": "Programming",
-                "slug": "programming"
             }
         ]
     },
     {
-        "id": "e841724da924",
+        "mediumID": "e841724da924",
         "title": "Getting started with Hapi JS",
         "slug": "getting-started-with-hapi-js",
         "link": "https://medium.com/@mikecronin92/getting-started-with-hapi-js-e841724da924",
@@ -191,20 +175,12 @@
         "subtitle": "Part 1: setting up the server and basic routing",
         "tags": [
             {
-                "name": "Nodejs",
-                "slug": "nodejs"
+                "name": "Node",
+                "slug": "node"
             },
             {
                 "name": "Hapi",
                 "slug": "hapi"
-            },
-            {
-                "name": "Hapijs",
-                "slug": "hapijs"
-            },
-            {
-                "name": "Programming",
-                "slug": "programming"
             },
             {
                 "name": "JavaScript",
@@ -213,7 +189,7 @@
         ]
     },
     {
-        "id": "236207de3d55",
+        "mediumID": "236207de3d55",
         "title": "How to ask Questions as a Jr. Dev",
         "slug": "how-to-ask-questions-as-a-jr-dev",
         "link": "https://medium.com/@mikecronin92/how-to-ask-questions-as-a-jr-dev-236207de3d55",
@@ -221,29 +197,13 @@
         "subtitle": "Asking questions in a coding bootcamp is expected, but once you transition to a real job, it feels different. You’re no longer talking to…",
         "tags": [
             {
-                "name": "Programming",
-                "slug": "programming"
-            },
-            {
-                "name": "Developer",
-                "slug": "developer"
-            },
-            {
-                "name": "Bootcamp",
-                "slug": "bootcamp"
-            },
-            {
-                "name": "Coding",
-                "slug": "coding"
-            },
-            {
-                "name": "Technology",
-                "slug": "technology"
+                "name": "Coding Bootcamp",
+                "slug": "codingbootcamp"
             }
         ]
     },
     {
-        "id": "b5eb57fdbeb4",
+        "mediumID": "b5eb57fdbeb4",
         "title": "A beginner’s guide to understanding JavaScript Closures",
         "slug": "a-beginners-guide-to-understanding-javascript-closures",
         "link": "https://medium.com/@mikecronin92/a-beginners-guide-to-understanding-javascript-closures-b5eb57fdbeb4",
@@ -261,19 +221,11 @@
             {
                 "name": "Coding Interviews",
                 "slug": "coding-interviews"
-            },
-            {
-                "name": "Coding",
-                "slug": "coding"
-            },
-            {
-                "name": "Programming",
-                "slug": "programming"
             }
         ]
     },
     {
-        "id": "c6592094658",
+        "mediumID": "c6592094658",
         "title": "Thoughts On Coding Bootcamps (Now That I’ve Graduated)",
         "slug": "thoughts-on-coding-bootcamps-now-that-ive-graduated",
         "link": "https://medium.com/@mikecronin92/thoughts-on-coding-bootcamps-now-that-ive-graduated-c6592094658",
@@ -281,11 +233,7 @@
         "subtitle": "Coding bootcamps are so hot right now. They come in all shapes in sizes, to give you a bit of reference, my opinions are based off of…",
         "tags": [
             {
-                "name": "Programming",
-                "slug": "programming"
-            },
-            {
-                "name": "Codingbootcamp",
+                "name": "Coding Bootcamp",
                 "slug": "codingbootcamp"
             },
             {
@@ -295,10 +243,6 @@
             {
                 "name": "JavaScript",
                 "slug": "javascript"
-            },
-            {
-                "name": "Coding",
-                "slug": "coding"
             }
         ]
     }

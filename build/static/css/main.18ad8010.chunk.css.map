@@ -1,1 +1,0 @@
-{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,SACI,SAAU,CACV,WACJ,CAEA,gBACI,SAAU,CACV,WACJ","file":"main.18ad8010.chunk.css","sourcesContent":["textarea {\n    width: 80%;\n    height: 80vh;\n}\n\n#raw-text-input {\n    width: 50%;\n    height: 20vh;\n}\n"]}
