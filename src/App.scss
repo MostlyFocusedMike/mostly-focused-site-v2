@@ -13,10 +13,11 @@ ul {
 }
 
 html, body {
+    @extend %font;
     padding: 0;
     margin: 0;
+    width: 100%;
     font-size: 16px;
-    @extend %font;
     background: url('/images/skyline.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -41,22 +42,29 @@ a {
 
 form {
     display: block;
-    width: 25rem;
+    width: 100%;
+    width: 30%;
+    min-width: 20rem;
     margin: 1rem auto;
     padding: 1rem;
-    border: 0.1rem solid #CCC;
+    // border: 0.1rem solid #CCC;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, .5);
     background: #000;
     background-color: rgba(8, 0, 45, 0.8);
-    label {
+    label, p {
         @extend %font;
         display: block;
         margin: 0 auto;
         padding: 0;
-        color: #ffffff;
+        color: #EEE;
         font-weight: 200;
         width: 100%;
         text-align: center;
         font-size: 1.4rem;
+    }
+    p {
+        width: 80%;
+        margin-bottom: 1rem;
     }
     select {
         box-shadow: none;

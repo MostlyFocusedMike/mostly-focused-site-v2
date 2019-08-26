@@ -116,7 +116,7 @@
 
 #welcome-banner {
   background: #000;
-  background-color: rgba(8, 0, 45, 0.8);
+  background-color: #05001c;
   margin: 0;
   padding: 0.5rem 1rem;
   text-align: right;
@@ -124,7 +124,7 @@
   #welcome-banner h1 {
     margin: 0;
     color: #FFF;
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-weight: 100; }
   #welcome-banner p {
     margin: 1rem 0;
@@ -136,12 +136,13 @@ ul {
   list-style: none;
   padding: 0; }
 
-html, body, form label {
+html, body, form label, form p {
   font-family: sans-serif; }
 
 html, body {
   padding: 0;
   margin: 0;
+  width: 100%;
   font-size: 16px;
   background: url("/images/skyline.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -163,21 +164,26 @@ a {
 
 form {
   display: block;
-  width: 25rem;
+  width: 100%;
+  width: 30%;
+  min-width: 20rem;
   margin: 1rem auto;
   padding: 1rem;
-  border: 0.1rem solid #CCC;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
   background: #000;
   background-color: rgba(8, 0, 45, 0.8); }
-  form label {
+  form label, form p {
     display: block;
     margin: 0 auto;
     padding: 0;
-    color: #ffffff;
+    color: #EEE;
     font-weight: 200;
     width: 100%;
     text-align: center;
     font-size: 1.4rem; }
+  form p {
+    width: 80%;
+    margin-bottom: 1rem; }
   form select {
     box-shadow: none;
     -webkit-background: #EEE;
