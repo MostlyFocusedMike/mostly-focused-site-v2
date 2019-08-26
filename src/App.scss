@@ -1,5 +1,6 @@
 @import './components/Articles/styles.scss';
 @import './components/Tags/styles.scss';
+@import './components/WelcomeBanner/styles.scss';
 
 
 ul {
@@ -16,6 +17,11 @@ html, body {
     margin: 0;
     font-size: 16px;
     @extend %font;
+    background: url('/images/skyline.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 textarea {
@@ -35,14 +41,18 @@ a {
 
 form {
     display: block;
-    width: 20rem;
+    width: 25rem;
     margin: 1rem auto;
+    padding: 1rem;
+    border: 0.1rem solid #CCC;
+    background: #000;
+    background-color: rgba(8, 0, 45, 0.8);
     label {
         @extend %font;
         display: block;
         margin: 0 auto;
         padding: 0;
-        color: #656565;
+        color: #ffffff;
         font-weight: 200;
         width: 100%;
         text-align: center;

@@ -53,6 +53,7 @@
     transition: all 500ms;
     box-sizing: border-box;
     overflow: hidden;
+    background: #EEE;
     -moz-animation: fadein 1s;
     /* Firefox */
     -webkit-animation: fadein 1s;
@@ -113,6 +114,24 @@
   margin: 1rem auto;
   padding: 0.5rem; }
 
+#welcome-banner {
+  background: #000;
+  background-color: rgba(8, 0, 45, 0.8);
+  margin: 0;
+  padding: 0.5rem 1rem;
+  text-align: right;
+  border-bottom: 0.1rem solid #CCC; }
+  #welcome-banner h1 {
+    margin: 0;
+    color: #FFF;
+    font-size: 3.5rem;
+    font-weight: 100; }
+  #welcome-banner p {
+    margin: 1rem 0;
+    font-size: 1.25rem;
+    color: #EEE;
+    font-weight: 100; }
+
 ul {
   list-style: none;
   padding: 0; }
@@ -123,7 +142,12 @@ html, body, form label {
 html, body {
   padding: 0;
   margin: 0;
-  font-size: 16px; }
+  font-size: 16px;
+  background: url("/images/skyline.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 textarea {
   width: 80%;
@@ -139,13 +163,17 @@ a {
 
 form {
   display: block;
-  width: 20rem;
-  margin: 1rem auto; }
+  width: 25rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 0.1rem solid #CCC;
+  background: #000;
+  background-color: rgba(8, 0, 45, 0.8); }
   form label {
     display: block;
     margin: 0 auto;
     padding: 0;
-    color: #656565;
+    color: #ffffff;
     font-weight: 200;
     width: 100%;
     text-align: center;

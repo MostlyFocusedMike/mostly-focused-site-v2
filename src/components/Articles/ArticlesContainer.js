@@ -11,7 +11,6 @@ const ArticlesContainer = ({ articles }) => {
 
     return (
         <div id='articles-div'>
-            <h1>My Articles</h1>
             <ul id='articles-ul'>
                 {
                     filteredArticles.map((article) => (
