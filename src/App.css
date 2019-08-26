@@ -152,7 +152,9 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
   height: 100%;
-  overflow: auto; }
+  overflow-y: scroll;
+  /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch; }
 
 textarea {
   width: 80%;
