@@ -5,6 +5,7 @@
   justify-content: center; }
 
 #tags-ul .tag-li input[type=button], form input[type=button] {
+  -webkit-appearance: none;
   background: #5CA6E5;
   color: white;
   border: none;
@@ -96,6 +97,7 @@
   justify-content: center; }
 
 #tags-ul .tag-li input[type=button], form input[type=button] {
+  -webkit-appearance: none;
   background: #5CA6E5;
   color: white;
   border: none;
@@ -148,7 +150,9 @@ html, body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  height: 100%;
+  overflow: hidden; }
 
 textarea {
   width: 80%;
@@ -185,6 +189,7 @@ form {
     margin-bottom: 1rem; }
   form select {
     box-shadow: none;
+    -webkit-appearance: none;
     -webkit-background: #EEE;
     background: #EEE;
     border: none;

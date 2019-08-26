@@ -8,17 +8,18 @@ $col: green;
 }
 
 %basic-button {
-  background: #5CA6E5;
-  color: white;
-  border: none;
-  border-radius: 2rem;
-  padding: .3rem .7rem;
-  margin: 0.25rem;
-  transition: background 150ms;
-  &:hover {
-    background: #1D88E3;
-  }
-  &:active {
-    background: #6EB0E8;
-  }
+    -webkit-appearance: none;
+    background: #5CA6E5;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    padding: .3rem .7rem;
+    margin: 0.25rem;
+    transition: background 150ms;
+    &:hover {
+        background: #1D88E3;
+    }
+    &:active {
+        background: #6EB0E8;
+    }
 }
