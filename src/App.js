@@ -4,7 +4,7 @@ import './App.css';
 import ArticlesContainer from './components/Articles/ArticlesContainer';
 import SearchBar from './components/SearchBar';
 import WelcomeBanner from './components/WelcomeBanner';
-// import MainComponent from './components/converter/MainComponent';
+import MainComponent from './components/converter/MainComponent';
 
 function App() {
     const [articles, setArticles] = useState([
@@ -31,7 +31,7 @@ function App() {
             <WelcomeBanner />
             <SearchBar />
             <ArticlesContainer articles={articles}/>
-            {/* <MainComponent /> */}
+            <MainComponent />
         </div>
     );
 }
