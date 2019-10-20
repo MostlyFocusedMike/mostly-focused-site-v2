@@ -9,7 +9,8 @@ import MainComponent from './components/converter/MainComponent';
 function App() {
     const [articles, setArticles] = useState([
         {
-            mediumID: '',
+            id: 0,
+            medium_id: '',
             title: '',
             slug: '',
             link: '',

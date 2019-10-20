@@ -13,10 +13,11 @@ const ArticlesContainer = ({ articles }) => {
         <div id='articles-div'>
             <ul id='articles-ul'>
                 {
-                    filteredArticles.map((article) => (
+                    filteredArticles.length
+                    && filteredArticles.map((article) => (
                         <ArticleCard
                             article={article}
-                            key={article.mediumID}
+                            key={article.id}
                         />
 
                     ))

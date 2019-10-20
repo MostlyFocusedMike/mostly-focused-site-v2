@@ -4,7 +4,7 @@ class ArticleAdapter {
     }
 }
 
-ArticleAdapter.url = './articles.json';
+ArticleAdapter.url = './articles.v2.json';
 ArticleAdapter.options = {
     method: 'GET',
     credentials: 'include', // fetch doesn't include cookies by default
