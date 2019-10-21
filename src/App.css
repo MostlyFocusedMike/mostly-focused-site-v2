@@ -116,30 +116,54 @@
   margin: 1rem auto;
   padding: 0.5rem; }
 
+#welcome-banner #white-line {
+  -moz-transform: rotate(40deg) skew(0deg, -40deg);
+  -webkit-transform: rotate(40deg) skew(0deg, -40deg);
+  -o-transform: rotate(40deg) skew(0deg, -40deg);
+  -ms-transform: rotate(40deg) skew(0deg, -40deg);
+  transform: rotate(45deg) skew(0deg, -45deg); }
+
 #welcome-banner {
-  background: #000;
-  background-color: #05001c;
+  background: #1A1A1A;
   margin: 0;
   padding: 0.5rem 1rem;
   text-align: right;
-  border-bottom: 0.1rem solid #CCC; }
+  position: relative; }
   #welcome-banner h1 {
     margin: 0;
-    color: #FFF;
-    font-size: 2rem;
-    font-weight: 100; }
-  #welcome-banner p {
-    margin: 1rem 0;
+    color: #5FB9FC;
     font-size: 1.25rem;
-    color: #EEE;
-    font-weight: 100; }
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif; }
+    #welcome-banner h1 span {
+      padding-left: 0.2rem;
+      padding-right: 1rem;
+      font-style: normal;
+      font-size: 1.5rem;
+      color: #FFF;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 200; }
+  #welcome-banner #white-line {
+    position: absolute;
+    right: 2.95rem;
+    top: 2.3rem;
+    width: 6.5rem;
+    height: .5rem;
+    border-bottom: 0.1rem solid white;
+    border-right: 0.1rem solid white; }
+
+#blue-bar {
+  height: 0.25rem;
+  background: #00294a;
+  background: linear-gradient(90deg, #00294a 0%, #026ec9 73%, #035093 100%); }
 
 ul {
   list-style: none;
   padding: 0; }
 
 html, body, form label, form p {
-  font-family: sans-serif; }
+  font-family: 'Roboto', sans-serif; }
 
 html, body {
   padding: 0;

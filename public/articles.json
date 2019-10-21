@@ -1,249 +1,701 @@
 [
     {
-        "mediumID": "16f1a7e639a0",
-        "title": "Attention New Devs: Professionals Google Stuff. A Lot.",
-        "slug": "attention-new-devs-professionals-google-stuff-a-lot",
-        "link": "https://medium.com/@mikecronin92/attention-new-devs-professionals-google-stuff-a-lot-16f1a7e639a0",
-        "image": "https://miro.medium.com/max/1400/1*_vTEr9GqtFOUmhS3Cvjp2Q.jpeg",
-        "subtitle": "And that’s a good thing",
-        "tags": [
-            {
-                "name": "JavaScript",
-                "slug": "javascript"
-            },
-            {
-                "name": "Coding Bootcamp",
-                "slug": "codingbootcamp"
-            }
-        ]
+      "id": 3,
+      "medium_id": "5267debd2c24",
+      "title": "What Makes a Good Code Comment?",
+      "link": "https://medium.com/@mikecronin92/what-makes-a-good-code-comment-5267debd2c24",
+      "image": "https://miro.medium.com/max/1400/1*ybDiKJBVLVtdBzrFM_BNuA@2x.png",
+      "subtitle": "How comments can clarify things code can’t",
+      "first_published_at": "2019-10-13T06:23:10.416Z",
+      "created_at": "2019-10-14T03:36:33.688Z",
+      "updated_at": "2019-10-16T03:22:06.067Z",
+      "tags": [
+        {
+          "id": 1,
+          "name": "JavaScript",
+          "slug": "javascript",
+          "created_at": "2019-10-14T03:36:15.139Z",
+          "updated_at": "2019-10-14T03:36:15.139Z"
+        },
+        {
+          "id": 4,
+          "name": "Codingbootcamp",
+          "slug": "codingbootcamp",
+          "created_at": "2019-10-14T03:36:33.717Z",
+          "updated_at": "2019-10-14T03:36:33.717Z"
+        }
+      ]
     },
     {
-        "mediumID": "c8e5275155b5",
-        "title": "A Ruby Cheatsheet For Arrays",
-        "slug": "a-ruby-cheatsheet-for-arrays",
-        "link": "https://medium.com/@mikecronin92/a-ruby-cheatsheet-for-arrays-c8e5275155b5",
-        "image": "https://miro.medium.com/max/1400/1*w4BdJCbwQJuEeHVSpwlAvQ.jpeg",
-        "subtitle": "A reference for beginners and forgetful professionals",
-        "tags": [
-            {
-                "name": "Ruby",
-                "slug": "ruby"
-            },
-            {
-                "name": "Ruby on Rails",
-                "slug": "ruby-on-rails"
-            },
-            {
-                "name": "Web Development",
-                "slug": "web-development"
-            }
-        ]
+      "id": 4,
+      "medium_id": "97750bd09ffa",
+      "title": "A Beginner’s Guide to Async/Await in JavaScript",
+      "link": "https://medium.com/@mikecronin92/a-beginners-guide-to-async-await-in-javascript-97750bd09ffa",
+      "image": "https://miro.medium.com/max/1400/1*fqLaXeqw_6p-sHWdYVehsg.png",
+      "subtitle": "Asynchronous JavaScript has never been friendlier",
+      "first_published_at": "2019-10-10T05:36:25.105Z",
+      "created_at": "2019-10-14T03:36:33.728Z",
+      "updated_at": "2019-10-16T03:22:06.087Z",
+      "tags": [
+        {
+          "id": 1,
+          "name": "JavaScript",
+          "slug": "javascript",
+          "created_at": "2019-10-14T03:36:15.139Z",
+          "updated_at": "2019-10-14T03:36:15.139Z"
+        },
+        {
+          "id": 5,
+          "name": "Asynchronous",
+          "slug": "asynchronous",
+          "created_at": "2019-10-14T03:36:33.739Z",
+          "updated_at": "2019-10-14T03:36:33.739Z"
+        }
+      ]
     },
     {
-        "mediumID": "b39840f75c4f",
-        "title": "How to Build a Dynamic, Controlled Form with React Hooks (2019)",
-        "slug": "how-to-build-a-dynamic-controlled-form-with-react-hooks-2019",
-        "link": "https://medium.com/@mikecronin92/how-to-build-a-dynamic-controlled-form-with-react-hooks-2019-b39840f75c4f",
-        "image": "https://miro.medium.com/max/1400/1*cElSU8pY7J_Ky6pg9bEe_w.jpeg",
-        "subtitle": "React Hooks help simplify a tricky concept",
-        "tags": [
-            {
-                "name": "JavaScript",
-                "slug": "javascript"
-            },
-            {
-                "name": "React",
-                "slug": "react"
-            }
-        ]
+      "id": 5,
+      "medium_id": "e54a15e9de2",
+      "title": "Tips for Writing Self-Documenting Code",
+      "link": "https://medium.com/@mikecronin92/tips-for-writing-self-documenting-code-e54a15e9de2",
+      "image": "https://miro.medium.com/max/1400/1*7xg6jR7_K758beJgGYN29Q.jpeg",
+      "subtitle": "How to write code that other developers can actually read",
+      "first_published_at": "2019-09-27T04:04:10.324Z",
+      "created_at": "2019-10-14T03:36:33.749Z",
+      "updated_at": "2019-10-16T03:22:06.102Z",
+      "tags": [
+        {
+          "id": 1,
+          "name": "JavaScript",
+          "slug": "javascript",
+          "created_at": "2019-10-14T03:36:15.139Z",
+          "updated_at": "2019-10-14T03:36:15.139Z"
+        }
+      ]
     },
     {
-        "mediumID": "62eef165bec8",
-        "title": "What are Primitive and Reference Types in JavaScript?",
-        "slug": "javascript-interview-prep-primitive-vs-reference-types",
-        "link": "https://medium.com/@mikecronin92/javascript-interview-prep-primitive-vs-reference-types-62eef165bec8",
-        "image": "https://miro.medium.com/max/1400/1*lPHxTNcQXtwq6ogeQGtAwQ.jpeg",
-        "subtitle": "Understanding how JavaScript treats different data",
-        "metaDescription": "Understanding the different ways that JavaScript variables can store data.",
-        "tags": [
-            {
-                "name": "JavaScript",
-                "slug": "javascript"
-            },
-            {
-                "name": "Interview Questions",
-                "slug": "interview-questions"
-            },
-            {
-                "name": "Coding Bootcamp",
-                "slug": "codingbootcamp"
-            }
-        ]
+      "id": 6,
+      "medium_id": "43dc4063d1cb",
+      "title": "A TypeScript Startup Guide for the Impatient",
+      "link": "https://medium.com/@mikecronin92/a-typescript-startup-guide-for-the-impatient-43dc4063d1cb",
+      "image": "https://miro.medium.com/max/1400/1*iAS08xfzl0emzrhHROQhmQ.png",
+      "subtitle": "You’ve got places to be, let’s code quick",
+      "first_published_at": "2019-09-16T03:47:54.328Z",
+      "created_at": "2019-10-14T03:36:33.761Z",
+      "updated_at": "2019-10-16T03:22:06.115Z",
+      "tags": [
+        {
+          "id": 1,
+          "name": "JavaScript",
+          "slug": "javascript",
+          "created_at": "2019-10-14T03:36:15.139Z",
+          "updated_at": "2019-10-14T03:36:15.139Z"
+        },
+        {
+          "id": 6,
+          "name": "Typescript",
+          "slug": "typescript",
+          "created_at": "2019-10-14T03:36:33.771Z",
+          "updated_at": "2019-10-14T03:36:33.771Z"
+        },
+        {
+          "id": 7,
+          "name": "Guides And Tutorials",
+          "slug": "guides-and-tutorials",
+          "created_at": "2019-10-14T03:36:33.785Z",
+          "updated_at": "2019-10-14T03:36:33.785Z"
+        }
+      ]
     },
     {
-        "mediumID": "a38b3033280c",
-        "title": "Test Driven Development Is Dumb. Fight Me.",
-        "slug": "test-driven-development-is-dumb-fight-me",
-        "link": "https://medium.com/@mikecronin92/test-driven-development-is-dumb-fight-me-a38b3033280c",
-        "image": "https://miro.medium.com/max/1400/1*-3uGPw48sJjVS1R4Adx65g.jpeg",
-        "subtitle": "A great idea hiding behind a terrible implementation",
-        "tags": [
-            {
-                "name": "Test Driven Development",
-                "slug": "test-driven-development"
-            },
-            {
-                "name": "JavaScript",
-                "slug": "javascript"
-            },
-            {
-                "name": "Codingbootcamp",
-                "slug": "codingbootcamp"
-            }
-        ]
+      "id": 7,
+      "medium_id": "5edf4415a09d",
+      "title": "How to use a Ternary in JavaScript",
+      "link": "https://medium.com/@mikecronin92/whats-a-javascript-ternary-5edf4415a09d",
+      "image": "https://miro.medium.com/max/1400/1*-ujF25F2vlhUPp0OMCBUsw.png",
+      "subtitle": "A conditional short cut to save time and space",
+      "first_published_at": "2019-08-29T10:31:02.641Z",
+      "created_at": "2019-10-14T03:36:33.799Z",
+      "updated_at": "2019-10-16T03:22:06.137Z",
+      "tags": [
+        {
+          "id": 1,
+          "name": "JavaScript",
+          "slug": "javascript",
+          "created_at": "2019-10-14T03:36:15.139Z",
+          "updated_at": "2019-10-14T03:36:15.139Z"
+        },
+        {
+          "id": 3,
+          "name": "React",
+          "slug": "react",
+          "created_at": "2019-10-14T03:36:15.198Z",
+          "updated_at": "2019-10-14T03:36:15.198Z"
+        },
+        {
+          "id": 4,
+          "name": "Codingbootcamp",
+          "slug": "codingbootcamp",
+          "created_at": "2019-10-14T03:36:33.717Z",
+          "updated_at": "2019-10-14T03:36:33.717Z"
+        }
+      ]
     },
     {
-        "mediumID": "a072ba653717",
-        "title": "A Beginner’s Guide to Recursion",
-        "slug": "understanding-how-recursion-works-by-using-arrays",
-        "link": "https://medium.com/@mikecronin92/understanding-how-recursion-works-by-using-arrays-a072ba653717",
-        "image": "https://miro.medium.com/max/1400/1*myJegT6UPUiopSgfHXUg-g.jpeg",
-        "subtitle": "Learn how recursion works without using math functions",
-        "metaDescription": "A helpful guide for new programmers on one of computer sciences trickiest subjects: recursion.",
-        "tags": [
-            {
-                "name": "JavaScript",
-                "slug": "javascript"
-            },
-            {
-                "name": "Recursion",
-                "slug": "recursion"
-            }
-        ]
+      "id": 1,
+      "medium_id": "16f1a7e639a0",
+      "title": "Attention New Devs: Professionals Google Stuff. A Lot.",
+      "link": "https://medium.com/@mikecronin92/attention-new-devs-professionals-google-stuff-a-lot-16f1a7e639a0",
+      "image": "https://miro.medium.com/max/1400/1*WukTgTeaECh1OOclSbwS_w.png",
+      "subtitle": "And that’s a good thing",
+      "first_published_at": "2019-08-19T11:37:28.949Z",
+      "created_at": "2019-10-14T03:36:15.117Z",
+      "updated_at": "2019-10-16T03:22:06.161Z",
+      "tags": [
+        {
+          "id": 1,
+          "name": "JavaScript",
+          "slug": "javascript",
+          "created_at": "2019-10-14T03:36:15.139Z",
+          "updated_at": "2019-10-14T03:36:15.139Z"
+        },
+        {
+          "id": 2,
+          "name": "Coding Bootcamp",
+          "slug": "codingbootcamp",
+          "created_at": "2019-10-14T03:36:15.178Z",
+          "updated_at": "2019-10-14T03:36:15.178Z"
+        },
+        {
+          "id": 4,
+          "name": "Codingbootcamp",
+          "slug": "codingbootcamp",
+          "created_at": "2019-10-14T03:36:33.717Z",
+          "updated_at": "2019-10-14T03:36:33.717Z"
+        }
+      ]
     },
     {
-        "mediumID": "9727c527efd0",
-        "title": "How to use DataLoaders in GraphQL",
-        "slug": "how-to-use-dataloader-js",
-        "link": "https://medium.com/@mikecronin92/how-to-use-dataloader-js-9727c527efd0",
-        "image": "https://miro.medium.com/max/1400/1*IMtFemgI6S3x_Rqx1koc-g.jpeg",
-        "subtitle": "Make your GraphQL queries more efficient by batching them",
-        "metaDescription": "Learn the basic mechanics of DataLoaders so that you can use them in yourGraphQL Node API",
-        "tags": [
-            {
-                "name": "JavaScript",
-                "slug": "javascript"
-            },
-            {
-                "name": "Node",
-                "slug": "node"
-            },
-            {
-                "name": "GraphQL",
-                "slug": "graphql"
-            }
-        ]
+      "id": 8,
+      "medium_id": "c8e5275155b5",
+      "title": "A Ruby Cheatsheet For Arrays",
+      "link": "https://medium.com/@mikecronin92/a-ruby-cheatsheet-for-arrays-c8e5275155b5",
+      "image": "https://miro.medium.com/max/1400/1*r8A9itcEe3TWtMz4x_so3g.png",
+      "subtitle": "A reference for beginners and forgetful professionals",
+      "first_published_at": "2019-08-15T20:13:53.467Z",
+      "created_at": "2019-10-14T03:36:33.855Z",
+      "updated_at": "2019-10-16T03:22:06.180Z",
+      "tags": [
+        {
+          "id": 8,
+          "name": "Ruby",
+          "slug": "ruby",
+          "created_at": "2019-10-14T03:36:33.861Z",
+          "updated_at": "2019-10-14T03:36:33.861Z"
+        },
+        {
+          "id": 9,
+          "name": "Ruby on Rails",
+          "slug": "ruby-on-rails",
+          "created_at": "2019-10-14T03:36:33.870Z",
+          "updated_at": "2019-10-14T03:36:33.870Z"
+        },
+        {
+          "id": 10,
+          "name": "Web Development",
+          "slug": "web-development",
+          "created_at": "2019-10-14T03:36:33.879Z",
+          "updated_at": "2019-10-14T03:36:33.879Z"
+        }
+      ]
     },
     {
-        "mediumID": "dd4921cb3c1a",
-        "title": "What is the N+1 Problem in GraphQL?",
-        "slug": "what-is-the-n-1-problem-in-graphql",
-        "link": "https://medium.com/@mikecronin92/what-is-the-n-1-problem-in-graphql-dd4921cb3c1a",
-        "image": "https://miro.medium.com/max/1400/1*HQgzjtYMXtvmpbKkyS7e-A.jpeg",
-        "subtitle": "A crash course on a surprisingly common problem",
-        "tags": [
-            {
-                "name": "GraphQL",
-                "slug": "graphql"
-            },
-            {
-                "name": "JavaScript",
-                "slug": "javascript"
-            },
-            {
-                "name": "Node",
-                "slug": "node"
-            }
-        ]
+      "id": 2,
+      "medium_id": "b39840f75c4f",
+      "title": "How to Build a Dynamic, Controlled Form with React Hooks (2019)",
+      "link": "https://medium.com/@mikecronin92/how-to-build-a-dynamic-controlled-form-with-react-hooks-2019-b39840f75c4f",
+      "image": "https://miro.medium.com/max/1400/1*6MTSetXmNVAELQlbJw1v0Q.png",
+      "subtitle": "React Hooks help simplify a tricky concept",
+      "first_published_at": "2019-07-31T23:42:42.647Z",
+      "created_at": "2019-10-14T03:36:15.188Z",
+      "updated_at": "2019-10-16T03:22:06.204Z",
+      "tags": [
+        {
+          "id": 1,
+          "name": "JavaScript",
+          "slug": "javascript",
+          "created_at": "2019-10-14T03:36:15.139Z",
+          "updated_at": "2019-10-14T03:36:15.139Z"
+        },
+        {
+          "id": 3,
+          "name": "React",
+          "slug": "react",
+          "created_at": "2019-10-14T03:36:15.198Z",
+          "updated_at": "2019-10-14T03:36:15.198Z"
+        },
+        {
+          "id": 10,
+          "name": "Web Development",
+          "slug": "web-development",
+          "created_at": "2019-10-14T03:36:33.879Z",
+          "updated_at": "2019-10-14T03:36:33.879Z"
+        }
+      ]
     },
     {
-        "mediumID": "e841724da924",
-        "title": "Getting started with Hapi JS",
-        "slug": "getting-started-with-hapi-js",
-        "link": "https://medium.com/@mikecronin92/getting-started-with-hapi-js-e841724da924",
-        "image": "https://miro.medium.com/max/1400/1*GIKkOpHNbHA1BiP4wwvdWw.jpeg",
-        "subtitle": "Part 1: setting up the server and basic routing",
-        "tags": [
-            {
-                "name": "Node",
-                "slug": "node"
-            },
-            {
-                "name": "Hapi",
-                "slug": "hapi"
-            },
-            {
-                "name": "JavaScript",
-                "slug": "javascript"
-            }
-        ]
+      "id": 9,
+      "medium_id": "62eef165bec8",
+      "title": "What are Primitive and Reference Types in JavaScript?",
+      "link": "https://medium.com/@mikecronin92/javascript-interview-prep-primitive-vs-reference-types-62eef165bec8",
+      "image": "https://miro.medium.com/max/1400/1*GaGsGlBnetFLAVt9OwzzvQ.png",
+      "subtitle": "Understanding how JavaScript treats different data",
+      "first_published_at": "2019-07-25T05:15:29.731Z",
+      "created_at": "2019-10-14T03:36:33.918Z",
+      "updated_at": "2019-10-16T03:22:06.239Z",
+      "tags": [
+        {
+          "id": 1,
+          "name": "JavaScript",
+          "slug": "javascript",
+          "created_at": "2019-10-14T03:36:15.139Z",
+          "updated_at": "2019-10-14T03:36:15.139Z"
+        },
+        {
+          "id": 4,
+          "name": "Codingbootcamp",
+          "slug": "codingbootcamp",
+          "created_at": "2019-10-14T03:36:33.717Z",
+          "updated_at": "2019-10-14T03:36:33.717Z"
+        },
+        {
+          "id": 12,
+          "name": "Interview Questions",
+          "slug": "interview-questions",
+          "created_at": "2019-10-14T03:36:33.929Z",
+          "updated_at": "2019-10-14T03:36:33.929Z"
+        }
+      ]
     },
     {
-        "mediumID": "236207de3d55",
-        "title": "How to ask Questions as a Jr. Dev",
-        "slug": "how-to-ask-questions-as-a-jr-dev",
-        "link": "https://medium.com/@mikecronin92/how-to-ask-questions-as-a-jr-dev-236207de3d55",
-        "image": "https://miro.medium.com/max/1400/1*RJ6fY6mvwESJ4xSu3Wm4fg.jpeg",
-        "subtitle": "Asking questions in a coding bootcamp is expected, but once you transition to a real job, it feels different. You’re no longer talking to…",
-        "tags": [
-            {
-                "name": "Coding Bootcamp",
-                "slug": "codingbootcamp"
-            }
-        ]
+      "id": 10,
+      "medium_id": "a38b3033280c",
+      "title": "Test Driven Development Is Dumb. Fight Me.",
+      "link": "https://medium.com/@mikecronin92/test-driven-development-is-dumb-fight-me-a38b3033280c",
+      "image": "https://miro.medium.com/max/1400/1*-3uGPw48sJjVS1R4Adx65g.jpeg",
+      "subtitle": "A great idea hiding behind a terrible implementation",
+      "first_published_at": "2019-07-18T03:15:14.041Z",
+      "created_at": "2019-10-14T03:36:33.946Z",
+      "updated_at": "2019-10-16T03:22:06.257Z",
+      "tags": [
+        {
+          "id": 1,
+          "name": "JavaScript",
+          "slug": "javascript",
+          "created_at": "2019-10-14T03:36:15.139Z",
+          "updated_at": "2019-10-14T03:36:15.139Z"
+        },
+        {
+          "id": 4,
+          "name": "Codingbootcamp",
+          "slug": "codingbootcamp",
+          "created_at": "2019-10-14T03:36:33.717Z",
+          "updated_at": "2019-10-14T03:36:33.717Z"
+        },
+        {
+          "id": 13,
+          "name": "Test Driven Development",
+          "slug": "test-driven-development",
+          "created_at": "2019-10-14T03:36:33.954Z",
+          "updated_at": "2019-10-14T03:36:33.954Z"
+        }
+      ]
     },
     {
-        "mediumID": "b5eb57fdbeb4",
-        "title": "A beginner’s guide to understanding JavaScript Closures",
-        "slug": "a-beginners-guide-to-understanding-javascript-closures",
-        "link": "https://medium.com/@mikecronin92/a-beginners-guide-to-understanding-javascript-closures-b5eb57fdbeb4",
-        "image": "https://miro.medium.com/max/1400/1*AJWhia2_QH77RYEWhsLsWA.jpeg",
-        "subtitle": "Closures are one of those topics that will likely pop up in any JavaScript interview you ever go on. Understanding them is key.",
-        "tags": [
-            {
-                "name": "JavaScript",
-                "slug": "javascript"
-            },
-            {
-                "name": "Closure",
-                "slug": "closure"
-            },
-            {
-                "name": "Coding Interviews",
-                "slug": "coding-interviews"
-            }
-        ]
+      "id": 14,
+      "medium_id": "a072ba653717",
+      "title": "A Beginner’s Guide to Recursion",
+      "link": "https://itnext.io/understanding-how-recursion-works-by-using-arrays-a072ba653717",
+      "image": "https://miro.medium.com/max/4738/1*myJegT6UPUiopSgfHXUg-g.jpeg",
+      "subtitle": "Learn how recursion works without using math functions",
+      "first_published_at": "2019-07-07T04:00:00.000Z",
+      "created_at": "2019-10-15T03:32:30.707Z",
+      "updated_at": "2019-10-15T03:32:30.707Z",
+      "tags": [
+        {
+          "id": 1,
+          "name": "JavaScript",
+          "slug": "javascript",
+          "created_at": "2019-10-14T03:36:15.139Z",
+          "updated_at": "2019-10-14T03:36:15.139Z"
+        },
+        {
+          "id": 21,
+          "name": "Recursion",
+          "slug": "recursion",
+          "created_at": "2019-10-15T03:32:30.761Z",
+          "updated_at": "2019-10-15T03:32:30.761Z"
+        }
+      ]
     },
     {
-        "mediumID": "c6592094658",
-        "title": "Thoughts On Coding Bootcamps (Now That I’ve Graduated)",
-        "slug": "thoughts-on-coding-bootcamps-now-that-ive-graduated",
-        "link": "https://medium.com/@mikecronin92/thoughts-on-coding-bootcamps-now-that-ive-graduated-c6592094658",
-        "image": "https://miro.medium.com/max/1400/1*Nyv1HffTKPZlxRaozkvDQw.jpeg",
-        "subtitle": "Coding bootcamps are so hot right now. They come in all shapes in sizes, to give you a bit of reference, my opinions are based off of…",
-        "tags": [
-            {
-                "name": "Coding Bootcamp",
-                "slug": "codingbootcamp"
-            },
-            {
-                "name": "Flatiron School",
-                "slug": "flatiron-school"
-            },
-            {
-                "name": "JavaScript",
-                "slug": "javascript"
-            }
-        ]
+      "id": 15,
+      "medium_id": "9727c527efd0",
+      "title": "How to use DataLoaders in GraphQL",
+      "link": "https://itnext.io/how-to-use-dataloader-js-9727c527efd0",
+      "image": "https://miro.medium.com/max/4738/1*IMtFemgI6S3x_Rqx1koc-g.jpeg",
+      "subtitle": "Make your GraphQL queries more efficient by batching them",
+      "first_published_at": "2019-07-01T04:00:00.000Z",
+      "created_at": "2019-10-15T03:33:38.315Z",
+      "updated_at": "2019-10-15T03:33:38.315Z",
+      "tags": [
+        {
+          "id": 1,
+          "name": "JavaScript",
+          "slug": "javascript",
+          "created_at": "2019-10-14T03:36:15.139Z",
+          "updated_at": "2019-10-14T03:36:15.139Z"
+        },
+        {
+          "id": 17,
+          "name": "Nodejs",
+          "slug": "nodejs",
+          "created_at": "2019-10-15T03:20:58.613Z",
+          "updated_at": "2019-10-15T03:20:58.613Z"
+        },
+        {
+          "id": 22,
+          "name": "GraphQL",
+          "slug": "graphql",
+          "created_at": "2019-10-15T03:33:38.334Z",
+          "updated_at": "2019-10-15T03:33:38.334Z"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "medium_id": "dd4921cb3c1a",
+      "title": "What is the N+1 Problem in GraphQL?",
+      "link": "https://itnext.io/what-is-the-n-1-problem-in-graphql-dd4921cb3c1a",
+      "image": "https://miro.medium.com/max/4738/1*HQgzjtYMXtvmpbKkyS7e-A.jpeg",
+      "subtitle": "A crash course on a surprisingly common problem",
+      "first_published_at": "2019-06-26T04:00:00.000Z",
+      "created_at": "2019-10-16T03:05:24.146Z",
+      "updated_at": "2019-10-16T03:05:24.146Z",
+      "tags": [
+        {
+          "id": 1,
+          "name": "JavaScript",
+          "slug": "javascript",
+          "created_at": "2019-10-14T03:36:15.139Z",
+          "updated_at": "2019-10-14T03:36:15.139Z"
+        },
+        {
+          "id": 22,
+          "name": "GraphQL",
+          "slug": "graphql",
+          "created_at": "2019-10-15T03:33:38.334Z",
+          "updated_at": "2019-10-15T03:33:38.334Z"
+        },
+        {
+          "id": 23,
+          "name": "NodeJs",
+          "slug": "nodejs",
+          "created_at": "2019-10-16T03:05:24.178Z",
+          "updated_at": "2019-10-16T03:05:24.178Z"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "medium_id": "e841724da924",
+      "title": "Getting started with Hapi JS",
+      "link": "https://itnext.io/getting-started-with-hapi-js-e841724da924",
+      "image": "https://miro.medium.com/max/4738/1*GIKkOpHNbHA1BiP4wwvdWw.jpeg",
+      "subtitle": "Part 1: starting the server and basic routing",
+      "first_published_at": "2019-02-17T05:00:00.000Z",
+      "created_at": "2019-10-15T03:20:58.591Z",
+      "updated_at": "2019-10-15T03:20:58.591Z",
+      "tags": [
+        {
+          "id": 1,
+          "name": "JavaScript",
+          "slug": "javascript",
+          "created_at": "2019-10-14T03:36:15.139Z",
+          "updated_at": "2019-10-14T03:36:15.139Z"
+        },
+        {
+          "id": 16,
+          "name": "Hapi",
+          "slug": "hapi",
+          "created_at": "2019-10-15T03:20:58.613Z",
+          "updated_at": "2019-10-15T03:20:58.613Z"
+        },
+        {
+          "id": 18,
+          "name": "Hapijs",
+          "slug": "hapijs",
+          "created_at": "2019-10-15T03:20:58.615Z",
+          "updated_at": "2019-10-15T03:20:58.615Z"
+        },
+        {
+          "id": 17,
+          "name": "Nodejs",
+          "slug": "nodejs",
+          "created_at": "2019-10-15T03:20:58.613Z",
+          "updated_at": "2019-10-15T03:20:58.613Z"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "medium_id": "236207de3d55",
+      "title": "How to ask Questions as a Jr. Dev",
+      "link": "https://itnext.io/how-to-ask-questions-as-a-jr-dev-236207de3d55",
+      "image": "https://miro.medium.com/max/8000/1*RJ6fY6mvwESJ4xSu3Wm4fg.jpeg",
+      "subtitle": null,
+      "first_published_at": "2019-02-12T05:00:00.000Z",
+      "created_at": "2019-10-16T03:13:54.230Z",
+      "updated_at": "2019-10-16T03:13:54.230Z",
+      "tags": [
+        {
+          "id": 24,
+          "name": "Coding Bootcamp",
+          "slug": "coding-bootcamp",
+          "created_at": "2019-10-16T03:13:54.255Z",
+          "updated_at": "2019-10-16T03:13:54.255Z"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "medium_id": "b5eb57fdbeb4",
+      "title": "A Beginner’s Guide to Understanding JavaScript Closures",
+      "link": "https://itnext.io/a-beginners-guide-to-understanding-javascript-closures-b5eb57fdbeb4",
+      "image": "https://miro.medium.com/max/4000/1*AJWhia2_QH77RYEWhsLsWA.jpeg",
+      "subtitle": null,
+      "first_published_at": "2018-10-13T04:00:00.000Z",
+      "created_at": "2019-10-15T03:24:42.780Z",
+      "updated_at": "2019-10-15T03:24:42.780Z",
+      "tags": [
+        {
+          "id": 1,
+          "name": "JavaScript",
+          "slug": "javascript",
+          "created_at": "2019-10-14T03:36:15.139Z",
+          "updated_at": "2019-10-14T03:36:15.139Z"
+        },
+        {
+          "id": 19,
+          "name": "Closure",
+          "slug": "closure",
+          "created_at": "2019-10-15T03:24:42.804Z",
+          "updated_at": "2019-10-15T03:24:42.804Z"
+        },
+        {
+          "id": 20,
+          "name": "Coding Interviews",
+          "slug": "coding-interviews",
+          "created_at": "2019-10-15T03:24:42.805Z",
+          "updated_at": "2019-10-15T03:24:42.805Z"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "medium_id": "c6592094658",
+      "title": "My Thoughts On Coding Bootcamps (Now That I’ve Graduated)",
+      "link": "https://itnext.io/thoughts-on-coding-bootcamps-now-that-ive-graduated-c6592094658",
+      "image": "https://miro.medium.com/max/4000/1*Nyv1HffTKPZlxRaozkvDQw.jpeg",
+      "subtitle": null,
+      "first_published_at": "2018-10-07T04:00:00.000Z",
+      "created_at": "2019-10-16T03:14:55.708Z",
+      "updated_at": "2019-10-16T03:14:55.708Z",
+      "tags": [
+        {
+          "id": 1,
+          "name": "JavaScript",
+          "slug": "javascript",
+          "created_at": "2019-10-14T03:36:15.139Z",
+          "updated_at": "2019-10-14T03:36:15.139Z"
+        },
+        {
+          "id": 4,
+          "name": "Codingbootcamp",
+          "slug": "codingbootcamp",
+          "created_at": "2019-10-14T03:36:33.717Z",
+          "updated_at": "2019-10-14T03:36:33.717Z"
+        },
+        {
+          "id": 25,
+          "name": "Flatiron School",
+          "slug": "flatiron-school",
+          "created_at": "2019-10-16T03:14:55.720Z",
+          "updated_at": "2019-10-16T03:14:55.720Z"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "medium_id": "59758ebfb778",
+      "title": "How To Use Object Destructuring in Modern Javascript",
+      "link": "https://itnext.io/how-to-use-object-destructuring-in-modern-javascript-59758ebfb778",
+      "image": "https://miro.medium.com/max/4738/1*Fl0TH91l1azcJNDv_tVOUA.jpeg",
+      "subtitle": null,
+      "first_published_at": "2018-06-27T04:00:00.000Z",
+      "created_at": "2019-10-16T03:16:13.153Z",
+      "updated_at": "2019-10-20T03:31:10.901Z",
+      "tags": [
+        {
+          "id": 1,
+          "name": "JavaScript",
+          "slug": "javascript",
+          "created_at": "2019-10-14T03:36:15.139Z",
+          "updated_at": "2019-10-14T03:36:15.139Z"
+        },
+        {
+          "id": 3,
+          "name": "React",
+          "slug": "react",
+          "created_at": "2019-10-14T03:36:15.198Z",
+          "updated_at": "2019-10-14T03:36:15.198Z"
+        },
+        {
+          "id": 25,
+          "name": "Flatiron School",
+          "slug": "flatiron-school",
+          "created_at": "2019-10-16T03:14:55.720Z",
+          "updated_at": "2019-10-16T03:14:55.720Z"
+        },
+        {
+          "id": 30,
+          "name": "ES2015",
+          "slug": "es2015",
+          "created_at": "2019-10-20T03:31:10.932Z",
+          "updated_at": "2019-10-20T03:31:10.932Z"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "medium_id": "c25279483e4f",
+      "title": "Coding the 5 Basic RESTful actions for JavaScript",
+      "link": "https://itnext.io/coding-the-5-basic-restful-actions-for-javascript-c25279483e4f",
+      "image": "https://miro.medium.com/max/4738/1*7nSQObbqsoKZmjtMHAhDXA.jpeg",
+      "subtitle": null,
+      "first_published_at": "2018-06-14T04:00:00.000Z",
+      "created_at": "2019-10-16T03:21:11.243Z",
+      "updated_at": "2019-10-16T03:21:11.243Z",
+      "tags": [
+        {
+          "id": 1,
+          "name": "JavaScript",
+          "slug": "javascript",
+          "created_at": "2019-10-14T03:36:15.139Z",
+          "updated_at": "2019-10-14T03:36:15.139Z"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "medium_id": "78b85ccf832b",
+      "title": "Using JSON Server to Create a Restful Server in 5 seconds",
+      "link": "https://itnext.io/using-json-server-to-create-a-restful-server-in-5-seconds-78b85ccf832b",
+      "image": "https://miro.medium.com/max/4738/1*6_3lmPQVifvrhy3qQl7dLg.jpeg",
+      "subtitle": null,
+      "first_published_at": "2018-06-14T04:00:00.000Z",
+      "created_at": "2019-10-16T03:17:22.794Z",
+      "updated_at": "2019-10-16T03:17:22.794Z",
+      "tags": [
+        {
+          "id": 17,
+          "name": "Nodejs",
+          "slug": "nodejs",
+          "created_at": "2019-10-15T03:20:58.613Z",
+          "updated_at": "2019-10-15T03:20:58.613Z"
+        },
+        {
+          "id": 25,
+          "name": "Flatiron School",
+          "slug": "flatiron-school",
+          "created_at": "2019-10-16T03:14:55.720Z",
+          "updated_at": "2019-10-16T03:14:55.720Z"
+        },
+        {
+          "id": 1,
+          "name": "JavaScript",
+          "slug": "javascript",
+          "created_at": "2019-10-14T03:36:15.139Z",
+          "updated_at": "2019-10-14T03:36:15.139Z"
+        },
+        {
+          "id": 28,
+          "name": "Json",
+          "slug": "json",
+          "created_at": "2019-10-16T03:17:22.809Z",
+          "updated_at": "2019-10-16T03:17:22.809Z"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "medium_id": "880eae0c8d25",
+      "title": "That data looks so fetching on you: Understanding the JS Fetch API",
+      "link": "https://itnext.io/that-data-looks-so-fetching-on-you-understanding-the-js-fetch-api-880eae0c8d25",
+      "image": "https://miro.medium.com/max/4738/1*C5b9mNOi7sKN0-LW-66DYw.jpeg",
+      "subtitle": null,
+      "first_published_at": "2018-06-10T04:00:00.000Z",
+      "created_at": "2019-10-15T03:09:45.811Z",
+      "updated_at": "2019-10-15T03:17:49.398Z",
+      "tags": [
+        {
+          "id": 1,
+          "name": "JavaScript",
+          "slug": "javascript",
+          "created_at": "2019-10-14T03:36:15.139Z",
+          "updated_at": "2019-10-14T03:36:15.139Z"
+        },
+        {
+          "id": 14,
+          "name": "Fetch Api",
+          "slug": "fetch-api",
+          "created_at": "2019-10-15T03:09:45.877Z",
+          "updated_at": "2019-10-15T03:09:45.877Z"
+        },
+        {
+          "id": 15,
+          "name": "Javascript Fetch",
+          "slug": "javascript-fetch",
+          "created_at": "2019-10-15T03:09:45.885Z",
+          "updated_at": "2019-10-15T03:09:45.885Z"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "medium_id": "ca28de7e3303",
+      "title": "The Basics of the :as Option in Ruby on Rails",
+      "link": "https://itnext.io/the-basics-of-the-as-option-in-rails-ca28de7e3303",
+      "image": "https://miro.medium.com/max/4738/1*SxeGQmhnkqizW6jJirIcLg.jpeg",
+      "subtitle": "Customize your route helpers quickly and easily",
+      "first_published_at": "2018-05-21T04:00:00.000Z",
+      "created_at": "2019-10-16T03:20:02.288Z",
+      "updated_at": "2019-10-16T03:20:02.288Z",
+      "tags": [
+        {
+          "id": 8,
+          "name": "Ruby",
+          "slug": "ruby",
+          "created_at": "2019-10-14T03:36:33.861Z",
+          "updated_at": "2019-10-14T03:36:33.861Z"
+        },
+        {
+          "id": 29,
+          "name": "Ruby on Rails",
+          "slug": "ruby-on rails",
+          "created_at": "2019-10-16T03:20:02.305Z",
+          "updated_at": "2019-10-16T03:20:02.305Z"
+        }
+      ]
     }
-]
+  ]

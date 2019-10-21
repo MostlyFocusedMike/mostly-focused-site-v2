@@ -30,7 +30,7 @@ class TagAdapter {
     }
 }
 
-TagAdapter.url = './articles.v2.json';
+TagAdapter.url = './articles.json';
 TagAdapter.options = {
     method: 'GET',
     headers: {
