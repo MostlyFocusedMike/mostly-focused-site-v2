@@ -50,10 +50,10 @@ form {
     min-width: 20rem;
     margin: 1rem auto;
     padding: 1rem;
-    // border: 0.1rem solid #CCC;
+    border: 0.1rem solid #939393;
+    border-radius: 2rem;
     box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, .5);
-    background: #000;
-    background-color: rgba(8, 0, 45, 0.8);
+    background: #272727;
     label, p {
         @extend %font;
         display: block;
@@ -76,8 +76,6 @@ form {
         border: none;
         border-radius: 0;
         padding: 0.5rem;
-        -moz-text-align-last:center;
-        text-align-last:center;
         display: block;
         margin: 1rem auto;
         font-size: 1.5rem;

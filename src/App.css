@@ -46,8 +46,8 @@
   #articles-ul .post-li {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
     margin: 1rem;
-    width: 20rem;
-    min-height: 26rem;
+    width: 22rem;
+    min-height: 20rem;
     position: relative;
     transform: scale(1);
     animation: fadein 1s;
@@ -65,7 +65,7 @@
       box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5); }
     #articles-ul .post-li img {
       width: 100%;
-      height: 11rem;
+      height: 12.5rem;
       display: block;
       margin: 0 auto 1rem; }
     #articles-ul .post-li h2 {
@@ -128,7 +128,8 @@
   margin: 0;
   padding: 0.5rem 1rem;
   text-align: right;
-  position: relative; }
+  position: relative;
+  height: 2.75rem; }
   #welcome-banner h1 {
     margin: 0;
     color: #5FB9FC;
@@ -199,9 +200,10 @@ form {
   min-width: 20rem;
   margin: 1rem auto;
   padding: 1rem;
+  border: 0.1rem solid #939393;
+  border-radius: 2rem;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
-  background: #000;
-  background-color: rgba(8, 0, 45, 0.8); }
+  background: #272727; }
   form label, form p {
     display: block;
     margin: 0 auto;
@@ -221,8 +223,6 @@ form {
     border: none;
     border-radius: 0;
     padding: 0.5rem;
-    -moz-text-align-last: center;
-    text-align-last: center;
     display: block;
     margin: 1rem auto;
     font-size: 1.5rem; }

@@ -27,15 +27,7 @@ const SearchBar = () => {
 
     return (
         <form>
-            <p>
-                Hello there, it&#39;s Mike.
-            </p>
-            <p>
-                This is my site. <br />
-            </p>
-            <p>
-                In theory, there should be more coming soon, but for now, here are my articles.
-            </p>
+            <p></p>
             <br />
             <label htmlFor="tag-filter">Find articles about: </label>
             <select id="tag-filter" value={chosenTag} onChange={handleChange}>
