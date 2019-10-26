@@ -42,11 +42,11 @@
   to {
     opacity: 1; } }
 #articles-ul {
-  margin: 1rem auto 2rem; }
+  margin: 1rem auto 1rem; }
   #articles-ul .post-li {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
     margin: 1rem;
-    width: 22rem;
+    width: 18rem;
     min-height: 20rem;
     position: relative;
     transform: scale(1);
@@ -65,7 +65,6 @@
       box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5); }
     #articles-ul .post-li img {
       width: 100%;
-      height: 12.5rem;
       display: block;
       margin: 0 auto 1rem; }
     #articles-ul .post-li h2 {
@@ -163,7 +162,7 @@ ul {
   list-style: none;
   padding: 0; }
 
-html, body, form label, form p {
+html, body {
   font-family: 'Roboto', sans-serif; }
 
 html, body {
@@ -195,26 +194,24 @@ a {
 
 form {
   display: block;
-  width: 100%;
   width: 30%;
   min-width: 20rem;
   margin: 1rem auto;
-  padding: 1rem;
   border: 0.1rem solid #939393;
-  border-radius: 2rem;
+  border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
   background: #272727; }
   form label, form p {
+    font-family: Roboto;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
     display: block;
     margin: 0 auto;
     padding: 0;
     color: #EEE;
-    font-weight: 100;
+    font-weight: lighter;
     text-align: center;
-    font-size: 1.4rem; }
-  form p {
-    width: 80%;
-    margin-bottom: 1rem; }
+    font-size: 1.5rem; }
   form select {
     box-shadow: none;
     -webkit-appearance: none;
@@ -224,7 +221,7 @@ form {
     border-radius: 0;
     padding: 0.5rem;
     display: block;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
     font-size: 1.5rem; }
   form input[type=button] {
     font-size: 1.25rem;

@@ -19,11 +19,11 @@
 
 #articles-ul {
     @extend %flexy;
-    margin: 1rem auto 2rem;
+    margin: 1rem auto 1rem;
     .post-li {
         box-shadow: 1px 1px 10px rgba(0,0,0,.3);
         margin: 1rem;
-        width: 22rem;
+        width: 18rem;
         min-height: 20rem;
         position: relative;
         transform: scale(1);
@@ -40,7 +40,6 @@
         }
         img {
             width: 100%;
-            height: 12.5rem;
             display: block;
             margin: 0 auto 1rem;
         }
