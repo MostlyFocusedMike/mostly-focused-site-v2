@@ -30,6 +30,7 @@ const SearchBar = () => {
             <p></p>
             <br />
             <label htmlFor="tag-filter">Find articles about: </label>
+            <hr />
             <select id="tag-filter" value={chosenTag} onChange={handleChange}>
                 {
                     tags.map(tag => (
@@ -37,7 +38,7 @@ const SearchBar = () => {
                     ))
                 }
             </select>
-            <input type="button" value="Show All Articles" onClick={handleReset} />
+            <input type="button" value="SHOW ALL ARTICLES" onClick={handleReset} />
         </form>
     );
 };
