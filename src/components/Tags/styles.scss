@@ -1,14 +1,44 @@
 @import '../../utilities.scss';
 
-#tags-ul {
-    @extend %flexy;
-    border-top: 0.1rem solid #AAA;
-    width: 90%;
+#tags {
     margin: 1rem auto;
-    padding: 0.5rem;
-    .tag-li {
-        input[type=button] {
-            @extend %basic-button;
+    background: #272727;
+    width: 70%;
+    padding: 0.5rem 0 0.2rem;
+    border-radius: 0.5rem;
+    line-height: .7;
+    h3 {
+        margin: 0rem;
+        padding-right: 0.7rem;
+        font-weight: 300;
+        color: #939393;
+        font-size: 1rem;
+        text-align: right;
+        font-style: italic;
+    }
+    hr {
+        margin: 0.1rem;
+        margin-left: 0.67rem;
+        width: 95%;
+        display: inline-block;
+        border: none;
+        border-top: 1px solid #767676;
+    }
+    ul {
+        @extend %flexy;
+        .tag {
+            input[type=button] {
+                background: none!important;
+                border: none;
+                padding: 0!important;
+                margin: 0.3rem;
+                color: #939393;
+                font-size: 0.8rem;
+                cursor: pointer;
+                &:hover {
+                    color: white;
+                }
+            }
         }
     }
 }

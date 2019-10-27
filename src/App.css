@@ -1,21 +1,8 @@
-#articles-ul, #tags-ul {
+#articles-ul, #tags ul {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
   justify-content: center; }
-
-#tags-ul .tag-li input[type=button] {
-  -webkit-appearance: none;
-  background: #5CA6E5;
-  color: white;
-  border: none;
-  border-radius: 2rem;
-  padding: .3rem .7rem;
-  margin: 0.25rem; }
-  #tags-ul .tag-li input[type=button]:hover {
-    background: #1D88E3; }
-  #tags-ul .tag-li input[type=button]:active {
-    background: #6EB0E8; }
 
 @keyframes fadein {
   from {
@@ -109,30 +96,44 @@
       #articles-ul .article-card a.link:active {
         color: #FFEF33; }
 
-#articles-ul, #tags-ul {
+#articles-ul, #tags ul {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
   justify-content: center; }
 
-#tags-ul .tag-li input[type=button] {
-  -webkit-appearance: none;
-  background: #5CA6E5;
-  color: white;
-  border: none;
-  border-radius: 2rem;
-  padding: .3rem .7rem;
-  margin: 0.25rem; }
-  #tags-ul .tag-li input[type=button]:hover {
-    background: #1D88E3; }
-  #tags-ul .tag-li input[type=button]:active {
-    background: #6EB0E8; }
-
-#tags-ul {
-  border-top: 0.1rem solid #AAA;
-  width: 90%;
+#tags {
   margin: 1rem auto;
-  padding: 0.5rem; }
+  background: #272727;
+  width: 70%;
+  padding: 0.5rem 0 0.2rem;
+  border-radius: 0.5rem;
+  line-height: .7; }
+  #tags h3 {
+    margin: 0rem;
+    padding-right: 0.7rem;
+    font-weight: 300;
+    color: #939393;
+    font-size: 1rem;
+    text-align: right;
+    font-style: italic; }
+  #tags hr {
+    margin: 0.1rem;
+    margin-left: 0.67rem;
+    width: 95%;
+    display: inline-block;
+    border: none;
+    border-top: 1px solid #767676; }
+  #tags ul .tag input[type=button] {
+    background: none !important;
+    border: none;
+    padding: 0 !important;
+    margin: 0.3rem;
+    color: #939393;
+    font-size: 0.8rem;
+    cursor: pointer; }
+    #tags ul .tag input[type=button]:hover {
+      color: white; }
 
 #welcome-banner #white-line {
   -moz-transform: rotate(40deg) skew(0deg, -40deg);
@@ -262,6 +263,9 @@ form {
     color: white;
     margin: 0 auto;
     display: block; }
+    form input[type=button]:hover {
+      color: #bdbdbd;
+      background: #5c5b5b; }
   form hr {
     margin: .5rem 0 0;
     width: 95%;

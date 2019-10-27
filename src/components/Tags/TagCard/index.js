@@ -10,7 +10,7 @@ const TagCard = ({ tag }) => {
     };
 
     return (
-        <li className='tag-li'>
+        <li className='tag'>
             <input
                 type='button'
                 value={tag.name}

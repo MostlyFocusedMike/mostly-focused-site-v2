@@ -96,6 +96,10 @@ form {
         color: white;
         margin: 0 auto;
         display: block;
+        &:hover {
+            color: rgb(189, 189, 189);
+            background: #5c5b5b;
+        }
     }
     hr {
         margin: .5rem 0 0;
