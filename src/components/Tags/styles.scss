@@ -7,11 +7,12 @@
     padding: 0.5rem 0 0.2rem;
     border-radius: 0.5rem;
     line-height: .7;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.5);
     h3 {
         margin: 0rem;
         padding-right: 0.7rem;
         font-weight: 300;
-        color: #939393;
+        color: #b0b0b0;
         font-size: 1rem;
         text-align: right;
         font-style: italic;
@@ -32,7 +33,7 @@
                 border: none;
                 padding: 0!important;
                 margin: 0.3rem;
-                color: #939393;
+                color: #b0b0b0;
                 font-size: 0.8rem;
                 cursor: pointer;
                 &:hover {
