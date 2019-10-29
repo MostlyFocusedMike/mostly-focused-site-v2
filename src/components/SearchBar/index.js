@@ -13,10 +13,6 @@ const SearchBar = () => {
         TagAdapter.getAll().then(setTags);
     }, []);
 
-    useEffect(() => {
-        console.log('tag: ', chosenTag);
-    }, [chosenTag]);
-
     const handleChange = (e) => {
         setChosenTag(e.target.value);
     };

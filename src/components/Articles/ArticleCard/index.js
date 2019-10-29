@@ -4,7 +4,6 @@ import { getFormattedSubtitle } from './helpers';
 import TagsContainer from '../../Tags/TagsContainer';
 
 const ArticleCard = ({ article }) => {
-    console.log('article: ', article);
     const subtitle = getFormattedSubtitle(article.subtitle);
     return (
         <li>

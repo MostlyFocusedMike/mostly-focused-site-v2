@@ -15,7 +15,6 @@ const CopyToClipboard = (props) => {
                 setIsAlertError(false);
                 setIsAlertVisible(true);
             } catch (error) {
-                console.log('error: ', error);
                 setIsAlertError(true);
             }
             setIsAlertVisible(true);

@@ -8,7 +8,7 @@ const TagCard = ({ tag }) => {
     const handleClick = (e) => {
         setChosenTag(e.target.dataset.value);
     };
-
+    Array.from(Array(4)).map(() => 5);
     return (
         <li className='tag'>
             <input
