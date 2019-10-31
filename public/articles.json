@@ -4,11 +4,11 @@
         "medium_id": "6c0c09e049c3",
         "title": "How to Use TypeScript Generics",
         "link": "https://medium.com/@mikecronin92/how-to-use-typescript-generics-6c0c09e049c3",
-        "image": "https://miro.medium.com/max/1400/1*qSIBQVnvSR-_RM_lsIbksQ.png",
+        "image": "https://miro.medium.com/max/1400/1*GP_9S8rs2D2D9lcE1v9SpA.png",
         "subtitle": "A quick tutorial on one of TypeScript’s best features",
         "first_published_at": "2019-10-31T10:01:03.474Z",
         "created_at": "2019-10-31T11:26:27.084Z",
-        "updated_at": "2019-10-31T11:26:27.084Z",
+        "updated_at": "2019-10-31T11:38:29.674Z",
         "tags": [
           {
             "id": 1,
@@ -25,7 +25,7 @@
             "updated_at": "2019-10-14T03:36:33.771Z"
           }
         ]
-    },
+      },
     {
       "id": 3,
       "medium_id": "5267debd2c24",
