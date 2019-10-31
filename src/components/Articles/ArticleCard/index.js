@@ -7,17 +7,21 @@ const ArticleCard = ({ article }) => {
     const subtitle = getFormattedSubtitle(article.subtitle);
     return (
         <li>
-            <a id={`post-${article.id}-img-link`} href={`${article.link}`} target="_blank" rel="noopener noreferrer" >
-                <div className="article-card" id={`post-${article.medium_id}-d`}>
-                    <img id={`post-${article.id}-img`}src={`${article.image}`} />
+            <div className="article-card" id={`post-${article.medium_id}-d`}>
+                <a id={`post-${article.id}-img-link`} href={`${article.link}`} target="_blank" rel="noopener noreferrer" >
+                    <img
+                        id={`post-${article.id}-img`}
+                        src={`${article.image}`}
+                        alt={`Header image for "${article.title}" article`}
+                    />
                     <h2 id={`post-${article.medium_iD}-title`}>{article.title}</h2>
                     {
                         subtitle
                         && <p id={`post-${article.medium_id}-subtitle`}>{subtitle}</p>
                     }
-                    <a className='link' href={article.link} target="_blank" rel="noopener noreferrer" >READ ARTICLE</a>
-                </div>
-            </a>
+                </a>
+                <a className='link' href={article.link} target="_blank" rel="noopener noreferrer" >READ ARTICLE</a>
+            </div>
 
             <TagsContainer tags={article.tags}/>
         </li>

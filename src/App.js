@@ -6,23 +6,13 @@ import SearchBar from './components/SearchBar';
 import WelcomeBanner from './components/WelcomeBanner';
 
 function App() {
-    const [articles, setArticles] = useState([
-        {
-            id: 0,
-            medium_id: '',
-            title: '',
-            slug: '',
-            link: '',
-            image: '',
-            subtitle: '',
-            tags: [],
-        },
-    ]);
+    const [articles, setArticles] = useState([]);
 
     useEffect(() => {
         ArticleAdapter.getAll()
             .then((jsonArticles) => {
-                setArticles(jsonArticles);
+                const foo = setArticles(jsonArticles);
+                console.log('foo: ', foo);
             });
     }, []);
 
@@ -30,7 +20,10 @@ function App() {
         <div className='App'>
             <WelcomeBanner />
             <SearchBar />
-            <ArticlesContainer articles={articles}/>
+            {
+                articles.length
+                && <ArticlesContainer articles={articles}/>
+            }
         </div>
     );
 }

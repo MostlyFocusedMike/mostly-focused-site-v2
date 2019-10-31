@@ -13,15 +13,12 @@ const server = new Hapi.Server({
     },
 });
 
-
-// define server start function
 const launch = async () => {
     try {
         await server.register([
             Inert,
         ]);
 
-        // add each route
         server.route([
             {
                 method: 'GET',
@@ -45,9 +42,9 @@ const launch = async () => {
                     notes: "This should be temporary, since the homepage likely won't always be articles",
                     handler: async (req, h) => {
                         return h.redirect('/');
-                    }
+                    },
                 },
-            }
+            },
         ]);
 
         await server.start(); // the builtin server.start method is async

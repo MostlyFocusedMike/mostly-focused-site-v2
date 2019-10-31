@@ -92,7 +92,8 @@
       padding-top: 0.5rem;
       font-weight: lighter; }
       #articles-ul .article-card a.link:hover {
-        color: #e39b00; }
+        color: #e39b00;
+        background: #3f3f3f; }
       #articles-ul .article-card a.link:active {
         color: #FFEF33; }
 
@@ -256,7 +257,7 @@ form {
     letter-spacing: 0.4rem;
     width: 100%;
     height: 2rem;
-    background: #646464 !important;
+    background: #646464;
     border: none !important;
     border-top: 1px solid #939393 !important;
     border-radius: 0 0 0.9rem 0.9rem !important;
@@ -265,8 +266,11 @@ form {
     margin: 0 auto;
     display: block; }
     form input[type=button]:hover {
-      color: #bdbdbd;
-      background: #5c5b5b; }
+      color: #e39b00;
+      background: #3f3f3f; }
+    form input[type=button]:active {
+      color: #FFF;
+      background: #646464; }
   form hr {
     margin: .5rem 0 0;
     width: 95%;
