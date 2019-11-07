@@ -1,5 +1,32 @@
 [
     {
+        "id": 1,
+        "medium_id": "333c2d775400",
+        "title": "How React’s useEffect Hook Works",
+        "link": "https://medium.com/@mikecronin92/the-useeffect-hook-makes-sense-if-you-think-differently-333c2d775400",
+        "image": "https://miro.medium.com/max/1400/1*uDJa89eWA-NRI-G8JQgzlA.png",
+        "subtitle": "It’s different, but better",
+        "first_published_at": "2019-11-05T03:27:49.046Z",
+        "created_at": "2019-11-07T03:43:18.699Z",
+        "updated_at": "2019-11-07T03:43:18.699Z",
+        "tags": [
+          {
+            "id": 1,
+            "name": "JavaScript",
+            "slug": "javascript",
+            "created_at": "2019-11-07T03:43:18.724Z",
+            "updated_at": "2019-11-07T03:43:18.724Z"
+          },
+          {
+            "id": 3,
+            "name": "React",
+            "slug": "react",
+            "created_at": "2019-10-14T03:36:15.198Z",
+            "updated_at": "2019-10-14T03:36:15.198Z"
+          }
+        ]
+    },
+    {
         "id": 23,
         "medium_id": "6c0c09e049c3",
         "title": "How to Use TypeScript Generics",
