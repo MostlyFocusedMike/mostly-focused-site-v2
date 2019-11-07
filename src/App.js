@@ -11,8 +11,7 @@ function App() {
     useEffect(() => {
         ArticleAdapter.getAll()
             .then((jsonArticles) => {
-                const foo = setArticles(jsonArticles);
-                console.log('foo: ', foo);
+                setArticles(jsonArticles);
             });
     }, []);
 
