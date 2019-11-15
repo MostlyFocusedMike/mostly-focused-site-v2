@@ -1,17 +1,9 @@
 {
-  "name": "foo",
+  "name": "mostly-focused-site-v2",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@hapi/hapi": "^18.3.2",
-    "@hapi/inert": "^5.2.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
-  },
   "scripts": {
-    "start": "node src/server.js",
+    "start": "node src/server-v2.js",
     "start:dev": "react-scripts start",
     "build": "react-scripts build",
     "sass": "sass --watch src/App.scss:src/App.css",
@@ -29,6 +21,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "@hapi/hapi": "^18.3.2",
+    "@hapi/inert": "^5.2.1",
+    "express": "^4.17.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
