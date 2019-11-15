@@ -12,7 +12,7 @@ const ArticleCard = ({ article }) => {
                     <img
                         id={`post-${article.id}-img`}
                         src={`${article.image}`}
-                        alt={`Header image for "${article.title}" article`}
+                        alt={`"${article.title}" article`}
                     />
                     <h2 id={`post-${article.medium_iD}-title`}>{article.title}</h2>
                     {
