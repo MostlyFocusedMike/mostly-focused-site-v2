@@ -1,15 +1,3 @@
-- [Getting Started](#getting-started)
-  - [The Most Basic App](#the-most-basic-app)
-  - [`express` and `app`](#express-and-app)
-  - [`app.get(path, callback(req, res, next))`](#appgetpath-callbackreq-res-next)
-  - [`app.listen(port, [host] callback)`](#applistenport-host-callback)
-- [Basic Routing](#basic-routing)
-  - [routing structure](#routing-structure)
-- [Serving static files in Express](#serving-static-files-in-express)
-  - [`express.static`](#expressstatic)
-  - [first real brush with `app.use`](#first-real-brush-with-appuse)
-  - [options argument](#options-argument)
-
 # Getting Started
 - Here is the starting example given from the docs, with some notes and further reading
 
