@@ -1,15 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { NoteAdapter } from '../../Adapters';
 import createMarkdown from '../../helpers/create-markdown';
 
-const CurrentNote = ({ noteTitle }) => {
-    const [currentText, setCurrentText] = useState(null);
-
-    useEffect(() => {
-        NoteAdapter.getOne(noteTitle).then(setCurrentText);
-    });
-
+const CurrentNote = ({ noteTitle, currentText }) => {
     return (
         <div id='current-note'>
             <div id='markdown'>
@@ -29,6 +22,7 @@ const CurrentNote = ({ noteTitle }) => {
 
 CurrentNote.propTypes = {
     noteTitle: PropTypes.object,
+    currentText: PropTypes.string,
 };
 
 export default CurrentNote;

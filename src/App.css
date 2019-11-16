@@ -227,8 +227,36 @@
       width: 80%;
       margin: 0.5rem; }
   #notes-page #table-of-contents {
-    width: 19rem;
-    background: white; }
+    background: #FFF;
+    width: 20rem;
+    height: 100vh; }
+    #notes-page #table-of-contents #contents {
+      border: 1px solid #000;
+      height: 80%;
+      overflow: auto; }
+      #notes-page #table-of-contents #contents ul {
+        list-style-type: none;
+        padding: 0; }
+        #notes-page #table-of-contents #contents ul .padding-lvl-1 {
+          padding-left: 0;
+          font-size: 1.25rem;
+          font-weight: bold;
+          text-decoration: underline; }
+        #notes-page #table-of-contents #contents ul .padding-lvl-2 {
+          padding-left: .5rem;
+          font-size: 1.1rem;
+          font-style: italic; }
+        #notes-page #table-of-contents #contents ul .padding-lvl-3 {
+          padding-left: 1rem;
+          font-size: .9rem; }
+          #notes-page #table-of-contents #contents ul .padding-lvl-3::before {
+            content: "- "; }
+        #notes-page #table-of-contents #contents ul li {
+          display: block;
+          margin: 1rem;
+          color: black; }
+          #notes-page #table-of-contents #contents ul li a:hover {
+            color: gray; }
 
 ul {
   list-style: none;

@@ -6,14 +6,11 @@ import TableOfContents from '../../components/TableOfContents';
 
 function ArticlesPage() {
     const [currentNote, setCurrentNote] = useState('hello');
+    const [currentText, setCurrentText] = useState(null);
 
     useEffect(() => {
-        NoteAdapter.getOne('Express: Getting Started').then(console.log);
-    }, []);
-
-    useEffect(() => {
-        NoteAdapter.getAllTitles().then(console.log);
-    }, []);
+        NoteAdapter.getOne(currentNote).then(setCurrentText);
+    }, [currentNote]);
 
     useEffect(() => {
         console.log(currentNote);
@@ -31,8 +28,9 @@ function ArticlesPage() {
             />
             <CurrentNote
                 noteTitle={currentNote}
+                currentText={currentText}
             />
-            <TableOfContents />
+            <TableOfContents text={currentText} />
         </div>
     );
 }
