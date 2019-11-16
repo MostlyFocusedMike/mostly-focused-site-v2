@@ -184,6 +184,13 @@
   background: #989;
   width: 22rem; }
 
+#note-title hr {
+  width: 80%;
+  margin: 0.5rem; }
+
+#current-note h2 {
+  color: white; }
+
 ul {
   list-style: none;
   padding: 0; }

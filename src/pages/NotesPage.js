@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NoteAdapter } from '../Adapters';
 import NoteTitles from '../components/NoteTitles';
+import CurrentNote from '../components/CurrentNote';
 
 function ArticlesPage() {
     const [currentNote, setCurrentNote] = useState('# Click a Note');
@@ -27,6 +28,9 @@ function ArticlesPage() {
             <h1>My Notes</h1>
             <NoteTitles
                 handleClick={handleClick}
+            />
+            <CurrentNote
+                noteTitle={currentNote}
             />
         </div>
     );
