@@ -4,6 +4,18 @@
   flex-wrap: wrap;
   justify-content: center; }
 
+#notes-page #current-note #markdown a {
+  text-decoration: underline; }
+  #notes-page #current-note #markdown a:link {
+    color: #253bff; }
+  #notes-page #current-note #markdown a:visited {
+    color: #000e91; }
+  #notes-page #current-note #markdown a:hover {
+    color: #e48900;
+    font-style: italic; }
+  #notes-page #current-note #markdown a:active {
+    color: black; }
+
 @keyframes fadein {
   from {
     opacity: 0; }
@@ -103,6 +115,18 @@
   flex-wrap: wrap;
   justify-content: center; }
 
+#notes-page #current-note #markdown a {
+  text-decoration: underline; }
+  #notes-page #current-note #markdown a:link {
+    color: #253bff; }
+  #notes-page #current-note #markdown a:visited {
+    color: #000e91; }
+  #notes-page #current-note #markdown a:hover {
+    color: #e48900;
+    font-style: italic; }
+  #notes-page #current-note #markdown a:active {
+    color: black; }
+
 #tags {
   margin: 1rem auto;
   background: #272727;
@@ -190,6 +214,18 @@
   flex-wrap: wrap;
   justify-content: center; }
 
+#notes-page #current-note #markdown a {
+  text-decoration: underline; }
+  #notes-page #current-note #markdown a:link {
+    color: #253bff; }
+  #notes-page #current-note #markdown a:visited {
+    color: #000e91; }
+  #notes-page #current-note #markdown a:hover {
+    color: #e48900;
+    font-style: italic; }
+  #notes-page #current-note #markdown a:active {
+    color: black; }
+
 #notes-page {
   justify-content: space-around; }
   #notes-page #current-note {
@@ -205,7 +241,8 @@
       padding: 1rem;
       padding-bottom: 8rem;
       font-size: 1.1rem;
-      height: 100%; }
+      height: 100%;
+      /* unvisited link */ }
       #notes-page #current-note #markdown h2 {
         color: #363;
         line-height: 2.5rem; }
@@ -220,6 +257,8 @@
         margin: 0; }
         #notes-page #current-note #markdown blockquote h1, #notes-page #current-note #markdown blockquote h2, #notes-page #current-note #markdown blockquote h3, #notes-page #current-note #markdown blockquote h4, #notes-page #current-note #markdown blockquote h5, #notes-page #current-note #markdown blockquote h6, #notes-page #current-note #markdown blockquote p {
           margin: 0; }
+      #notes-page #current-note #markdown a {
+        text-decoration: underline; }
   #notes-page #note-titles {
     background: #989;
     width: 19rem; }

@@ -35,6 +35,12 @@
                     margin: 0;
                 }
             }
+            /* unvisited link */
+            a {
+                text-decoration: underline;
+                @extend %text-link;
+            }
+
         }
     }
 

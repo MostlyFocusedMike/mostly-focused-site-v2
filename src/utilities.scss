@@ -22,3 +22,20 @@ $col: green;
         background: #6EB0E8;
     }
 }
+
+%text-link {
+    text-decoration: underline;
+    &:link {
+        color: rgb(37, 59, 255);
+    }
+    &:visited {
+        color: rgb(0, 14, 145);
+    }
+    &:hover {
+        color: rgb(228, 137, 0);
+        font-style: italic;
+    }
+    &:active {
+        color: rgb(0, 0, 0);
+    }
+}

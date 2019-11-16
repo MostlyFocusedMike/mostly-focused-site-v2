@@ -25,7 +25,10 @@ app.listen(port, '0.0.0.0', () => {
 - Requiring express returns a function that when called returns an express application, normally the application is called app for convention.
 
 ## `app.get(path, callback(req, res, next))`
-[docs for `.get`](https://expressjs.com/en/4x/api.html#app.get.method)
+[Marked]
+
+[Marked]: https://github.com/markedjs/marked/
+[docs for .get](https://expressjs.com/en/4x/api.html#app.get.method)
 - there are others for the http verbs `.get`, `.put`, `.patch`, `.post`, however these aren't usually used directly on the main app, and are instead used on something called a router. More later.
 - the function (called a handler function) takes three arguments, the request, the response, and the callback for middleware. Again, more on that later
 - To actually send anything to the client, you can use `res.send` and a payload.
