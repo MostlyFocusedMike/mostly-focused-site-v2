@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { NoteAdapter } from '../../Adapters';
+import NoteTitle from '../NoteTitle';
 
-const NoteTitles = () => {
+const NoteTitles = ({ handleClick }) => {
     const [noteTitles, setNoteTitles] = useState(null);
     useEffect(() => {
         NoteAdapter.getAllTitles().then(setNoteTitles);
@@ -12,14 +14,20 @@ const NoteTitles = () => {
             { noteTitles
                 && <ul>
                     {
-                        noteTitles.map(title => {
-                            return <h2 key={title}>{title}</h2>;
-                        })
+                        noteTitles.map(title => <NoteTitle
+                            key={title}
+                            noteTitle={title}
+                            handleClick={handleClick}
+                        />)
                     }
                 </ul>
             }
         </div>
     );
+};
+
+NoteTitles.propTypes = {
+    handleClick: PropTypes.func,
 };
 
 export default NoteTitles;
