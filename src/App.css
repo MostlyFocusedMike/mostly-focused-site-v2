@@ -190,6 +190,8 @@
 
 #current-note h2 {
   color: white; }
+#current-note code {
+  color: white; }
 
 ul {
   list-style: none;

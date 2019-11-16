@@ -4,7 +4,7 @@ import NoteTitles from '../components/NoteTitles';
 import CurrentNote from '../components/CurrentNote';
 
 function ArticlesPage() {
-    const [currentNote, setCurrentNote] = useState('# Click a Note');
+    const [currentNote, setCurrentNote] = useState('hello');
 
     useEffect(() => {
         NoteAdapter.getOne('Express: Getting Started').then(console.log);
