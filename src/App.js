@@ -1,28 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { ArticleAdapter } from './Adapters';
+import React from 'react';
 import './App.css';
-import ArticlesContainer from './components/Articles/ArticlesContainer';
-import SearchBar from './components/SearchBar';
-import WelcomeBanner from './components/WelcomeBanner';
+import ArticlesPage from './pages/ArticlesPage';
 
 function App() {
-    const [articles, setArticles] = useState([]);
-
-    useEffect(() => {
-        ArticleAdapter.getAll()
-            .then((jsonArticles) => {
-                setArticles(jsonArticles);
-            });
-    }, []);
-
     return (
         <div className='App'>
-            <WelcomeBanner />
-            <SearchBar />
-            {
-                articles.length
-                && <ArticlesContainer articles={articles}/>
-            }
+            <ArticlesPage />
         </div>
     );
 }

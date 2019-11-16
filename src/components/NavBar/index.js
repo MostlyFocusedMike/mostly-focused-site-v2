@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WelcomeBanner = () => {
+const NavBar = () => {
     return (
         <>
             <div id="welcome-banner">
@@ -12,4 +12,4 @@ const WelcomeBanner = () => {
     );
 };
 
-export default WelcomeBanner;
+export default NavBar;
