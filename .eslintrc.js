@@ -20,6 +20,7 @@ module.exports = {
         "class-methods-use-this": "off",
         "import/prefer-default-export": "off",
         "arrow-parens": "off",
+        "no-underscore-dangle": "off",
     },
     parser: "babel-eslint", // this lets us use ES6+ things in react like `= () => {}`
 };

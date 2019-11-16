@@ -26,6 +26,8 @@
     "@hapi/hapi": "^18.3.2",
     "@hapi/inert": "^5.2.1",
     "express": "^4.17.1",
+    "highlight.js": "^9.16.2",
+    "marked": "^0.7.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
