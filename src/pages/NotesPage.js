@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { NoteAdapter } from '../Adapters';
+import NoteTitles from '../components/NoteTitles';
 
 function ArticlesPage() {
     useEffect(() => {
-        NoteAdapter.getOne('test').then(console.log);
+        NoteAdapter.getOne('Express: Getting Started').then(console.log);
     }, []);
 
     useEffect(() => {
@@ -13,6 +14,7 @@ function ArticlesPage() {
     return (
         <div className='notes-page'>
             <h1>My Notes</h1>
+            <NoteTitles />
         </div>
     );
 }

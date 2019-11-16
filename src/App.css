@@ -180,6 +180,10 @@
   background: #00294a;
   background: linear-gradient(90deg, #00294a 0%, #026ec9 73%, #035093 100%); }
 
+#note-titles {
+  background: #989;
+  width: 22rem; }
+
 ul {
   list-style: none;
   padding: 0; }

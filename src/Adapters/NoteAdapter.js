@@ -1,5 +1,6 @@
 const NOTE_TITLES = [
-    'test',
+    'Test',
+    'Express: Getting Started',
 ];
 
 const options = {
@@ -15,7 +16,11 @@ const ArticleAdapter = {
      * Retrieve a single note from the markdown folder
      * @param {string} articleTitle - The title of the file without .md
      */
-    getOne: (articleTitle) => {
+    getOne: (articleTitleRaw) => {
+        const articleTitle = articleTitleRaw
+            .toLocaleLowerCase()
+            .replace(/:/g, '')
+            .replace(/ /g, '-');
         return fetch(`./markdown/${articleTitle}.md`, options).then(r => r.text());
     },
 
