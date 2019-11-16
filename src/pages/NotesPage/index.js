@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { NoteAdapter } from '../Adapters';
-import NoteTitles from '../components/NoteTitles';
-import CurrentNote from '../components/CurrentNote';
+import { NoteAdapter } from '../../Adapters';
+import NoteTitles from '../../components/NoteTitles';
+import CurrentNote from '../../components/CurrentNote';
+import TableOfContents from '../../components/TableOfContents';
 
 function ArticlesPage() {
     const [currentNote, setCurrentNote] = useState('hello');
@@ -24,14 +25,14 @@ function ArticlesPage() {
     };
 
     return (
-        <div className='notes-page'>
-            <h1>My Notes</h1>
+        <div id='notes-page'>
             <NoteTitles
                 handleClick={handleClick}
             />
             <CurrentNote
                 noteTitle={currentNote}
             />
+            <TableOfContents />
         </div>
     );
 }

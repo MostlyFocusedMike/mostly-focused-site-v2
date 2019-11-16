@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const NoteTitle = ({ noteTitle, handleClick }) => {
     return (
-        <div id='note-title'>
+        <div className='note-title'>
             <input
                 type='button'
                 value={noteTitle}

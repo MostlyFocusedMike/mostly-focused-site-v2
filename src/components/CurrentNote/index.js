@@ -17,7 +17,7 @@ const CurrentNote = ({ noteTitle }) => {
                 {
                     currentText
                     && <div
-                        dangerouslySetInnerHTML={{ __html: createMarkdown(currentText)}}
+                        dangerouslySetInnerHTML={{ __html: createMarkdown(currentText) }}
                         id="preview-text"
                     >
                     </div>
