@@ -1,3 +1,5 @@
+import path from 'path';
+
 const NOTE_TITLES = [
     'Test',
     'Express: Getting Started',
@@ -21,7 +23,9 @@ const ArticleAdapter = {
             .toLocaleLowerCase()
             .replace(/:/g, '')
             .replace(/ /g, '-');
-        return fetch(`./markdown/${articleTitle}.md`, options).then(r => r.text());
+
+        // remember this get's compiled so the / is the 'public' folder
+        return fetch(path.join(__dirname, 'markdown', `${articleTitle}.md`), options).then(r => r.text());
     },
 
     /** Return a list of the note titles alphabetically sorted */

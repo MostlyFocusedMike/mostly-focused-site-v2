@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { NoteAdapter } from '../../Adapters';
 import NoteTitles from '../../components/NoteTitles';
 import CurrentNote from '../../components/CurrentNote';
 import TableOfContents from '../../components/TableOfContents';
 
-function ArticlesPage(props) {
+function NotesPage({ match }) {
     const [currentNote, setCurrentNote] = useState('hello');
     const [currentText, setCurrentText] = useState(null);
 
     useEffect(() => {
-        console.log('props: ', props.match);
         NoteAdapter.getOne(currentNote).then(setCurrentText);
-    }, [currentNote, props]);
+    }, [currentNote]);
 
     const handleClick = (e) => {
         e.preventDefault();
@@ -30,4 +30,8 @@ function ArticlesPage(props) {
     );
 }
 
-export default ArticlesPage;
+NotesPage.propTypes = {
+    match: PropTypes.object,
+};
+
+export default NotesPage;

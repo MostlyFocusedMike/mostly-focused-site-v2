@@ -31,10 +31,6 @@ const TableOfContents = ({ text }) => {
         }
     }, [text]);
 
-    useEffect(() => {
-        console.log('text: ', text);
-    }, [text]);
-
     return (
         <div id='table-of-contents'>
             <h2>Table Of Contents</h2>
