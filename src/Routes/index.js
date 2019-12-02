@@ -15,6 +15,10 @@ const Routes = () => {
                 exact path='/notes'
                 component = { NotesPage }
             />
+            <Route
+                exact path='/notes/:note'
+                component = { NotesPage }
+            />
         </Switch>
     );
 };

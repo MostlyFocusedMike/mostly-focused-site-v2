@@ -208,6 +208,12 @@
   width: 80%;
   margin: 0.5rem; }
 
+#current-note {
+  height: 20rem; }
+
+#markdown {
+  height: 19rem; }
+
 #articles-ul, #tags ul, #notes-page {
   display: flex;
   align-items: flex-start;
@@ -241,7 +247,7 @@
       padding: 1rem;
       padding-bottom: 8rem;
       font-size: 1.1rem;
-      height: 100%;
+      height: 40%;
       /* unvisited link */ }
       #notes-page #current-note #markdown h2 {
         color: #363;
@@ -260,18 +266,22 @@
       #notes-page #current-note #markdown a {
         text-decoration: underline; }
   #notes-page #note-titles {
-    background: #989;
-    width: 19rem; }
+    background: #272727;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    color: #EBEBEB;
+    font-weight: 300;
+    margin: 1.5rem;
+    width: 18rem; }
     #notes-page #note-titles .note-title hr {
       width: 80%;
       margin: 0.5rem; }
   #notes-page #table-of-contents {
     background: #FFF;
     width: 20rem;
-    height: 100vh; }
+    height: 75vh; }
     #notes-page #table-of-contents #contents {
       border: 1px solid #000;
-      height: 80%;
       overflow: auto; }
       #notes-page #table-of-contents #contents ul {
         list-style-type: none;

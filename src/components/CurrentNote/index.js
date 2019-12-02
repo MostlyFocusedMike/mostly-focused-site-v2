@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import createMarkdown from '../../helpers/create-markdown';
 
@@ -21,7 +21,7 @@ const CurrentNote = ({ noteTitle, currentText }) => {
 };
 
 CurrentNote.propTypes = {
-    noteTitle: PropTypes.object,
+    noteTitle: PropTypes.string,
     currentText: PropTypes.string,
 };
 

@@ -4,17 +4,14 @@ import NoteTitles from '../../components/NoteTitles';
 import CurrentNote from '../../components/CurrentNote';
 import TableOfContents from '../../components/TableOfContents';
 
-function ArticlesPage() {
+function ArticlesPage(props) {
     const [currentNote, setCurrentNote] = useState('hello');
     const [currentText, setCurrentText] = useState(null);
 
     useEffect(() => {
+        console.log('props: ', props.match);
         NoteAdapter.getOne(currentNote).then(setCurrentText);
-    }, [currentNote]);
-
-    useEffect(() => {
-        console.log(currentNote);
-    }, [currentNote]);
+    }, [currentNote, props]);
 
     const handleClick = (e) => {
         e.preventDefault();
@@ -23,9 +20,7 @@ function ArticlesPage() {
 
     return (
         <div id='notes-page'>
-            <NoteTitles
-                handleClick={handleClick}
-            />
+            <NoteTitles handleClick={handleClick} />
             <CurrentNote
                 noteTitle={currentNote}
                 currentText={currentText}

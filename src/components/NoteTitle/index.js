@@ -15,7 +15,7 @@ const NoteTitle = ({ noteTitle, handleClick }) => {
 };
 
 NoteTitle.propTypes = {
-    noteTitle: PropTypes.object,
+    noteTitle: PropTypes.string,
     handleClick: PropTypes.func,
 };
 
