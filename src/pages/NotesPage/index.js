@@ -5,12 +5,11 @@ import NoteTitles from '../../components/NoteTitles';
 import CurrentNote from '../../components/CurrentNote';
 import TableOfContents from '../../components/TableOfContents';
 
-function NotesPage({ match: params }) {
+const NotesPage = ({ match: { params } }) => {
     const [currentNote, setCurrentNote] = useState('home');
     const [currentText, setCurrentText] = useState(null);
 
     useEffect(() => {
-        console.log('match: ', params);
         const firstNote = params.note || currentNote;
         NoteAdapter.getOne(firstNote).then(setCurrentText);
     }, [currentNote, params]);
