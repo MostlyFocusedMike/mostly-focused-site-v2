@@ -30,7 +30,7 @@ const ArticleAdapter = {
      */
     getOne: (articleTitleRaw) => {
         const articleTitle = convertTitleToFile(articleTitleRaw);
-        if (!allFiles.includes(articleTitle)) return Promise.resolve({ OK: false });
+        if (!allFiles.includes(articleTitle)) return Promise.resolve({ notFound: true });
 
         // remember this gets compiled so the / is the 'public' folder
         return fetch(path.join(__dirname, 'markdown', `${articleTitle}.md`), options).then(r => r.text());

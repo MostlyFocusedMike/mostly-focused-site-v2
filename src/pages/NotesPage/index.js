@@ -1,4 +1,6 @@
+/* eslint-disable no-unused-expressions */
 import React, { useState, useEffect } from 'react';
+import { Redirect } from 'react-router';
 import PropTypes from 'prop-types';
 import { NoteAdapter } from '../../Adapters';
 import NoteTitles from '../../components/NoteTitles';
@@ -7,11 +9,16 @@ import TableOfContents from '../../components/TableOfContents';
 
 const NotesPage = ({ match: { params } }) => {
     const [currentNote, setCurrentNote] = useState('home');
+    const [redirect, setRedirect] = useState(false);
     const [currentText, setCurrentText] = useState(null);
 
     useEffect(() => {
         const firstNote = params.note || currentNote;
-        NoteAdapter.getOne(firstNote).then(setCurrentText);
+        NoteAdapter.getOne(firstNote).then(res => {
+            res.notFound
+                ? setRedirect(true)
+                : setCurrentText(res);
+        });
     }, [currentNote, params]);
 
     const handleClick = (e) => {
@@ -21,6 +28,7 @@ const NotesPage = ({ match: { params } }) => {
 
     return (
         <div id='notes-page'>
+            { redirect && <Redirect to='/notes' /> }
             <NoteTitles handleClick={handleClick} />
             <CurrentNote
                 noteTitle={currentNote}
