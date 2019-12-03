@@ -1,9 +1,19 @@
 import path from 'path';
 
+const convertTitleToFile = (title) => {
+    return title
+        .toLocaleLowerCase()
+        .replace(/:/g, '')
+        .replace(/ /g, '-');
+};
+
 const NOTE_TITLES = [
+    'Home',
     'Test',
     'Express: Getting Started',
 ];
+
+const allFiles = NOTE_TITLES.map((title) => convertTitleToFile(title));
 
 const options = {
     method: 'GET',
@@ -15,16 +25,14 @@ const options = {
 
 const ArticleAdapter = {
     /**
-     * Retrieve a single note from the markdown folder
-     * @param {string} articleTitle - The title of the file without .md
+     * Retrieve a single note from the markdown folder if title exists in list
+     * @param {string} articleTitle - The display title of the file (no .md or dashes)
      */
     getOne: (articleTitleRaw) => {
-        const articleTitle = articleTitleRaw
-            .toLocaleLowerCase()
-            .replace(/:/g, '')
-            .replace(/ /g, '-');
+        const articleTitle = convertTitleToFile(articleTitleRaw);
+        if (!allFiles.includes(articleTitle)) return Promise.resolve({ OK: false });
 
-        // remember this get's compiled so the / is the 'public' folder
+        // remember this gets compiled so the / is the 'public' folder
         return fetch(path.join(__dirname, 'markdown', `${articleTitle}.md`), options).then(r => r.text());
     },
 
