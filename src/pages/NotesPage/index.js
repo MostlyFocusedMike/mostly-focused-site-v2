@@ -13,12 +13,12 @@ const NotesPage = ({ match: { params } }) => {
     const [currentText, setCurrentText] = useState(null);
 
     useEffect(() => {
-        const firstNote = params.note || currentNote;
-        NoteAdapter.getOne(firstNote).then(res => {
-            res.notFound
-                ? setRedirect(true)
-                : setCurrentText(res);
-        });
+        NoteAdapter.getOne(params.note || currentNote)
+            .then(res => {
+                res.notFound
+                    ? setRedirect(true)
+                    : setCurrentText(res);
+            });
     }, [currentNote, params]);
 
     const handleClick = (e) => {
