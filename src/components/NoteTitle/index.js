@@ -1,14 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const NoteTitle = ({ noteTitle, handleClick }) => {
+const NoteTitle = ({ noteTitle, noteLink }) => {
     return (
         <div className='note-title'>
-            <input
-                type='button'
-                value={noteTitle}
-                onClick={handleClick}
-            />
+            <Link to={`/notes/${noteLink}`}>{noteTitle}</Link>
             <hr />
         </div>
     );
@@ -16,7 +13,7 @@ const NoteTitle = ({ noteTitle, handleClick }) => {
 
 NoteTitle.propTypes = {
     noteTitle: PropTypes.string,
-    handleClick: PropTypes.func,
+    noteLink: PropTypes.string,
 };
 
 export default NoteTitle;

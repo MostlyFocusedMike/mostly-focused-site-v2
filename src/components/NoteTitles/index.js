@@ -14,10 +14,10 @@ const NoteTitles = ({ handleClick }) => {
             { noteTitles
                 && <ul>
                     {
-                        noteTitles.map(title => <NoteTitle
+                        noteTitles.map(({ title, link }) => <NoteTitle
                             key={title}
                             noteTitle={title}
-                            handleClick={handleClick}
+                            noteLink={link}
                         />)
                     }
                 </ul>

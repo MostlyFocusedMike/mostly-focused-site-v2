@@ -9,8 +9,8 @@ const convertTitleToFile = (title) => {
 
 const NOTE_TITLES = [
     'Home',
-    'Test',
     'Express: Getting Started',
+    'Test',
 ];
 
 const allFiles = NOTE_TITLES.map((title) => convertTitleToFile(title));
@@ -36,10 +36,8 @@ const ArticleAdapter = {
         return fetch(path.join(__dirname, 'markdown', `${articleTitle}.md`), options).then(r => r.text());
     },
 
-    /** Return a list of the note titles alphabetically sorted */
-    getAllTitles: () => {
-        return Promise.resolve(NOTE_TITLES.sort());
-    },
+    /** Return a list of the note titles and links to them */
+    getAllTitles: () => Promise.resolve(NOTE_TITLES.map(title => ({ title, link: convertTitleToFile(title) }))),
 };
 
 export default ArticleAdapter;
