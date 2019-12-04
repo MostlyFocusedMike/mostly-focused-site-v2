@@ -17,7 +17,7 @@ const NotesPage = ({ match: { params } }) => {
             .then(res => {
                 res.notFound
                     ? setRedirect(true)
-                    : setCurrentText(res);
+                    : setCurrentText(res.text);
             });
     }, [currentNote, params]);
 

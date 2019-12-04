@@ -33,7 +33,13 @@ const ArticleAdapter = {
         if (!allFiles.includes(articleTitle)) return Promise.resolve({ notFound: true });
 
         // remember this gets compiled so the / is the 'public' folder
-        return fetch(path.join(__dirname, 'markdown', `${articleTitle}.md`), options).then(r => r.text());
+        return fetch(path.join(__dirname, 'markdown', `${articleTitle}.md`), options)
+            .then(r => r.text())
+            .then(text => {
+                return {
+                    text,
+                };
+            });
     },
 
     /** Return a list of the note titles and links to them */
