@@ -13,7 +13,7 @@ const NotesPage = ({ match: { params } }) => {
     const [currentText, setCurrentText] = useState(null);
 
     useEffect(() => {
-        NoteAdapter.getOne(params.note || currentNote)
+        NoteAdapter.getOne(params.note)
             .then(res => {
                 res.notFound
                     ? setRedirect(true)

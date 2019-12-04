@@ -1,5 +1,12 @@
 import path from 'path';
 
+/** Source of truth for all  */
+const NOTE_TITLES = [
+    'Home',
+    'Express: Getting Started',
+    'Test',
+];
+
 const convertTitleToFile = (title) => {
     return title
         .toLocaleLowerCase()
@@ -7,11 +14,10 @@ const convertTitleToFile = (title) => {
         .replace(/ /g, '-');
 };
 
-const NOTE_TITLES = [
-    'Home',
-    'Express: Getting Started',
-    'Test',
-];
+const convertTitleToRoute = (title) => {
+    const fileName = convertTitleToFile(title);
+    return fileName.match(/home/) ? '' : `/${fileName}`;
+};
 
 const allFiles = NOTE_TITLES.map((title) => convertTitleToFile(title));
 
@@ -26,14 +32,13 @@ const options = {
 const ArticleAdapter = {
     /**
      * Retrieve a single note from the markdown folder if title exists in list
-     * @param {string} articleTitle - The display title of the file (no .md or dashes)
+     * @param {string} articleFileName - The file name
      */
-    getOne: (articleTitleRaw) => {
-        const articleTitle = convertTitleToFile(articleTitleRaw);
-        if (!allFiles.includes(articleTitle)) return Promise.resolve({ notFound: true });
+    getOne: (articleFileName = NOTE_TITLES[0].toLocaleLowerCase()) => {
+        if (!allFiles.includes(articleFileName)) return Promise.resolve({ notFound: true });
 
         // remember this gets compiled so the / is the 'public' folder
-        return fetch(path.join(__dirname, 'markdown', `${articleTitle}.md`), options)
+        return fetch(path.join(__dirname, 'markdown', `${articleFileName}.md`), options)
             .then(r => r.text())
             .then(text => {
                 return {
@@ -43,7 +48,7 @@ const ArticleAdapter = {
     },
 
     /** Return a list of the note titles and links to them */
-    getAllTitles: () => Promise.resolve(NOTE_TITLES.map(title => ({ title, link: convertTitleToFile(title) }))),
+    getAllTitles: () => Promise.resolve(NOTE_TITLES.map(title => ({ title, link: convertTitleToRoute(title) }))),
 };
 
 export default ArticleAdapter;

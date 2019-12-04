@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const NoteTitle = ({ noteTitle, noteLink }) => {
     return (
         <div className='note-title'>
-            <Link to={`/notes/${noteLink}`}>{noteTitle}</Link>
+            <Link to={`/notes${noteLink}`}>{noteTitle}</Link>
             <hr />
         </div>
     );
