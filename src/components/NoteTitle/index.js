@@ -2,18 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const NoteTitle = ({ noteTitle, noteLink }) => {
+const NoteTitle = ({ title, link }) => {
     return (
         <div className='note-title'>
-            <Link to={`/notes${noteLink}`}>{noteTitle}</Link>
+            <Link to={link}>{title}</Link>
             <hr />
         </div>
     );
 };
 
 NoteTitle.propTypes = {
-    noteTitle: PropTypes.string,
-    noteLink: PropTypes.string,
+    title: PropTypes.string,
+    link: PropTypes.string,
 };
 
 export default NoteTitle;

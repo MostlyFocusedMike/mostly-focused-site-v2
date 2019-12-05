@@ -1,36 +1,19 @@
 import path from 'path';
 
 /** Source of truth for titles, default home note must come first */
-const NOTE_TITLES = [
-    {
-        file: 'home',
-        display: 'Home',
-    },
-    {
-        file: 'express-getting-started',
-        display: 'Express: Getting Started',
-    },
-    {
-        file: 'test',
-        display: 'Test',
-    },
-];
-
-const getDefaultFile = () => NOTE_TITLES[0].file;
-
-const convertTitleToFile = (title) => {
-    return title
-        .toLocaleLowerCase()
-        .replace(/:/g, '')
-        .replace(/ /g, '-');
+const NOTE_FILES = {
+    DEFAULT: 'Home',
+    'express-js-getting-started': 'Express.JS: Getting Started',
+    test: 'Test',
 };
 
-const convertTitleToRoute = (title) => {
-    const fileName = convertTitleToFile(title);
-    return (fileName === getDefaultFile()) ? '' : `/${fileName}`;
-};
+const getDefaultFile = () => NOTE_FILES.DEFAULT;
+// const allFiles = NOTE_FILES.map(({ file }) => file);
 
-const allFiles = NOTE_TITLES.map(({ file }) => file);
+const getFileLink = (file) => {
+    const subPath = (file === getDefaultFile()) ? '' : `/${file}`;
+    return `/notes${subPath}`;
+};
 
 const ArticleAdapter = {
     /**
@@ -38,20 +21,26 @@ const ArticleAdapter = {
      * @param {string} articleFileName - The file name
      */
     getOne: (articleFileName = getDefaultFile()) => {
-        if (!allFiles.includes(articleFileName)) return Promise.resolve({ notFound: true });
+        // if (!allFiles.includes(articleFileName)) return Promise.resolve({ notFound: true });
 
-        // remember this gets compiled so the / is the 'public' folder
-        return fetch(path.join(__dirname, 'markdown', `${articleFileName}.md`))
-            .then(r => r.text())
-            .then(text => {
-                return {
-                    text,
-                };
-            });
+        // // remember this gets compiled so the / is the 'public' folder
+        // return fetch(path.join(__dirname, 'markdown', `${articleFileName}.md`))
+        //     .then(r => r.text())
+        //     .then(text => {
+        //         return {
+        //             text,
+        //         };
+        //     });
     },
 
     /** Return a list of the note titles and links to them */
-    getAllTitles: () => Promise.resolve(NOTE_TITLES.map(({ file }) => ({ file, link: convertTitleToRoute(file) }))),
+    getAllTitles: () => {
+        const titles = Object.keys(NOTE_FILES).map(file => ({
+            title: NOTE_FILES[file],
+            link: getFileLink(file),
+        }));
+        return Promise.resolve(titles);
+    },
 };
 
 export default ArticleAdapter;
