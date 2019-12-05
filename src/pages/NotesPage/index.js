@@ -8,28 +8,30 @@ import CurrentNote from '../../components/CurrentNote';
 import TableOfContents from '../../components/TableOfContents';
 
 const NotesPage = ({ match: { params } }) => {
-    const [currentNote, setCurrentNote] = useState('home');
+    const [note, setNote] = useState(null); // shape: {title, text}
     const [redirect, setRedirect] = useState(false);
-    const [currentText, setCurrentText] = useState(null);
 
     useEffect(() => {
         NoteAdapter.getOne(params.note)
             .then(res => {
-                res.notFound
-                    ? setRedirect(true)
-                    : setCurrentText(res.text);
+                if (res.notFound) {
+                    setRedirect(true);
+                } else {
+                    setNote(res);
+                }
             });
-    }, [currentNote, params]);
+    }, [note, params]);
 
     return (
         <div id='notes-page'>
             { redirect && <Redirect to='/notes' /> }
-            <NoteTitles />
-            <CurrentNote
-                noteTitle={currentNote}
-                currentText={currentText}
-            />
-            <TableOfContents text={currentText} />
+            {
+                note && <>
+                    <NoteTitles />
+                    {/* <CurrentNote note={note} /> */}
+                    <TableOfContents text={note.text} />
+                </>
+            }
         </div>
     );
 }
