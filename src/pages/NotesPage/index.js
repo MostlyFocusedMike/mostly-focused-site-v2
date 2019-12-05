@@ -13,12 +13,10 @@ const NotesPage = ({ match: { params } }) => {
 
     useEffect(() => {
         NoteAdapter.getOne(params.note)
-            .then(res => {
-                if (res.notFound) {
-                    setRedirect(true);
-                } else {
-                    setNote(res);
-                }
+            .then(dbNote => {
+                dbNote.notFound
+                    ? setRedirect(true)
+                    : setNote(dbNote);
             });
     }, [note, params]);
 
@@ -28,13 +26,13 @@ const NotesPage = ({ match: { params } }) => {
             {
                 note && <>
                     <NoteTitles />
-                    {/* <CurrentNote note={note} /> */}
+                    <CurrentNote note={note} />
                     <TableOfContents text={note.text} />
                 </>
             }
         </div>
     );
-}
+};
 
 NotesPage.propTypes = {
     match: PropTypes.object,
