@@ -1,17 +1,19 @@
 import path from 'path';
 
-/** Source of truth for titles, default home note must come first */
+/** Default note title */
+const DEFAULT_NOTE = 'home';
+
+/** Source of truth for titles */
 const NOTE_FILES = {
-    DEFAULT: 'Home',
+    [DEFAULT_NOTE]: 'Home',
     'express-js-getting-started': 'Express.JS: Getting Started',
     test: 'Test',
 };
 
-const getDefaultFile = () => NOTE_FILES.DEFAULT;
 // const allFiles = NOTE_FILES.map(({ file }) => file);
 
 const getFileLink = (file) => {
-    const subPath = (file === getDefaultFile()) ? '' : `/${file}`;
+    const subPath = (file === DEFAULT_NOTE) ? '' : `/${file}`;
     return `/notes${subPath}`;
 };
 
@@ -20,7 +22,7 @@ const ArticleAdapter = {
      * Retrieve a single note from the markdown folder if title exists in list
      * @param {string} articleFileName - The file name
      */
-    getOne: (articleFileName = getDefaultFile()) => {
+    getOne: (articleFileName = DEFAULT_NOTE) => {
         // if (!allFiles.includes(articleFileName)) return Promise.resolve({ notFound: true });
 
         // // remember this gets compiled so the / is the 'public' folder
