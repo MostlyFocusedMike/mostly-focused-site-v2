@@ -2,6 +2,7 @@ import path from 'path';
 
 /** Default note title */
 const DEFAULT_NOTE = 'home';
+const MARKDOWN_DIR = 'markdown';
 
 /** Source of truth for titles */
 const NOTE_FILES = {
@@ -10,29 +11,28 @@ const NOTE_FILES = {
     test: 'Test',
 };
 
-// const allFiles = NOTE_FILES.map(({ file }) => file);
-
-const getFileLink = (file) => {
-    const subPath = (file === DEFAULT_NOTE) ? '' : `/${file}`;
+const getFileLink = (fileName) => {
+    const subPath = (fileName === DEFAULT_NOTE) ? '' : `/${fileName}`;
     return `/notes${subPath}`;
 };
 
 const ArticleAdapter = {
     /**
-     * Retrieve a single note from the markdown folder if title exists in list
-     * @param {string} articleFileName - The file name
+     * Retrieve a single note from the markdown folder
+     * @param {string} fileName - Note's file name in markdown folder, no .md included
      */
-    getOne: (articleFileName = DEFAULT_NOTE) => {
-        // if (!allFiles.includes(articleFileName)) return Promise.resolve({ notFound: true });
+    getOne: (fileName = DEFAULT_NOTE) => {
+        if (!NOTE_FILES[fileName]) return Promise.resolve({ notFound: true });
 
-        // // remember this gets compiled so the / is the 'public' folder
-        // return fetch(path.join(__dirname, 'markdown', `${articleFileName}.md`))
-        //     .then(r => r.text())
-        //     .then(text => {
-        //         return {
-        //             text,
-        //         };
-        //     });
+        // remember this gets compiled so the / is the 'public' folder
+        return fetch(path.join(__dirname, MARKDOWN_DIR, `${fileName}.md`))
+            .then(r => r.text())
+            .then(text => {
+                return {
+                    title: NOTE_FILES[fileName],
+                    text,
+                };
+            });
     },
 
     /** Return a list of the note titles and links to them */

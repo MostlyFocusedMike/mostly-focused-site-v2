@@ -8,33 +8,28 @@ import CurrentNote from '../../components/CurrentNote';
 import TableOfContents from '../../components/TableOfContents';
 
 const NotesPage = ({ match: { params } }) => {
-    // const [currentNote, setCurrentNote] = useState('home');
-    // const [redirect, setRedirect] = useState(false);
-    // const [currentText, setCurrentText] = useState(null);
+    const [currentNote, setCurrentNote] = useState('home');
+    const [redirect, setRedirect] = useState(false);
+    const [currentText, setCurrentText] = useState(null);
 
-    // useEffect(() => {
-    //     NoteAdapter.getOne(params.note)
-    //         .then(res => {
-    //             res.notFound
-    //                 ? setRedirect(true)
-    //                 : setCurrentText(res.text);
-    //         });
-    // }, [currentNote, params]);
-
-    // const handleClick = (e) => {
-    //     e.preventDefault();
-    //     setCurrentNote(e.target.value);
-    // };
+    useEffect(() => {
+        NoteAdapter.getOne(params.note)
+            .then(res => {
+                res.notFound
+                    ? setRedirect(true)
+                    : setCurrentText(res.text);
+            });
+    }, [currentNote, params]);
 
     return (
         <div id='notes-page'>
-            {/* { redirect && <Redirect to='/notes' /> } */}
+            { redirect && <Redirect to='/notes' /> }
             <NoteTitles />
-            {/* <CurrentNote
+            <CurrentNote
                 noteTitle={currentNote}
                 currentText={currentText}
-            /> */}
-            {/* <TableOfContents text={currentText} /> */}
+            />
+            <TableOfContents text={currentText} />
         </div>
     );
 }
