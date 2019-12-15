@@ -11,6 +11,8 @@ const NoteTitles = () => {
 
     return (
         <div id='note-titles'>
+            <h2>My Notes</h2>
+            <hr/>
             { noteTitles
                 && <ul>
                     {

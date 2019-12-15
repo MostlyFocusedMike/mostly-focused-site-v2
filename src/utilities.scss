@@ -23,6 +23,23 @@ $col: green;
     }
 }
 
+@mixin link-colors($decoration, $link, $visited, $hover, $active) {
+    text-decoration: $decoration;
+    &:link {
+        color: $link;
+    }
+    &:visited {
+        color: $visited;
+    }
+    &:hover {
+        color: $hover;
+        font-style: italic;
+    }
+    &:active {
+        color: $active;
+    }
+}
+
 %text-link {
     text-decoration: underline;
     &:link {

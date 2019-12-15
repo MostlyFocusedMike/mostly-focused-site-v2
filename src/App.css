@@ -204,10 +204,6 @@
   background: #00294a;
   background: linear-gradient(90deg, #00294a 0%, #026ec9 73%, #035093 100%); }
 
-#note-title hr {
-  width: 80%;
-  margin: 0.5rem; }
-
 #current-note {
   height: 20rem; }
 
@@ -273,9 +269,46 @@
     font-weight: 300;
     margin: 1.5rem;
     width: 18rem; }
-    #notes-page #note-titles .note-title hr {
-      width: 80%;
-      margin: 0.5rem; }
+    #notes-page #note-titles h2 {
+      font-family: Roboto;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      margin: 1rem 1rem 0;
+      color: #EEE;
+      font-weight: 100;
+      font-size: 1.75rem; }
+    #notes-page #note-titles hr {
+      margin: .5rem 0 0;
+      width: 95%;
+      display: inline-block;
+      border: none;
+      border-top: 1px solid #939393; }
+    #notes-page #note-titles ul {
+      padding: 0 0.25rem; }
+      #notes-page #note-titles ul .note-title {
+        text-align: center; }
+        #notes-page #note-titles ul .note-title hr {
+          margin: 1rem auto;
+          width: 80%;
+          display: block;
+          border: none;
+          border-top: 1px solid #939393; }
+        #notes-page #note-titles ul .note-title a {
+          display: inline-block;
+          width: 80%;
+          font-size: 1.5rem;
+          letter-spacing: 0.2rem;
+          font-weight: 100;
+          text-decoration: none; }
+          #notes-page #note-titles ul .note-title a:link {
+            color: #FFF; }
+          #notes-page #note-titles ul .note-title a:visited {
+            color: #FFF; }
+          #notes-page #note-titles ul .note-title a:hover {
+            color: #e48900;
+            font-style: italic; }
+          #notes-page #note-titles ul .note-title a:active {
+            color: #BBB; }
   #notes-page #table-of-contents {
     background: #FFF;
     width: 20rem;
