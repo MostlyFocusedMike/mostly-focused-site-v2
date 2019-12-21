@@ -310,35 +310,54 @@
           #notes-page #note-titles ul .note-title a:active {
             color: #BBB; }
   #notes-page #table-of-contents {
-    background: #FFF;
-    width: 20rem;
-    height: 75vh; }
-    #notes-page #table-of-contents #contents {
-      border: 1px solid #000;
-      overflow: auto; }
-      #notes-page #table-of-contents #contents ul {
-        list-style-type: none;
-        padding: 0; }
-        #notes-page #table-of-contents #contents ul .padding-lvl-1 {
-          padding-left: 0;
-          font-size: 1.25rem;
-          font-weight: bold;
-          text-decoration: underline; }
-        #notes-page #table-of-contents #contents ul .padding-lvl-2 {
-          padding-left: .5rem;
-          font-size: 1.1rem;
-          font-style: italic; }
-        #notes-page #table-of-contents #contents ul .padding-lvl-3 {
-          padding-left: 1rem;
-          font-size: .9rem; }
-          #notes-page #table-of-contents #contents ul .padding-lvl-3::before {
-            content: "- "; }
-        #notes-page #table-of-contents #contents ul li {
-          display: block;
-          margin: 1rem;
-          color: black; }
-          #notes-page #table-of-contents #contents ul li a:hover {
-            color: gray; }
+    background: #272727;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    color: #EBEBEB;
+    font-weight: 300;
+    margin: 1.5rem;
+    width: 18rem; }
+    #notes-page #table-of-contents h2 {
+      font-family: Roboto;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      margin: 1rem 1rem 0;
+      color: #EEE;
+      font-weight: 100;
+      font-size: 1.75rem; }
+    #notes-page #table-of-contents ul {
+      list-style-type: none;
+      padding: 0;
+      max-height: 20rem;
+      overflow: scroll;
+      background: #101010; }
+      #notes-page #table-of-contents ul .padding-lvl-1 {
+        padding-left: 0;
+        font-size: 1.5rem;
+        font-weight: bold; }
+      #notes-page #table-of-contents ul .padding-lvl-2 {
+        padding-left: 1rem;
+        font-size: 1.1rem;
+        font-style: italic; }
+      #notes-page #table-of-contents ul .padding-lvl-3 {
+        padding-left: 2rem;
+        font-size: .9rem; }
+        #notes-page #table-of-contents ul .padding-lvl-3::before {
+          content: "- "; }
+      #notes-page #table-of-contents ul li {
+        display: block;
+        margin: 1rem; }
+        #notes-page #table-of-contents ul li a:hover {
+          text-decoration: none; }
+          #notes-page #table-of-contents ul li a:hover:link {
+            color: #FFF; }
+          #notes-page #table-of-contents ul li a:hover:visited {
+            color: #FFF; }
+          #notes-page #table-of-contents ul li a:hover:hover {
+            color: #e48900;
+            font-style: italic; }
+          #notes-page #table-of-contents ul li a:hover:active {
+            color: #BBB; }
 
 ul {
   list-style: none;

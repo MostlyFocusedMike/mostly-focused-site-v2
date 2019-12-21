@@ -18,7 +18,8 @@ const NotesPage = ({ match: { params } }) => {
                     ? setRedirect(true)
                     : setNote(dbNote);
             });
-    }, [note, params]);
+    }, [params]);
+    console.log('rendered: ');
 
     return (
         <div id='notes-page'>

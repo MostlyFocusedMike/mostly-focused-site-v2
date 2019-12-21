@@ -34,18 +34,16 @@ const TableOfContents = ({ text }) => {
     return (
         <div id='table-of-contents'>
             <h2>Table Of Contents</h2>
-            <div id="contents">
-                <ul>
-                    {
-                        tableContents
-                        && tableContents.map(({ padding, link, contentText }) => (
-                            <li className={`padding-lvl-${padding}`} key={link}>
-                                <a href={`#${link}`}>{contentText}</a>
-                            </li>
-                        ))
-                    }
-                </ul>
-            </div>
+            <ul id="contents">
+                {
+                    tableContents
+                    && tableContents.map(({ padding, link, contentText }) => (
+                        <li className={`padding-lvl-${padding}`} key={link}>
+                            <a href={`#${link}`}>{contentText}</a>
+                        </li>
+                    ))
+                }
+            </ul>
         </div>
     );
 };
