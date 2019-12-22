@@ -5,8 +5,8 @@ import createMarkdown from '../../helpers/create-markdown';
 const CurrentNote = ({ note: { title, text } }) => {
     return (
         <div id='current-note'>
+            <h2 id="title">{title}</h2>
             <div id='markdown'>
-                <h2>{title}</h2>
                 <div
                     id="preview-text"
                     dangerouslySetInnerHTML={{ __html: createMarkdown(text) }}

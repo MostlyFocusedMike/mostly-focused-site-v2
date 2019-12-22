@@ -171,10 +171,10 @@
 #welcome-banner {
   background: #1A1A1A;
   margin: 0;
-  padding: 0.5rem 1rem;
+  padding: 0rem 1rem 0.5rem;
   text-align: right;
   position: relative;
-  height: 2.75rem; }
+  height: 2rem; }
   #welcome-banner h1 {
     margin: 0;
     color: #5FB9FC;
@@ -186,29 +186,23 @@
       padding-left: 0.2rem;
       padding-right: 1rem;
       font-style: normal;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       color: #FFF;
       font-family: 'Oswald', sans-serif;
       font-weight: 200; }
   #welcome-banner #white-line {
     position: absolute;
     right: 2.95rem;
-    top: 2.3rem;
-    width: 6.5rem;
+    top: 1.6rem;
+    width: 6.2rem;
     height: .5rem;
     border-bottom: 0.1rem solid white;
     border-right: 0.1rem solid white; }
 
 #blue-bar {
-  height: 0.25rem;
+  height: 0.1rem;
   background: #00294a;
   background: linear-gradient(90deg, #00294a 0%, #026ec9 73%, #035093 100%); }
-
-#current-note {
-  height: 20rem; }
-
-#markdown {
-  height: 19rem; }
 
 #articles-ul, #tags ul, #notes-page {
   display: flex;
@@ -230,30 +224,55 @@
 
 #notes-page {
   justify-content: space-around; }
+  #notes-page h2#title {
+    font-family: Roboto;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    margin: 0.5rem 1rem;
+    color: #EEE;
+    font-weight: 100;
+    font-size: 1.75rem; }
   #notes-page #current-note {
     width: 47%;
     height: 80vh;
     max-width: 50rem;
     min-width: 22rem;
     flex: 1;
-    margin: 0; }
+    margin: 1rem 0 0;
+    height: 90vh;
+    overflow: auto;
+    background: #272727;
+    padding: 0.25rem;
+    border-radius: 0.2rem; }
     #notes-page #current-note #markdown {
+      margin: 0 auto;
       overflow-x: hidden;
       background: #FFF;
-      padding: 1rem;
-      padding-bottom: 8rem;
+      padding: 0 1rem 1rem;
       font-size: 1.1rem;
-      height: 40%;
+      border-radius: 0.2rem;
       /* unvisited link */ }
+      #notes-page #current-note #markdown h1 > code,
+      #notes-page #current-note #markdown h2 > code,
+      #notes-page #current-note #markdown h3 > code,
+      #notes-page #current-note #markdown h4 > code,
+      #notes-page #current-note #markdown p > code,
+      #notes-page #current-note #markdown li > code {
+        background: #EFEFEF;
+        padding: 0.1rem; }
       #notes-page #current-note #markdown h2 {
-        color: #363;
+        color: #111;
         line-height: 2.5rem; }
       #notes-page #current-note #markdown li {
         margin: 0.5rem; }
+      #notes-page #current-note #markdown .hljs {
+        padding: 1rem;
+        border-radius: 0.2rem;
+        box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.5); }
       #notes-page #current-note #markdown blockquote {
         background: #e1e1e1;
         font-style: italic;
-        color: #333;
+        color: #222;
         padding: 0.25rem 0.5rem;
         border-left: .2rem solid #555;
         margin: 0; }
@@ -268,7 +287,9 @@
     color: #EBEBEB;
     font-weight: 300;
     margin: 1.5rem;
-    width: 18rem; }
+    width: 18rem;
+    max-height: 40rem;
+    overflow: auto; }
     #notes-page #note-titles h2 {
       font-family: Roboto;
       -moz-osx-font-smoothing: grayscale;
@@ -328,7 +349,7 @@
     #notes-page #table-of-contents ul {
       list-style-type: none;
       padding: 0;
-      max-height: 20rem;
+      max-height: 60vh;
       overflow: scroll;
       background: #101010; }
       #notes-page #table-of-contents ul .padding-lvl-1 {
