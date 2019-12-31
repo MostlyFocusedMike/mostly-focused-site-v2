@@ -234,12 +234,11 @@
     font-size: 1.75rem; }
   #notes-page #current-note {
     width: 47%;
-    height: 80vh;
     max-width: 50rem;
     min-width: 22rem;
     flex: 1;
     margin: 1rem 0 0;
-    height: 90vh;
+    max-height: 90vh;
     overflow: auto;
     background: #272727;
     padding: 0.25rem;
@@ -263,8 +262,11 @@
       #notes-page #current-note #markdown h2 {
         color: #111;
         line-height: 2.5rem; }
-      #notes-page #current-note #markdown li {
-        margin: 0.5rem; }
+      #notes-page #current-note #markdown ul {
+        list-style: square;
+        padding: 0 1rem; }
+        #notes-page #current-note #markdown ul li {
+          margin: 0.5rem; }
       #notes-page #current-note #markdown .hljs {
         padding: 1rem;
         border-radius: 0.2rem;

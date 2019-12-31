@@ -14,12 +14,11 @@
     }
     #current-note {
         width: 47%;
-        height: 80vh;
         max-width: 50rem;
         min-width: 22rem;
         flex: 1;
         margin: 1rem 0 0;
-        height: 90vh;
+        max-height: 90vh;
         overflow: auto;
         background:#272727;
         padding: 0.25rem;
@@ -44,9 +43,14 @@
                 color:#111;
                 line-height: 2.5rem;
             }
-            li {
-                margin: 0.5rem;
+            ul {
+                list-style: square;
+                padding: 0 1rem;
+                li {
+                    margin: 0.5rem;
+                }
             }
+
             .hljs {
                 padding: 1rem;
                 border-radius: 0.2rem;

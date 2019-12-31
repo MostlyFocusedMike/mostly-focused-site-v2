@@ -8,7 +8,7 @@ const MARKDOWN_DIR = 'markdown';
 const NOTE_FILES = {
     [DEFAULT_NOTE]: 'Home',
     'express-js-getting-started': 'Express.JS: Getting Started',
-    test: 'Test',
+    'bayesian-pt1': 'Bayesian Statistics the Fun Way: Part 1',
 };
 
 const getFileLink = (fileName) => {
