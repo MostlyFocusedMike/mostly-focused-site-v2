@@ -15,7 +15,7 @@ const MyProvider = (props) => {
             {props.children}
         </AppContext.Provider>
     );
-}
+};
 
 MyProvider.propTypes = {
     children: PropTypes.object,
