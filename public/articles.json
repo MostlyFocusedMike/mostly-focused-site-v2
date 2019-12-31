@@ -1,5 +1,100 @@
 [
     {
+        "id": 28,
+        "medium_id": "f46bc9499767",
+        "title": "Some Tips for Mocking Code in Tests",
+        "link": "https://medium.com/@mostlyfocusedmike/some-tips-for-mocking-code-in-tests-f46bc9499767",
+        "image": "https://miro.medium.com/max/1400/1*zE9Ynlg1Pb9yx2cschuFYA.png",
+        "subtitle": "Mocks are great. Until they’re not.",
+        "first_published_at": "2019-12-19T12:59:55.527Z",
+        "created_at": "2019-12-31T00:26:57.550Z",
+        "updated_at": "2019-12-31T00:26:57.550Z",
+        "tags": [
+            {
+                "id": 1,
+                "name": "JavaScript",
+                "slug": "javascript",
+                "created_at": "2019-10-14T03:36:15.139Z",
+                "updated_at": "2019-10-14T03:36:15.139Z"
+            },
+            {
+                "id": 13,
+                "name": "Testing",
+                "slug": "testing",
+                "created_at": "2019-10-14T03:36:33.954Z",
+                "updated_at": "2019-10-14T03:36:33.954Z"
+            }
+        ]
+      },
+      {
+        "id": 27,
+        "medium_id": "230d6f7eb328",
+        "title": "Let’s Talk About TypeScript’s Learning Curve",
+        "link": "https://medium.com/@mostlyfocusedmike/lets-talk-about-typescript-s-learning-curve-230d6f7eb328",
+        "image": "https://miro.medium.com/max/1400/1*nhheci-dJwag98Fezr4J9w.png",
+        "subtitle": "Some tips for learning TypeScript",
+        "first_published_at": "2019-12-04T03:52:43.327Z",
+        "created_at": "2019-12-31T00:26:57.588Z",
+        "updated_at": "2019-12-31T00:26:57.588Z",
+        "tags": [
+            {
+                "id": 1,
+                "name": "JavaScript",
+                "slug": "javascript",
+                "created_at": "2019-10-14T03:36:15.139Z",
+                "updated_at": "2019-10-14T03:36:15.139Z"
+            },
+            {
+                "id": 6,
+                "name": "Typescript",
+                "slug": "typescript",
+                "created_at": "2019-10-14T03:36:33.771Z",
+                "updated_at": "2019-10-14T03:36:33.771Z"
+            }
+        ]
+      },
+      {
+        "id": 26,
+        "medium_id": "d8cf48769aa0",
+        "title": "Next Tech Steps for Bootcamp Grads",
+        "link": "https://medium.com/@mostlyfocusedmike/next-tech-steps-for-bootcamp-grads-d8cf48769aa0",
+        "image": "https://miro.medium.com/max/1400/1*6BoN42lW3wDv338Cin4b9w.png",
+        "subtitle": "Some useful links to look at once you catch your breath",
+        "first_published_at": "2019-11-21T02:39:47.559Z",
+        "created_at": "2019-12-31T00:26:57.618Z",
+        "updated_at": "2019-12-31T00:26:57.618Z",
+        "tags": [
+            {
+                "id": 1,
+                "name": "JavaScript",
+                "slug": "javascript",
+                "created_at": "2019-10-14T03:36:15.139Z",
+                "updated_at": "2019-10-14T03:36:15.139Z"
+            },
+            {
+                "id": 3,
+                "name": "React",
+                "slug": "react",
+                "created_at": "2019-12-31T00:24:02.452Z",
+                "updated_at": "2019-12-31T00:24:02.452Z"
+            },
+            {
+                "id": 4,
+                "name": "Coding Bootcamp",
+                "slug": "coding-bootcamp",
+                "created_at": "2019-10-14T03:36:33.717Z",
+                "updated_at": "2019-10-14T03:36:33.717Z"
+            },
+            {
+                "id": 10,
+                "name": "Docker",
+                "slug": "docker",
+                "created_at": "2019-12-31T00:26:57.633Z",
+                "updated_at": "2019-12-31T00:26:57.633Z"
+            }
+        ]
+      },
+    {
         "id": 25,
         "medium_id": "9177fc0e1b49",
         "title": "Getting Started with Express JS for the Impatient",
@@ -378,8 +473,8 @@
         },
         {
           "id": 13,
-          "name": "Test Driven Development",
-          "slug": "test-driven-development",
+          "name": "Testing",
+          "slug": "testing",
           "created_at": "2019-10-14T03:36:33.954Z",
           "updated_at": "2019-10-14T03:36:33.954Z"
         }
