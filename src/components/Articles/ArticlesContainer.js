@@ -5,9 +5,9 @@ import appContext from '../../context';
 
 const ArticlesContainer = ({ articles }) => {
     const { chosenTag } = useContext(appContext);
-    const filteredArticles = articles.filter((article) => (
-        (chosenTag === 'anything') || (article.tags.findIndex(x => x.slug === chosenTag) > -1)
-    ));
+    const filteredArticles = (chosenTag === 'anything')
+        ? articles
+        : articles.filter((article) => article.tags.some(x => x.slug === chosenTag));
 
     return (
         <div id='articles-div'>
