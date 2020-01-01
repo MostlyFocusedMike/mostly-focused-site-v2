@@ -13,7 +13,7 @@ app.use((req, res, next) => {
 /* set up static files router */
 const staticAssets = express.static(path.join(__dirname, '..', 'build'));
 app.use(staticAssets);
-app.use('/notes', staticAssets);
+app.use('/notes/:noteName?', staticAssets);
 
 app.get('/articles', (req, res) => {
     res.redirect('/');

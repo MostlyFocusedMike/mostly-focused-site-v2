@@ -19,27 +19,23 @@ generally a skeptic and have never believed in alien encounters,
 but, completely perplexed by the scene outside, you find yourself
 thinking, Could this be a UFO?!
 
-# Observations
+## Observations
 - Before making hypothesis you collect data
 - This data can be noted as high to low probablity
 - could be noted as:
 
-```plaintext
-P(bright light outside window, saucer-shaped object in sky ) = very low
-```
+
+> P(bright light outside window, saucer-shaped object in sky ) = very low
 
 - This states the Probability of `x` items all occuring together is `very low`
 - 'In probability theory, we use a comma to separate events when we’re looking at the combined probability of multiple events.'
 - so a single event would be written as `P(rain) = possible`
 
-## Holding Prior Beliefs and Conditioning Probabilities
+### Holding Prior Beliefs and Conditioning Probabilities
 we don't exist in a vaccuum, typically we frame data against prior beliefs we hold about how things work
 so:
 
-```plaintext
-P(bright light outside window, saucer-shaped object in sky
-  | experience on Earth ) = very low
-```
+> P(bright light outside window, saucer-shaped object in sky | experience on Earth ) = very low
 - '|' doesn't mean 'or', it means "given", used to show prior beliefs
 - “The probability of observing bright
 lights and a saucer-shaped object in the sky, given our experience on Earth,
@@ -62,7 +58,7 @@ P(D | X) = low
 ```
 being on July 4th makes lights more probable
 
-## Explaining the formula
+### Explaining the formula
 Now that we have variables, it breaks down like:
 ```plaintext
 P(D | X) = L
@@ -71,11 +67,11 @@ Meaning: the **P**robability the variables on the left of | _being explained by_
 - `P(D|X) = very likely`: means the data does not surprise you given your beliefs
 - `P(D|X) = very low`: means the data is surprising given your beliefs
 
-## Assuming Prior Beliefs in Practice
+### Assuming Prior Beliefs in Practice
 - we don't have to list all our prior beliefs every time, it is assumed
 - sometimes list most relevant, so we'll post just experience on earth to remind
 
-# Forming a Hypothesis
+## Forming a Hypothesis
 - form hypothesis off of given data and prior beliefs. hypotheses can be about anything
 - Given above D data and X prior experiences, we would make a hypothesis of:
 
@@ -100,7 +96,7 @@ demonstrate that our hypothesis explains the data.
 
 - this is not done, just becuase you have a hypothesis doesn't mean you are finished, a hypothesis may make an event more likely, but the hypothesis itself could still be very unlikely
 
-# Gathering More Evidence and Updating Your Beliefs
+## Gathering More Evidence and Updating Your Beliefs
 - gethering ore data after forming hypothesis is important
 - lets say you noticed more lights, more saucers, a film crew, and someone yelling "cut"
 
@@ -116,7 +112,7 @@ P (H2 | X ) = very low
 ```
 - it's also not likely a movie is made outside, but it's more likely than a UFO
 
-# Comparing Hypotheses
+## Comparing Hypotheses
 - to compare, use your updated data
 
 > D<sub>updated</sub> = bright lights, saucer-shaped object, wires, film crew <br />
@@ -132,7 +128,7 @@ P (H2 | X ) = very low
 - Mathematically, we express these as a ratio h2:h1 is 1000:1
 - Meaning the h2 explains the data 1,000 times better than h1
 
-# Data Informs Belief; Belief Should Not Inform Data
+## Data Informs Belief; Belief Should Not Inform Data
 - Hypotheses change and everyone's experiences are different, but data should be universal fact
 
 - we've been using
@@ -158,30 +154,29 @@ in the world,” or “How well what I think supports what I observe.”
 -------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
 
-# CHAPTER 2: MEASURING UNCERTAINTY
+# CH 2: Measuring Uncertainty
 ## Overview
 Very high and very low are certainly not very scientific, this chapter discusses how to quantify probability instead of relying on qualitative feelings
 
-# What Is a Probability?
+## What Is a Probability?
 - borrowing from logic, where there are true and false values, or 1 and 0 for computers
 - we can use probablity as extensions of that idea P(X) = 0 means it's impossible and P(X) = 1 is a guarantee.
 - Rarely do we use 1 and 0, ussually it's fractions to show how confident we are that something will happen, like P(X) = .5 means we are truly unsure if it will or won't happen
 
-## Negation
+### Negation
 - not true == false, not false == true
 - We want the probabilty of something not happening + the opposite to equal 1
 - The probability of x and the negation of the probability of x should be 1
 
-```plaintext
-P(X) + ¬P(X) = 1
-````
+> P(X) + ¬P(X) = 1
+
 > *NOTE:* the "¬" minus with a tick is the negation symbol, sometimes it's just a "-" or "~"
 
 - so if P(X) = 1, then the negation would be 0, so 1 + 0 = 1, if the P(X) = 0, the negation would be 1, so 0 + 1
 - we use 1 and 0, but it's helpful to think about about it as percentages, 100% of happening is what we say anyway since it's the max
 - this makes sense, if rain is .75 chance of happening, that means it's a 25% of **not** raining, the chance and the negation of chance combined equal 100%, or .75 + .25 = 1
 
-# Calculating Probabilities by Counting Outcomes of Events
+## Calculating Probabilities by Counting Outcomes of Events
 - we have 2 sets of outcomes with probability, the total possible outcomes and the outcomes we care about
 - so for a coin flip, the total possible is 2, it's heads or tails
 - the outcomes we care about is 1, we want heads (in this case)
