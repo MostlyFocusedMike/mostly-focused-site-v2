@@ -1,4 +1,4 @@
-# CHAPTER 1: BAYESIAN THINKING AND EVERYDAY REASONING
+# CH 1: Bayesian Thinking and Everyday Reasoning
 ## Overview
 - Frequentist statistics is founded on the idea that probability represents the frequency with which something happens
 - Bayesian statistics is concerned with how probabilities represent how uncertain we are about a piece of information.
@@ -170,6 +170,8 @@ Very high and very low are certainly not very scientific, this chapter discusses
 
 > P(X) + ¬P(X) = 1
 
+> P(X) = 1 - ¬P(X)
+
 > *NOTE:* the "¬" minus with a tick is the negation symbol, sometimes it's just a "-" or "~"
 
 - so if P(X) = 1, then the negation would be 0, so 1 + 0 = 1, if the P(X) = 0, the negation would be 1, so 0 + 1
@@ -180,20 +182,19 @@ Very high and very low are certainly not very scientific, this chapter discusses
 - we have 2 sets of outcomes with probability, the total possible outcomes and the outcomes we care about
 - so for a coin flip, the total possible is 2, it's heads or tails
 - the outcomes we care about is 1, we want heads (in this case)
-- In probability theory, we use {} to refer to define sets, and Ω (the capital Greek letter omega) to indicate the set of all events and :
+- In probability theory, we use {} to refer to define sets, and Ω (the capital Greek letter omega) to indicate the set of all events, and i guess just say "desired" for the desired set:
 
 ```plaintext
-Ω  = {heads, tails}
 desired = {heads}
+Ω  = {heads, tails}
 ```
 
 - in order to find the probability of getting an outcome we care about, P(heads), we need to divide out {desired}/Ω
 
 ```plaintext
-   {heads}         1
+    {heads}        1
 --------------  =  -
 {heads, tails}     2
-
 ```
 - so P(heads) = .5
 - More complex, let's say we want probability of getting *at least* one heads in 2 coinflips
@@ -206,7 +207,7 @@ desired  = {(heads, tails), (heads, heads), (tails, heads)}
 - As you can see there are 3 outcomes we want, with four total, so P(one heads) = .75
 > as examples get more complicated, manually counting each possible outcome becomes unfeasible. Solving harder probability problems of this nature often involves a field of mathematics called *combinatorics*. In Chapter 4 we’ll see how we can use combinatorics to solve a slightly more complex problem.
 
-# Calculating Probabilities as Ratios of Beliefs
+## Calculating Probabilities as Ratios of Beliefs
 > Counting events is useful for physical objects, but it’s not so great for the
 vast majority of real-life probability questions we might have, such as:
 
@@ -235,28 +236,190 @@ P(H1)     100
 P(H2)      5
 ```
 
+- the odds of h1 are 20 to 1 in this case, or just 20
 - this is like at the race track, odds are 12 to 1 on peaches the horse, so if you pay 1 dollar, and they win, you get 12 dollars back.
 
-# Solving for the Probabilities
+### Extra: Checking countable ratios
+- The rain is just guessing essentially, but the way to calculate basic odds, like say picking the ace in 3 card monte, is simple
+- we use our sets like before,
+
+```plaintext
+P(h1) = get the ace
+P(h2) = don't get the ace
+
+desired = {ace}
+Ω  = {ace, jack, jack}
+
+giving us P(h1) = 1/3
+```
+- that gives us a countable probablity, but what if we wanted the ratio?
+- You essentially count how many things you want *out of* the set of all posibilities instead of using two different sets
+
+```plaintext
+p(h1)  =  1 (there is 1 ace)
+-----  =  -
+p(h2)  =  2 (there are 2 jacks)
+```
+- the sum of the numerator and denominator should be the same as the length of Ω
+- Remeber the ratio is not the end probability, the likelihood of getting the ace is not 0.5, but rather 1 to 2
+
+
+## Solving for the Probabilities
+- to do calculations, it's helpful to think of P(h) like a variable, so we can do regular math function, so
+```plaintext
+20 * p(h) + 1 * p(h) = 22P(h)
+20 *  X   + 1 *  X   = 22X
+```
+- In normal algebra it would be
+```plaintext
+20P(h) + 2P(h) = 22P(h)
+20X    + 2X    = 22X
+```
+
+- so given our orginal equation of:
 
 > P(h<sub>1(will rain)</sub>) = 20 * P(h<sub>2(wont rain)</sub>)
 - read as “The probability that that it will rain is 20 times greater than the probability that it won't.”
-- remember that the P(X) of something is equal to 1 - P(X), so let's replace the wont rain:
-- to do calculations, it's helpful to think of P(h) like a variable, so we can do regular math function, so 20 * p(h) + 1 * p(h) = 20P(h) + 2P(h) = 22P(h)
+- remember that the P(X) of something is equal to 1 - ¬P(X), so let's replace the `won't rain` with its negation:
 
-> P(h<sub>1(will rain)</sub>) = 20 * (1 - P(h<sub>2(wont rain)</sub>))
-- now multiply out the parenthesis
+> P(h<sub>1(will rain)</sub>) = 20 * (1 - P(h<sub>2(will rain)</sub>))
 
-> P(h<sub>1(will rain)</sub>) = 20 - 20 * P(h<sub>2(wont rain)</sub>))
+- now multiply the new parenthetical `(1 - Ph2)` by 20 to remove it
 
-- remove both -20 * P(h<sub>1(will rain)</sub>) from the right side by adding 20 * P(h<sub>1(will rain)</sub>) to boths sides
-- this will give use 21 * P(h<sub>1</sub>), since we added 20 * P(h<sub>1</sub>, and there was already one P(h<sub>1</sub>) on that side
+> P(h<sub>1(will rain)</sub>) = 20 * (1 - P(h<sub>2(will rain)</sub>))
 
-> P(h<sub>1(will rain)</sub>) = 20 - 20 * P(h<sub>2(wont rain)</sub>))
+becomes
 
+> P(h<sub>1(will rain)</sub>) = 20 - 20P(h<sub>2(will rain)</sub>))
+
+
+- remove both -20P(h<sub>1</sub>) from the right side by adding 20P(h<sub>1</sub>) to boths sides
+
+> P(h<sub>1(will rain)</sub>) + 20P(h<sub>2(will rain)</sub>)) = 20
+
+- now combine like terms (this was why we switched to the negation in the first place):
+
+> 21P(h<sub>2(will rain)</sub>)) = 20
+
+- we want a pure P(h) on one side, so we can finally achieve this by dividing by 21 on both sides
+
+```plaintext
+21P(h2)     20
+-------  =  --
+   21       21
+```
+
+- Final answer:
+> P(h<sub>2(will rain)</sub>)) = 20/21
+
+- This finally gives us a nice answer of something happening (based on our given odds) between 0 and 1. Note that it can be way off, since we are deciding the odds, 20 times more likely to rain than not, ourselves in this case
+- instead of doing all that, theres a simple formula we can use do get the likelihood between 0 and 1 of a hypothesis
+
+```plaintext
+O = odds
+          O(h)
+P(h) = ----------
+        1 + O(h)
+```
+
+- given our example, where we gave the odds of rain at 20
+```plaintext
+          20
+P(h1) = ------
+        1 + 20
+```
+
+## Measuring Beliefs in a Coin Toss
+- This is all fine and dandy, but let's check if this whole process works by checking it against something we know to be true: our coin toss which we calculated by counting
+- Like rain vs won't rain, we need 2 probabilities to compare in a ratio to get the odds, we use a coin toss becuase the 2 options are: getting heads and its negation, getting tails
+
+### assigning the ratio
+- So this was what we did for the rain: "I bet you 100 dollars it will rain" and they say "Meh, I only bet 5 dollars it won't"
+- This gets converted to ratios for odds:
+
+
+> P(h<sub>1(will rain)</sub>),  and:
+> P(h<sub>2(wont rain)</sub>)
+
+```plaintext
+P(H1)     100
+-----  =  ---  =  20 (20 to 1)
+P(H2)      5
+```
+
+- to repeat the process with coins, we need to stop thinking of a toss as an event, but as a hypothesis
+
+> P(h<sub>1(will flip heads)</sub>)          <br>
+> P(h<sub>2(wont flip tails)</sub>)
+
+- now we know that each outcome is equaly likely to happen so we can really give it a 1:1 ratio:
+
+```plaintext
+P(h1)     1
+-----  =  -  = 1
+P(h2)     1
+```
+- so the odds of getting heads is 1 to 1
+- this is interesting because we also know that P(h1) + P(h2) = 1 (because (h1) + ¬P(h1) = 1), so we have
+
+```plaintext
+P(h1)/P(h2)  =  1  =  P(h1) + P(h2)
+```
+- Since that means the two hypotheses must be combine to be 1, *and* be the same, they must both have a probability of 0.5, does our new formula work?
+
+```plaintext
+          O(h)
+P(h) = ----------
+        1 + O(h)
+
+          1
+P(h1) = ------ = 1/2
+        1 + 1
+```
+- it does!
+
+## testing more possibilities
+- another test that doesn't involve 1 since that makes it harder to see patterns
+- Getting a red ball, when there are 2 red balls and 3 blue
+
+```plaintext
+h1 = get a red ball
+h2 = won't get a red ball
+
+desired = {red, red}
+Ω  = {red, red, blue, blue, blue}
+
+P(h1) = 2/5
+```
+
+- we know that the probablity of getting it by counting, so let's use the ratio
+
+```plaintext
+P(h1)      2
+-----  =  ---
+P(h2)      3
+
+            2/3
+P(h1) =  ---------  = 6/15 = 2/5
+          1 + 2/3
+```
+
+## CH 2 Formulas
+> P(X) + ¬P(X) = 1
+
+> P(X) = 1 - ¬P(X)
+
+
+```plaintext
+O = odds
+          O(h)
+P(h) = ----------
+        1 + O(h)
+```
 -------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
- ### Symbols to copy
+Symbols to copy
+
 Ω
 ¬
