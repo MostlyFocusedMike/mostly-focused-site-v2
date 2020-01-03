@@ -419,6 +419,90 @@ P(h) = ----------
 -------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
+# CH 3: The Logic of Uncertainty
+## overview
+- how AND, OR, and NOT factor into probablities
+- remember ¬ means NOT
+
+## Combining Probabilities with AND
+- we use and to talk about the probability of 2 or more events all occuring
+
+### Solving a Combination of Two Probabilities
+- suppose we want the probability of flipping a heads and rolling a 6 on a dice *together*
+- We know the odds individually:
+
+```plaintext
+P(heads) = 1/2, P(roll 6) = 1/6
+```
+- to get the combination, it's like CH2, where we look at the set of options
+- It's helpful to do this visually as if it were a branching tree,
+
+```plaintext
+       - heads
+flip <
+       - tails
+```
+- and assume the events happen sequentially:
+
+```plaintext
+
+                -1
+                -2
+       -heads < -3
+                -4
+                -5
+                -6
+flip <
+                -1
+                -2
+       -tails < -3
+                -4
+                -5
+                -6
+
+```
+- we can count out the total length of Ω as 12, and then consider the length of the desired set, in this cast ther is only one path that has heads and then 6, so our final probablity is
+
+```plaintext
+P(flip heads, roll 6) = 1/12
+```
+- this is specific though, can we get a general rule?
+
+### Applying the Product Rule of Probability
+- By looking at each level of the tree, we can determine the odds at each step
+- the coin level 2, and we only want one, so 1/2 probability at that stage
+- the dice level is 12, but we are already only on the top half, which gives 6,and we only care about 1 outcome in that branch so 1/6
+- we then multiply these together
+
+```plaintext
+coin  dice  total
+ 1    1      1
+ -  * -  =  --
+ 2    6     12
+```
+
+- that worked visually and we checked the math, but you'll notice that those probablities are what we started with, so the formula for AND probabilities is just:
+
+```plaintext
+P(A,B) = P(A) × P(B)
+```
+
+- because we are multiplying, ie taking the product of probabilites, this is called the `product rule of probability`
+- It Because it is multiplicaiton, it also works with as many ANDs as you have:
+
+```plaintext
+P(P(A,B),C) = P(A,B) * P(C) = P(A) * P(B) * P(C)
+```
+
+## Combining Probabilities with OR
+
+
+
+
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
 Symbols to copy
 
 Ω
